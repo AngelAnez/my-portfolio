@@ -1,0 +1,42 @@
+[
+  {
+    "name": "HTML",
+    "logo": "/images/html.svg"
+  },
+  {
+    "name": "CSS",
+    "logo": "/images/css.svg"
+  },
+  {
+    "name": "JavaScript",
+    "logo": "/images/javascript.svg"
+  },
+  {
+    "name": "Bootstrap",
+    "logo": "/images/bootstrap.svg"
+  },
+  {
+    "name": "NodeJS",
+    "logo": "/images/nodejs.svg"
+  },
+  {
+    "name": "MySQL",
+    "logo": "/images/mysql.svg"
+  },
+  {
+    "name": "TailwindCSS",
+    "logo": "/images/tailwindcss.svg"
+  },
+  {
+    "name": "React",
+    "logo": "/images/react.svg"
+  },
+  {
+    "name": "Docker",
+    "logo": "/images/docker.svg"
+  },
+  {
+    "name": "Astro",
+    "logo": "/images/astro.svg"
+  }
+]

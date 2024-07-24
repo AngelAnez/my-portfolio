@@ -1,0 +1,17 @@
+---
+import skills from "../config/skills.json";
+---
+
+<h1 class="text-center text-4xl font-bold">Tecnologías</h1>
+<section class="p-4">
+  <ul class="grid grid-cols-4 gap-y-4">
+    {
+      skills.map((skill) => (
+        <li class="mx-auto">
+          <img src={skill.logo} alt={skill.name} width="100" />
+          <h4 class="text-center">{skill.name}</h4>
+        </li>
+      ))
+    }
+  </ul>
+</section>
