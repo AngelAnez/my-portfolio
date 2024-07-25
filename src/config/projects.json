@@ -1,0 +1,8 @@
+[
+  {
+    "title": "Registro de Visitantes para el Zoológico Paraguaná",
+    "description": "Sistema enfocado en el registro de los visitantes del Zoológico Paraguaná",
+    "stack": ["HTML, CSS, JavaScript, NodeJS, ExpressJS, EJS, MySQL"]
+
+  }
+]
