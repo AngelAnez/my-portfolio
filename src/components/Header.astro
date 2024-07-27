@@ -1,6 +1,12 @@
-<header class="fixed right-0 mx-5 bg-slate-900 w-full">
-  <nav class="p-5">
-    <ul class="flex gap-x-10 justify-end">
+---
+import { Menu } from "lucide-react";
+---
+
+
+<header class="fixed right-0 px-5 bg-slate-900 w-full">
+
+  <nav class="p-5 flex justify-end">
+    <ul class="hidden md:flex gap-x-10 justify-end">
       <li>
         <a class="text-xl hover:opacity-60" href="#experience">Experiencia</a>
       </li>
@@ -17,5 +23,8 @@
         <a class="text-xl hover:opacity-60" href="#contact">Contacto</a>
       </li>
     </ul>
+    <button class="md:hidden py-1 px-2 border border-white rounded-md">
+        <Menu className="w-8 h-8"/>
+    </button>
   </nav>
 </header>
