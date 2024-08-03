@@ -1,15 +1,16 @@
 ---
 import skills from "../config/skills.json";
+import Title from "./pieces/Title.astro";
 ---
 
-<section id="skills" class="p-4 flex flex-col gap-y-10">
-  <h2 class="text-center text-4xl font-bold">Tecnologías</h2>
-  <ul class="grid grid-cols-2 gap-x-8 gap-y-4 md:grid-cols-4 md:gap-x-2">
+<section id="skills" class="pt-20 px-8 flex flex-col gap-y-10">
+  <Title>Tecnologías</Title>
+  <ul class="grid grid-cols-2 gap-x-8 gap-y-4 md:grid-cols-4 lg:grid-cols-5 md:gap-x-2">
     {
       skills.map((skill) => (
-        <li class="mx-auto">
-          <img src={skill.logo} alt={skill.name} width="100" />
-          <h4 class="text-center">{skill.name}</h4>
+        <li class="mx-auto hover:scale-125 transition-transform">
+          <img class="w-[100px] aspect-square" src={skill.logo} alt={`${skill.name} logo`} />
+          <p class="text-center text-xl">{skill.name}</p>
         </li>
       ))
     }

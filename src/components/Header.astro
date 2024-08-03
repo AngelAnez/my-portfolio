@@ -2,29 +2,30 @@
 import { Menu } from "lucide-react";
 ---
 
-
-<header class="fixed right-0 px-5 bg-slate-900 w-full">
-
-  <nav class="p-5 flex justify-end">
-    <ul class="hidden md:flex gap-x-10 justify-end">
-      <li>
-        <a class="text-xl hover:opacity-60" href="#experience">Experiencia</a>
+<header class="fixed right-0 px-5 bg-background w-full z-10">
+  <nav class="p-5 flex flex-col gap-5 lg:flex-row justify-between">
+    <section class="flex justify-between w-full lg:w-auto">
+      <h1 class="text-primary text-4xl font-bold italic">Angel Añez</h1>
+      <button aria-label="Menu" class="lg:hidden py-1 px-2 border border-white rounded-md">
+        <Menu className="w-6 h-6" />
+      </button>
+    </section>
+    <ul class="hidden text-white flex-col gap-3 lg:flex lg:flex-row lg:gap-x-10 lg:justify-end ">
+      <li class="py-1 px-1 lg:px-2 bg-white bg-opacity-0 rounded-md hover:bg-opacity-10">
+        <a class="text-2xl" href="#aboutme">Sobre mi</a>
       </li>
-      <li>
-        <a class="text-xl hover:opacity-60" href="#skills">Tecnologías</a>
+      <li class="py-1 px-1 lg:px-2 bg-white bg-opacity-0 rounded-md hover:bg-opacity-10">
+        <a class="text-2xl" href="#experience">Experiencia</a>
       </li>
-      <li>
-        <a class="text-xl hover:opacity-60" href="#projects">Proyectos</a>
+      <li class="py-1 px-1 lg:px-2 bg-white bg-opacity-0 rounded-md hover:bg-opacity-10">
+        <a class="text-2xl" href="#skills">Tecnologías</a>
       </li>
-      <li>
-        <a class="text-xl hover:opacity-60" href="#aboutme">Sobre mi</a>
+      <li class="py-1 px-1 lg:px-2 bg-white bg-opacity-0 rounded-md hover:bg-opacity-10">
+        <a class="text-2xl" href="#projects">Proyectos</a>
       </li>
-      <li>
-        <a class="text-xl hover:opacity-60" href="#contact">Contacto</a>
+      <li class="py-1 px-1 lg:px-2 bg-white bg-opacity-0 rounded-md hover:bg-opacity-10">
+        <a class="text-2xl" href="#contact">Contacto</a>
       </li>
     </ul>
-    <button class="md:hidden py-1 px-2 border border-white rounded-md">
-        <Menu className="w-8 h-8"/>
-    </button>
   </nav>
 </header>

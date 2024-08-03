@@ -1,43 +1,41 @@
 ---
 import { FileText, Code, Linkedin } from "lucide-react";
+import Button from "./pieces/Button.astro";
 ---
 
-<section id="hero" class="p-20 flex flex-col-reverse items-center md:flex-row md:justify-around md:h-full">
-  <section class="text-center">
-    <h1 class="text-5xl mb-4">Hola, soy <strong>Angel Añez</strong></h1>
-    <p class="opacity-30">Y me dedico al</p>
-    <h2 class="text-4xl italic">Desarrollo de Software</h2>
-    <h3 class="mt-10">¡Encantado de Conocerte!</h3>
-    <ul class="flex flex-col md:flex-row py-4 justify-center items-center gap-4">
+<article
+  id="hero"
+  class="py-16 px-8 flex flex-col-reverse items-center justify-evenly md:flex-row md:justify-between h-screen"
+>
+  <section class="flex flex-col md:gap-8 text-center">
+    <h1 class="text-4xl mb-4 max-w-[20ch]">Hola, soy <strong class="text-primary" >Angel Añez</strong> y me dedico al Desarrollo de Software</h1>
+    <h2 class="text-2xl">¡Encantado de Conocerte!</h2>
+    <ul
+      class="flex flex-col md:flex-row py-4 justify-center items-center gap-4"
+    >
       <li>
-        <a
-          class="flex gap-x-3 border border-gray-100 py-2 px-4 rounded-md hover:bg-red-600 cursor-pointer" href="/documents/docker.pdf" target="_blank"
-        >
+        <Button url="/documents/docker.pdf">
           CV
           <FileText />
-      </a>
+        </Button>
       </li>
       <li>
-        <a
-          class="flex gap-x-3 border border-gray-100 py-2 px-4 rounded-md hover:bg-gray-500 cursor-pointer" href="https://github.com/AngelAnez" target="_blank"
-        >
+        <Button url="https://github.com/AngelAnez">
           GitHub
           <Code />
-        </a>
+        </Button>
       </li>
       <li>
-        <a
-          class="flex gap-x-3 border border-gray-100 py-2 px-4 rounded-md hover:bg-blue-500 cursor-pointer" href="https://www.linkedin.com/in/angeldavid2001/" target="_blank"
-        >
+        <Button url="https://www.linkedin.com/in/angeldavid2001/">
           LinkedIn
           <Linkedin />
-        </a>
+        </Button>
       </li>
     </ul>
   </section>
-    <img
-      class="rounded-full w-60 md:w-80"
-      src="/images/profile.png"
-      alt="My Profile Photo"
-    />
-</section>
+  <img
+    class="rounded-full w-60 md:w-96 aspect-square"
+    src="/images/profile.webp"
+    alt="My Profile Photo"
+  />
+</article>

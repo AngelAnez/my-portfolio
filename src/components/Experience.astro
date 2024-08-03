@@ -1,4 +1,14 @@
-<section id="experience">
-    <h2 class="text-center text-4xl font-bold">Experiencia</h2>
+---
+import ExperienceInfo from "./pieces/ExperienceInfo.astro";
+import experience from "../config/experience.json";
+import Title from "./pieces/Title.astro";
+---
 
+<section id="experience" class="pt-20 px-8">
+  <Title>Experiencia</Title>
+  <ul class="flex flex-col gap-y-10 py-4">
+    {experience.map(exp => (
+        <ExperienceInfo exp={exp}/>
+    ))}
+  </ul>
 </section>

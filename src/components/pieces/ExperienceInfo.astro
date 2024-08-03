@@ -1,0 +1,15 @@
+---
+const { exp } = Astro.props;
+---
+
+<li class="flex flex-col gap-y-2">
+  <section class="flex justify-between">
+    <h3 class="text-2xl font-bold">{exp.position}</h2>
+    <h3 class="text-2xl font-semibold">{exp.company}</h3>
+  </section>
+  <span class="opacity-70 z-0 text-xl"
+    >{exp["start-date"]} {exp["end-date"] != "" && `- ${exp["end-date"]}`}
+  </span
+  >
+  {exp["job-duty"].map((duty) => <p class="text-lg max-w-[90ch]">{duty}</p>)}
+</li>

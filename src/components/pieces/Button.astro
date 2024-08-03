@@ -1,0 +1,11 @@
+---
+const {url} = Astro.props
+---
+
+<a
+  class="text-xl items-center flex gap-x-3 border-2 border-primary border-opacity-80 hover:border-opacity-100 text-primary text-opacity-80 hover:text-opacity-100 py-2 px-4 rounded-md cursor-pointer bg-primary bg-opacity-0 hover:bg-opacity-10"
+  href={url}
+  target="_blank"
+>
+    <slot/>
+</a>

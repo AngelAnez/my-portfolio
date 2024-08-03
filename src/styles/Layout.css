@@ -2,3 +2,6 @@ html{
     scrollbar-gutter: stable;
     scroll-behavior: smooth;
 }
+body{
+    font-family: 'Crimson Pro Variable', serif;
+}

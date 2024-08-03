@@ -1,17 +1,23 @@
 ---
+import Contact from '../components/Contact.astro'
 import '../styles/Layout.css'
+import '@fontsource-variable/crimson-pro';
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Angel Añez</title>
+    <meta name="description" content="Hola, soy Angel Añez y me dedico al Desarrollo de Software. ¡Bienvenido a mi Portafolio!"/>
+    <meta name="keywords" content="Angel Añez, Angel Anez, Desarrollador de Software, Ingeniero de Sistemas"/>
+    <title>Portafolio Web | Angel Añez</title>
+    <link rel="icon" type="image/svg" href="/favicon.svg"/>
   </head>
-  <body class="bg-slate-900 text-white">
-    <main class="container mx-auto">
+  <body class="bg-background text-white">
+    <main class="container mx-auto px-5 max-w-7xl">
       <slot/>
     </main>
+    <Contact/>
   </body>
 </html>
