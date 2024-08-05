@@ -20,6 +20,14 @@
     "logo": "/images/nodejs.svg"
   },
   {
+    "name": "ExpressJS",
+    "logo": "/images/expressjs.svg"
+  },
+  {
+    "name": "EJS",
+    "logo": "/images/ejs.svg"
+  },
+  {
     "name": "MySQL",
     "logo": "/images/mysql.svg"
   },
