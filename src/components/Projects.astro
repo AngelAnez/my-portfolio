@@ -4,9 +4,9 @@ import Card from "./pieces/Card.astro"
 import projects from "../config/projects.json";
 ---
 
-<section id="projects" class="pt-24 px-8">
+<section id="projects" class="pt-24 px-4">
     <Title>Proyectos</Title>
-    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-6 justify-items-center">
+    <ul class="flex flex-col gap-6 py-6 justify-items-center">
         {projects.map(project => {
             return <li><Card project={project}></Card></li>
         })}

@@ -3,14 +3,22 @@ import skills from "../config/skills.json";
 import Title from "./pieces/Title.astro";
 ---
 
-<section id="skills" class="pt-24 px-8 flex flex-col gap-y-10">
+<section id="skills" class="pt-24 px-4 flex flex-col gap-y-10">
   <Title>Tecnologías</Title>
-  <ul class="grid grid-cols-2 gap-x-8 gap-y-4 md:grid-cols-4 lg:grid-cols-5 md:gap-x-2">
+  <ul
+    class="grid grid-cols-2 gap-x-8 gap-y-4 md:grid-cols-4 lg:grid-cols-5 md:gap-x-2"
+  >
     {
       skills.map((skill) => (
         <li class="mx-auto hover:scale-125 transition-transform">
-          <img class="w-[100px] aspect-square" src={skill.logo} alt={`${skill.name} logo`} />
-          <p class="text-center text-xl">{skill.name}</p>
+          <img
+            class="w-[100px] aspect-square"
+            decoding="async"
+            loading="lazy"
+            src={skill.logo}
+            alt={`${skill.name} logo`}
+          />
+          <p class="text-center text-lg">{skill.name}</p>
         </li>
       ))
     }
