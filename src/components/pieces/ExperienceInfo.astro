@@ -4,14 +4,14 @@ const { exp } = Astro.props;
 
 <li class="flex flex-col gap-y-2 border-s-2 border-dark-primary p-5 bg-dark-background-secondary rounded-r-lg text-dark-text">
   <section class="flex justify-between">
-    <h3 class="text-xl font-bold">{exp.position}</h2>
-    <h3 class="text-xl font-semibold">{exp.company}</h3>
+    <h3 class="text-lg md:text-xl font-bold">{exp.position}</h2>
+    <h3 class="text-lg md:text-xl font-semibold">{exp.company}</h3>
   </section>
-  <span class="opacity-70 z-0 text-lg"
+  <span class="opacity-70 z-0 text-base md:text-lg"
     >{exp["start-date"]} {exp["end-date"] != "" && `- ${exp["end-date"]}`}
   </span
   >
   <ul class="ps-5">
-    {exp["job-duty"].map((duty) => <li class="max-w-[80ch] mb-3 list-disc	">{duty}</li>)}
+    {exp["job-duty"].map((duty) => <li class="text-sm md:text-base max-w-[80ch] mb-3 list-disc	">{duty}</li>)}
   </ul>
 </li>
