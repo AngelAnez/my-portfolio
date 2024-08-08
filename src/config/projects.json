@@ -23,6 +23,7 @@
     "description": ["Carta de presentación para mostrar mi experiencia, proyectos, tecnologías y datos de contacto.", "Este proyecto permitió prácticar el uso de Astro para generar sitios estáticos, crear componentes reutilizables, y prácticar los estilos con TailwindCSS."],
     "stack": ["HTML", "CSS", "JavaScript", "TailwindCSS", "Astro" ],
     "image": "my-portfolio.webp",
-    "demo": "/"
+    "demo": "/",
+    "github": "https://github.com/AngelAnez/my-portfolio"
   }
 ]
