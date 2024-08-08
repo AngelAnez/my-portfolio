@@ -2,7 +2,7 @@
   {
     "title": "Registro de Visitantes",
     "description": [
-      "Sistema para el registro de los visitantes del Zoológico Paraguaná. Fue diseñado para ayudar al Zoológico a automatizar su flujo de trabajo en la taquilla.",
+      "Sistema diseñado con el objetivo de ayudar al Zoológico Paraguaná a automatizar su flujo de trabajo en la taquilla.",
       "Además de registrar visitantes, cuenta con secciones para ver el historial de cada visita, conocer las estadísticas generales en un rango de fechas y exportarlas a PDF, generar novedades, administrar las cuentas de usuario y modificar el precio de las entradas."
     ],
     "stack": [
@@ -15,12 +15,12 @@
       "EJS",
       "MySQL"
     ],
-    "image": "zoo-system.png",
+    "image": "zoo-system.webp",
     "github": "https://github.com/AngelAnez/registro-zoo-paraguana"
   },
   {
     "title": "Portafolio Personal",
-    "description": ["Diseño de un portafolio web para poder presentar mi experiencia, tecnologías conocidas, proyectos realizados y mi información de contacto"],
+    "description": ["Carta de presentación para mostrar mi experiencia, proyectos, tecnologías y datos de contacto.", "Este proyecto permitió prácticar el uso de Astro para generar sitios estáticos, crear componentes reutilizables, y prácticar los estilos con TailwindCSS."],
     "stack": ["HTML", "CSS", "JavaScript", "TailwindCSS", "Astro" ],
     "image": "my-portfolio.webp",
     "demo": "/"

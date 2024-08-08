@@ -11,5 +11,7 @@ const { exp } = Astro.props;
     >{exp["start-date"]} {exp["end-date"] != "" && `- ${exp["end-date"]}`}
   </span
   >
-  {exp["job-duty"].map((duty) => <p class="max-w-[90ch] mb-3">{duty}</p>)}
+  <ul class="ps-5">
+    {exp["job-duty"].map((duty) => <li class="max-w-[80ch] mb-3 list-disc	">{duty}</li>)}
+  </ul>
 </li>

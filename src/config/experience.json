@@ -5,7 +5,9 @@
     "start-date": "Abril 2024",
     "end-date": "Agosto 2024",
     "job-duty": [
-        "Las prácticas profesionales fueron efectuadas en la Gerencia AIT del Centro de Refinación Paraguaná. Haciendo uso de lenguajes como JavaScript, PHP y Python, se desarrolló una API de notificaciones y reportes para el sistema Nagios que permitió mejorar los procesos de trabajo, la toma de decisiones y la forma de presentar los datos del monitoreo de red"
+        "Construí una API que recopila la información de los equipos monitoreados por Nagios",
+        "Desarrollé un módulo para enviar notificaciones y alertas de estado de los equipos críticos a través de un bot de Telegram",
+        "Implementé una funcionalidad para generar reportes en PDF sobre el estado general de equipos y servicios en la interfaz web de Nagios"
     ]
   }
 ]
