@@ -3,15 +3,15 @@ import { Menu } from "lucide-react";
 import NavElement from "./pieces/NavElement.astro";
 ---
 
-<header class="fixed right-0 px-5 bg-dark-background-primary bg-opacity-95 w-full z-10 border-b border-dark-primary">
+<header class="fixed right-0 px-5 bg-dark-background-primary backdrop-blur bg-opacity-70 w-full z-10 border-b-2 border-dark-primary select-none">
   <nav class="p-5 flex flex-col gap-5 lg:flex-row justify-between">
     <section class="flex justify-between w-full lg:w-auto">
       <h1 class="text-dark-primary text-3xl font-bold italic">Angel Añez</h1>
-      <button aria-label="Menu" class="lg:hidden py-1 px-2 border border-white rounded-md">
+      <button aria-label="Menu" class="lg:hidden py-1 px-2 border border-dark-text rounded-md">
         <Menu className="w-6 h-6" />
       </button>
     </section>
-    <ul class="hidden text-white flex-col gap-3 lg:flex lg:flex-row lg:gap-x-6 lg:justify-end ">
+    <ul class="hidden text-dark-text flex-col gap-3 lg:flex lg:flex-row lg:gap-x-6 lg:justify-end ">
       <NavElement href="#aboutme">Sobre mi</NavElement>
       <NavElement href="#experience">Experiencia</NavElement>
       <NavElement href="#projects">Proyectos</NavElement>
