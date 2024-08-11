@@ -1,22 +1,28 @@
 ---
-import { Menu } from "lucide-react";
-import NavElement from "./pieces/NavElement.astro";
+import NavElement from "./pieces/NavElement.jsx";
+import MenuButton from "./pieces/MenuButton.jsx";
 ---
 
-<header class="fixed right-0 px-5 bg-dark-background-primary backdrop-blur bg-opacity-70 w-full z-10 border-b-2 border-dark-primary select-none">
-  <nav class="p-3 md:p-5 flex flex-col gap-5 lg:flex-row justify-between">
+<header
+  class="fixed right-0 px-5 bg-dark-background-primary backdrop-blur bg-opacity-70 w-full z-10 border-b-2 border-dark-primary select-none"
+>
+  <nav class="p-3 md:p-5 flex flex-col md:gap-5 lg:flex-row justify-between">
     <section class="flex justify-between w-full lg:w-auto items-center">
-      <a class="text-xl text-dark-primary md:text-3xl font-bold italic" href="#hero">Angel Añez</a>
-      <button aria-label="Menu" class="lg:hidden py-1 px-2 border border-dark-text rounded-md">
-        <Menu className="w-5 h-5" />
-      </button>
+      <a
+        class="text-xl text-dark-primary md:text-3xl font-bold italic"
+        href="#hero">Angel Añez</a
+      >
+      <MenuButton client:visible />
     </section>
-    <ul class="hidden text-dark-text flex-col gap-3 lg:flex lg:flex-row lg:gap-x-6 lg:justify-end ">
-      <NavElement href="#aboutme">Sobre Mi</NavElement>
-      <NavElement href="#experience">Experiencia</NavElement>
-      <NavElement href="#projects">Proyectos</NavElement>
-      <NavElement href="#skills">Tecnologías</NavElement>
-      <NavElement href="#contact">Contacto</NavElement>
+    <ul
+      id="nav-list"
+      class="hidden py-4 md:py-0 text-dark-text flex-col gap-3 lg:flex lg:flex-row lg:gap-x-6 lg:justify-end"
+    >
+      <NavElement client:visible href="#aboutme" title="Sobre Mi" />
+      <NavElement client:visible href="#experience" title="Experiencia" />
+      <NavElement client:visible href="#projects" title="Proyectos" />
+      <NavElement client:visible href="#skills" title="Tecnologías" />
+      <NavElement client:visible href="#contact" title="Contacto" />
     </ul>
   </nav>
 </header>

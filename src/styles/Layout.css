@@ -1,29 +1,33 @@
-html{
-    scrollbar-gutter: stable;
-    scroll-behavior: smooth;
+html {
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
 }
-body{
-    font-family: 'Noto Sans Math', sans-serif;
+body {
+  font-family: "Noto Sans Math", sans-serif;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 10px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #00ff99;
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #00ff998e;
-  }
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00ff99;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff998e;
+}
+
+.peperoni{
+  transition: all 250ms ease-out;
+}
