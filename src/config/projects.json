@@ -25,5 +25,12 @@
     "image": "my-portfolio.webp",
     "demo": "/",
     "github": "https://github.com/AngelAnez/my-portfolio"
+  },
+  {
+    "title": "Emoticare",
+    "description": ["Plataforma de telemedicina realizada en equipo que permite a los usuarios agendar citas médicas con especialistas de la salud mental y llevar a cabo estas consultas a través de videollamada.", "En este proyecto, trabajé en la parte del Frontend y pude prácticar mis conocimientos en React y TypeScript, así como el trabajo en equipo a través de ramas de Git y GitHub"],
+    "stack": ["HTML", "CSS", "JavaScript", "TailwindCSS", "React", "TypeScript", "Git", "Github" ],
+    "image": "Emoticare-3.webp",
+    "github": "https://github.com/No-Country-simulation/c20-41-n-node-react"
   }
 ]
