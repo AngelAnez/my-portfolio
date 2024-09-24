@@ -1,3 +1,3 @@
 # Mi Portafolio
 
-Portafolio Web creado con Astro y TailwindCSS
+Mi Portafolio Web creado con Astro y TailwindCSS
