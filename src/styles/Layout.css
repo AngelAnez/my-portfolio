@@ -27,7 +27,3 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #00ff998e;
 }
-
-.peperoni{
-  transition: all 250ms ease-out;
-}
