@@ -8,19 +8,19 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: transparent;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #00ff99;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 /* Handle on hover */
