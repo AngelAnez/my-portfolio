@@ -24,6 +24,14 @@
     "logo": "/images/expressjs.svg"
   },
   {
+    "name": "Git",
+    "logo": "/images/git.svg"
+  },
+  {
+    "name": "GitHub",
+    "logo": "/images/github.svg"
+  },
+  {
     "name": "EJS",
     "logo": "/images/ejs.svg"
   },
