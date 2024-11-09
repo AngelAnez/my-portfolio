@@ -7,7 +7,7 @@ import Title from "./pieces/Title.astro";
 <section id="experience" class="pt-12 md:pt-24 px-4">
   <Title>Experiencia</Title>
   <ul class="flex flex-col gap-y-10 py-4">
-    {experience.map(exp => (
+    {experience.reverse().map(exp => (
         <ExperienceInfo exp={exp}/>
     ))}
   </ul>
