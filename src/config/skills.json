@@ -16,12 +16,28 @@
     "logo": "/images/bootstrap.svg"
   },
   {
+    "name": "TailwindCSS",
+    "logo": "/images/tailwindcss.svg"
+  },
+  {
     "name": "NodeJS",
     "logo": "/images/nodejs.svg"
   },
   {
     "name": "ExpressJS",
     "logo": "/images/expressjs.svg"
+  },
+  {
+    "name": "PHP",
+    "logo": "/images/php.svg"
+  },
+  {
+    "name": "Python",
+    "logo": "/images/python.svg"
+  },
+  {
+    "name": "MySQL",
+    "logo": "/images/mysql.svg"
   },
   {
     "name": "Git",
@@ -36,27 +52,19 @@
     "logo": "/images/ejs.svg"
   },
   {
-    "name": "MySQL",
-    "logo": "/images/mysql.svg"
-  },
-  {
-    "name": "TailwindCSS",
-    "logo": "/images/tailwindcss.svg"
+    "name": "TypeScript",
+    "logo": "/images/typescript.svg"
   },
   {
     "name": "React",
     "logo": "/images/react.svg"
   },
   {
-    "name": "Docker",
-    "logo": "/images/docker.svg"
-  },
-  {
     "name": "Astro",
     "logo": "/images/astro.svg"
   },
   {
-    "name": "TypeScript",
-    "logo": "/images/typescript.svg"
+    "name": "Docker",
+    "logo": "/images/docker.svg"
   }
 ]

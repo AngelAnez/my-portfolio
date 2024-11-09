@@ -2,12 +2,26 @@
   {
     "position": "Practicante",
     "company": "PDVSA",
-    "start-date": "Abril 2024",
-    "end-date": "Agosto 2024",
+    "start-date": "Abril 2023",
+    "end-date": "Agosto 2023",
     "job-duty": [
-        "Construí una API que recopila la información de los equipos monitoreados por Nagios",
-        "Desarrollé un módulo para enviar notificaciones y alertas de estado de los equipos críticos a través de un bot de Telegram",
-        "Implementé una funcionalidad para generar reportes en PDF sobre el estado general de equipos y servicios en la interfaz web de Nagios"
+      "Construí una API utilizando Python que recopila la información de los equipos monitoreados por Nagios",
+      "Desarrollé un módulo en Python para enviar notificaciones y alertas de estado de los equipos críticos a través de un bot de Telegram",
+      "Implementé la generación reportes en PDF sobre el estado general de equipos y servicios en la interfaz web de Nagios haciendo uso de JavaScript y PHP"
+    ]
+  },
+  {
+    "position": "Frontend Web Developer",
+    "company": "No Country",
+    "start-date": "Agosto 2024",
+    "end-date": "Noviembre 2024",
+    "job-duty": [
+      "Desarrollé interfaces de usuario llamativas adaptadas al diseño responsivo haciendo uso de React y TypeScript",
+      "Apliqué estilos a las vistas de las aplicaciones haciendo uso de Tailwind CSS y Material UI",
+      "Implementé formularios haciendo uso de React Hook Form para proporcionarle al usuario mensajes de validación personalizados",
+      "Utilicé React Router para el manejo de las vistas a través de rutas en una SPA",
+      "Integré servicios y APIs externas haciendo uso de Axios",
+      "Colaboré con otros Frontend, Backend, Diseñadores y Project Manager para la distribución de tareas que nos permitiera llevar a cabo los proyectos en los plazos establecidos"
     ]
   }
 ]
