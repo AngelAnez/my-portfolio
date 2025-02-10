@@ -1,7 +1,8 @@
 ---
 import { Download, Linkedin } from "lucide-react";
 import Button from "./pieces/Button.astro";
-import {cv, github, linkedin} from "../config/links.json"
+import { MYLINKS } from "../data/data";
+const {CV, GITHUB, LINKEDIN } = MYLINKS;
 ---
 
 <article
@@ -10,19 +11,23 @@ import {cv, github, linkedin} from "../config/links.json"
 >
   <section class="flex flex-col md:gap-8 text-center items-center">
     <h1 class="text-2xl md:text-3xl mb-4 max-w-[20ch]">
-      Hola, soy <strong class="text-dark-primary">Angel Añez</strong> y me dedico al Desarrollo
-      de Software
+      Hola, soy <strong class="text-dark-primary">Angel Añez</strong> y me dedico
+      al Desarrollo de Software
     </h1>
     <h2 class="text-lg md:text-xl">¡Encantado de Conocerte!</h2>
-    <section class="flex flex-col md:flex-row mt-5 justify-evenly gap-1 md:gap-5 items-center md:mt-0">
-      <Button url=`${cv}`>
+    <section
+      class="flex flex-col md:flex-row mt-5 justify-evenly gap-1 md:gap-5 items-center md:mt-0"
+    >
+      <Button url=`${CV}`>
         Descargar CV
         <Download />
       </Button>
       <ul class="flex py-4 justify-center items-center gap-4">
-        <li class="rounded-full p-3 border border-dark-primary text-dark-primary hover:bg-dark-primary hover:bg-opacity-80 hover:text-black transition-colors cursor-pointer">
+        <li
+          class="rounded-full p-3 border border-dark-primary text-dark-primary hover:bg-dark-primary hover:bg-opacity-80 hover:text-black transition-colors cursor-pointer"
+        >
           <a
-            href=`${github}`
+            href=`${GITHUB}`
             title="Enlace a mi GitHub"
             aria-label="Enlace a mi GitHub"
           >
@@ -43,9 +48,11 @@ import {cv, github, linkedin} from "../config/links.json"
             ></a
           >
         </li>
-        <li class="rounded-full p-3 cursor-pointer border border-dark-primary text-dark-primary hover:bg-dark-primary hover:bg-opacity-80 hover:text-black transition-colors">
+        <li
+          class="rounded-full p-3 cursor-pointer border border-dark-primary text-dark-primary hover:bg-dark-primary hover:bg-opacity-80 hover:text-black transition-colors"
+        >
           <a
-            href=`${linkedin}`
+            href=`${LINKEDIN}`
             title="Enlace a mi LinkedIn"
             aria-label="Enlace a mi LinkedIn"
           >

@@ -1,7 +1,8 @@
 ---
+import { MYLINKS } from "../data/data";
 import Title from "./pieces/Title.astro";
 import { Mail, Linkedin } from "lucide-react";
-import {linkedin, email} from "../config/links.json"
+const {EMAIL, LINKEDIN} = MYLINKS
 ---
 
 <footer
@@ -11,13 +12,13 @@ import {linkedin, email} from "../config/links.json"
   <Title>Contacto</Title>
   <ul class="flex flex-col md:flex-row justify-center gap-x-12 gap-y-4 text-base md:text-lg">
     <li>
-      <a class="flex gap-4 items-center hover:text-dark-primary" href=`mailto:${email}`>
+      <a class="flex gap-4 items-center hover:text-dark-primary" href=`mailto:${EMAIL}`>
         <Mail className="size-8 md:size-12" />
         angdavid2910@gmail.com
       </a>
     </li>
     <li>
-      <a class="flex gap-4 items-center hover:text-dark-primary" href=`${linkedin}` target="_blank">
+      <a class="flex gap-4 items-center hover:text-dark-primary" href=`${LINKEDIN}` target="_blank">
         <Linkedin className="size-8 md:size-12" />
         Angel Añez
       </a>
