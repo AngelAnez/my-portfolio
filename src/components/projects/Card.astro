@@ -8,7 +8,7 @@ const { project } = Astro.props;
 <a
   href={`/projects/${project.title.toLowerCase().split(" ").join("-")}`}
   class="flex flex-col"
-  class="bg-dark-background-secondary border-2 rounded-lg p-5 flex flex-col md:flex-row justify-between gap-4 hover:border-dark-primary transition-colors"
+  class="bg-background-secondary border-2 rounded-lg p-5 flex flex-col md:flex-row justify-between gap-4 hover:border-dark-primary transition-colors"
 >
   <figure class="md:w-[45%] flex items-center">
     <img
@@ -48,7 +48,7 @@ const { project } = Astro.props;
         project.demo && (
           <a
             href={project.demo}
-            class="px-2 py-1 rounded-full text-center flex hover:text-dark-primary"
+            class="px-2 py-1 rounded-full text-center flex hover:text-primary"
             title="Ver una demostración del proyecto"
             aria-label="Ver una demostración del proyecto"
           >
@@ -61,7 +61,7 @@ const { project } = Astro.props;
         project.github && (
           <a
             href={project.github}
-            class="px-2 py-1 rounded-full text-center flex hover:text-dark-primary"
+            class="px-2 py-1 rounded-full text-center flex hover:text-primary"
             title="Ir al repositorio del proyecto en GitHub"
             aria-label="Ir al repositorio del proyecto en GitHub"
             target="_blank"
@@ -87,7 +87,7 @@ const { project } = Astro.props;
         project.docker && (
           <a
             href={project.docker}
-            class="px-2 py-1 rounded-full text-center flex hover:text-dark-primary"
+            class="px-2 py-1 rounded-full text-center flex hover:text-primary"
             title="Ir al repositorio de la imagen del proyecto en DockerHub"
             aria-label="Ir al repositorio de la imagen del proyecto en DockerHub"
             target="_blank"

@@ -8,14 +8,14 @@ import NavElement from "@components/shared/NavElement";
 >
   <nav class="p-3 md:p-5 flex flex-col md:gap-5 lg:flex-row justify-between">
     <section class="flex justify-between w-full lg:w-auto items-center">
-      <a class="text-xl text-dark-primary md:text-3xl font-bold italic" href="/"
+      <a class="text-xl text-primary md:text-3xl font-bold italic" href="/"
         >Angel Añez</a
       >
       <MenuButton client:visible />
     </section>
     <ul
       id="nav-list"
-      class="hidden py-4 md:py-0 text-dark-text flex-col gap-3 lg:flex lg:flex-row lg:gap-x-6 lg:justify-end"
+      class="hidden py-4 md:py-0 text-body flex-col gap-3 lg:flex lg:flex-row lg:gap-x-6 lg:justify-end"
     >
       <NavElement client:visible href="#aboutme" title="Sobre Mi" />
       <NavElement client:visible href="#experience" title="Experiencia" />

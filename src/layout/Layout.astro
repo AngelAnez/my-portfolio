@@ -1,6 +1,6 @@
 ---
 import { ClientRouter } from "astro:transitions";
-import "@styles/Layout.css";
+import "@styles/global.css";
 import "@fontsource/noto-sans-math";
 import Header from "@components/shared/Header.astro";
 import Footer from "@components/shared/Footer.astro";
@@ -43,7 +43,7 @@ const { title = "Angel Añez | Home" } = Astro.props;
 
     <ClientRouter/>
   </head>
-  <body class="bg-dark-background-primary text-white">
+  <body class="bg-background-primary text-white">
     <Header />
     <main class="mx-auto px-5 max-w-6xl min-h-screen">
       <slot />

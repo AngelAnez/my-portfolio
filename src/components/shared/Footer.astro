@@ -12,18 +12,18 @@ const {EMAIL, LINKEDIN} = MYLINKS
   <Title>Contacto</Title>
   <ul class="flex flex-col md:flex-row justify-center gap-x-12 gap-y-4 text-base md:text-lg">
     <li>
-      <a class="flex gap-4 items-center hover:text-dark-primary" href=`mailto:${EMAIL}`>
+      <a class="flex gap-4 items-center hover:text-primary" href=`mailto:${EMAIL}`>
         <Mail className="size-8 md:size-12" />
         angdavid2910@gmail.com
       </a>
     </li>
     <li>
-      <a class="flex gap-4 items-center hover:text-dark-primary" href=`${LINKEDIN}` target="_blank">
+      <a class="flex gap-4 items-center hover:text-primary" href=`${LINKEDIN}` target="_blank">
         <Linkedin className="size-8 md:size-12" />
         Angel Añez
       </a>
     </li>
   </ul>
 
-  <p class="text-center text-sm md:text-base mt-5">Copyright © 2024 - Angel Añez</p>
+  <p class="text-center text-sm md:text-base mt-5">Copyright © {new Date().getFullYear()} - Angel Añez</p>
 </footer>
