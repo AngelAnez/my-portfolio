@@ -1,0 +1,39 @@
+---
+import type { GetStaticPaths } from "astro";
+import { PROJECTS as projects } from "../../data/db";
+import Layout from "../../layout/Layout.astro";
+
+export const getStaticPaths = (() => {
+  return projects.map((project) => ({
+    params: {
+      name: project.title.toLowerCase().split(" ").join("-"),
+    },
+  }));
+}) satisfies GetStaticPaths;
+
+const { name } = Astro.params;
+
+const projectName = name.split("-").join(" ");
+---
+
+<Layout title="Angel Añez | ">
+  <section class="pt-20 flex flex-col gap-4 text-xl">
+    <h1>Titulo del Proyecto: <span class="capitalize">{projectName}</span></h1>
+
+    <h2>Objetivo</h2>
+
+    <h2>Problemática</h2>
+
+    <h2>Solución</h2>
+
+    <h2>Rol en el proyecto</h2>
+
+    <h2>Tecnologías utilizadas</h2>
+
+    <h2>Enlaces del Proyecto</h2>
+
+    <h2>Colaboradores</h2>
+
+    <h2>Imágenes del Proyecto</h2>
+  </section>
+</Layout>

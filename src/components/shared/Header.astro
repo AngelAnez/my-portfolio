@@ -1,16 +1,15 @@
 ---
-import NavElement from "./pieces/NavElement.jsx";
-import MenuButton from "./pieces/MenuButton.jsx";
+import MenuButton from "@components/shared/MenuButton";
+import NavElement from "@components/shared/NavElement";
 ---
 
 <header
-  class="fixed right-0 px-5 bg-dark-background-primary backdrop-blur bg-opacity-70 w-full z-10 border-b-2 border-dark-primary select-none"
+  class="sticky top-0 right-0 px-5 bg-dark-background-primary backdrop-blur bg-opacity-70 w-full z-10 border-b-2 border-dark-primary select-none"
 >
   <nav class="p-3 md:p-5 flex flex-col md:gap-5 lg:flex-row justify-between">
     <section class="flex justify-between w-full lg:w-auto items-center">
-      <a
-        class="text-xl text-dark-primary md:text-3xl font-bold italic"
-        href="#hero">Angel Añez</a
+      <a class="text-xl text-dark-primary md:text-3xl font-bold italic" href="/"
+        >Angel Añez</a
       >
       <MenuButton client:visible />
     </section>
@@ -20,7 +19,7 @@ import MenuButton from "./pieces/MenuButton.jsx";
     >
       <NavElement client:visible href="#aboutme" title="Sobre Mi" />
       <NavElement client:visible href="#experience" title="Experiencia" />
-      <NavElement client:visible href="#projects" title="Proyectos" />
+      <NavElement client:visible href="/projects" title="Proyectos" />
       <NavElement client:visible href="#skills" title="Tecnologías" />
       <NavElement client:visible href="#contact" title="Contacto" />
     </ul>

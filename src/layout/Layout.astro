@@ -1,14 +1,15 @@
 ---
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
-import "../styles/Layout.css";
+import { ClientRouter } from "astro:transitions";
+import "@styles/Layout.css";
 import "@fontsource/noto-sans-math";
+import Header from "@components/shared/Header.astro";
+import Footer from "@components/shared/Footer.astro";
 
 interface Props {
   title?: string;
 }
 
-const { title = "Angel Añez | Software Developer" } = Astro.props;
+const { title = "Angel Añez | Home" } = Astro.props;
 ---
 
 <!doctype html>
@@ -39,12 +40,14 @@ const { title = "Angel Añez | Software Developer" } = Astro.props;
     />
     <title>{title}</title>
     <link rel="icon" type="image/svg" href="/favicon.svg" />
+
+    <ClientRouter/>
   </head>
   <body class="bg-dark-background-primary text-white">
-    <main class="container mx-auto px-5 max-w-6xl">
-      <Header />
+    <Header />
+    <main class="mx-auto px-5 max-w-6xl min-h-screen">
       <slot />
-      <Footer />
     </main>
+    <Footer />
   </body>
 </html>
