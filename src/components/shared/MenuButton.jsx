@@ -1,5 +1,3 @@
-import { Menu } from "lucide-react";
-
 function MenuButton() {
   return (
     <button
@@ -9,7 +7,7 @@ function MenuButton() {
         document.getElementById("nav-list").classList.toggle("hidden");
       }}
     >
-      <Menu className="w-5 h-5 md:w-7 md:h-7" />
+      Menu
     </button>
   );
 }

@@ -1,21 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Convergence&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import "tailwindcss";
 
 @theme {
-    --font-body: "Noto Sans Math", sans-serif;
-    /* Colors */
-    --color-primary: #00ff99;
-    --color-body: #fff;
-    --color-background-primary: #121212;
-    --color-background-secondary: #18181b;
+    
+    /* Font Family*/
+    --font-title: "Mali", serif;
+    --font-body: "Mali", serif;
+    --font-stars: "Convergence", serif;
+
+    /* Main Colors */
+    --color-primary: #13c7e7;
+    --color-secondary: #0a1885;
+    --color-body: #ecfbfe;
+    --color-background: #010d0e;
+    --color-accent: #190eb9;
+
+    /*Color Variants*/
+    --color-primary-10: hsl(from var(--color-primary) h s l / 10%);
+    --color-primary-25: hsl(from var(--color-primary) h s l / 25%);
+    --color-primary-50: hsl(from var(--color-primary) h s l / 50%);
+    --color-primary-75: hsl(from var(--color-primary) h s l / 75%);
+    --color-primary-90: hsl(from var(--color-primary) h s l / 90%);
+
+    --color-secondary-10: hsl(from var(--color-secondary) h s l / 10%);
+    --color-secondary-25: hsl(from var(--color-secondary) h s l / 25%);
+    --color-secondary-50: hsl(from var(--color-secondary) h s l / 50%);
+    --color-secondary-75: hsl(from var(--color-secondary) h s l / 75%);
+    --color-secondary-90: hsl(from var(--color-secondary) h s l / 90%);
+
+    --color-body-10: hsl(from var(--color-body) h s l / 10%);
+    --color-body-25: hsl(from var(--color-body) h s l / 25%);
+    --color-body-50: hsl(from var(--color-body) h s l / 50%);
+    --color-body-75: hsl(from var(--color-body) h s l / 75%);
+    --color-body-90: hsl(from var(--color-body) h s l / 90%);
+
+    --color-accent-10: hsl(from var(--color-accent) h s l / 10%);
+    --color-accent-25: hsl(from var(--color-accent) h s l / 25%);
+    --color-accent-50: hsl(from var(--color-accent) h s l / 50%);
+    --color-accent-75: hsl(from var(--color-accent) h s l / 75%);
+    --color-accent-90: hsl(from var(--color-accent) h s l / 90%);
+
+    --color-background-10: hsl(from var(--color-background) h s l / 10%);
+    --color-background-25: hsl(from var(--color-background) h s l / 25%);
+    --color-background-50: hsl(from var(--color-background) h s l / 50%);
+    --color-background-75: hsl(from var(--color-background) h s l / 75%);
+    --color-background-90: hsl(from var(--color-background) h s l / 90%);
+
+    /*
+    Paleta Antigua
+    --color-primary: #50D890;
+    --color-secondary: #4F98CA;
+    --color-baody: #000;
+    --color-background-primary: #EFFFFB;
+    --color-background-secondary: #272727;
+    */
+
+    /*
+Paleta #1
+    :root[data-theme="light"] {
+  --color-text: #011013;
+  --color-background: #f1fdfe;
+  --color-primary: #18ccec;
+  --color-secondary: #7a89f5;
+  --color-accent: #5146f1;
+}
+:root[data-theme="dark"] {
+  --color-text: #ecfbfe;
+  --color-background: #010d0e;
+  --color-primary: #13c7e7;
+  --color-secondary: #0a1885;
+  --color-accent: #190eb9;
+}
+
+    */
+
 }
 
 html {
     scrollbar-gutter: stable;
     scroll-behavior: smooth;
-}
-
-body {
-    font-family: "Noto Sans Math", sans-serif;
 }
 
 /* width */
@@ -26,16 +89,16 @@ body {
 /* Track */
 ::-webkit-scrollbar-track {
     background: transparent;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #00ff99;
-    border-radius: 6px;
+    background: var(--color-primary-50);
+    border-radius: 4px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #00ff998e;
+    background: var(--color-primary-25);
 }

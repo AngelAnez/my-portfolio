@@ -1,0 +1,89 @@
+---
+import NavElement from "./NavElement.astro";
+import { Icon } from "astro-icon/components";
+import { MYLINKS } from "@data/db";
+
+const navLinks = [
+  { title: "Sobre mi", href: "/" },
+  { title: "Experiencia", href: "/experience" },
+  { title: "Proyectos", href: "/projects" },
+  { title: "Certificaciones", href: "/certifications" },
+];
+
+const {CV, GITHUB, LINKEDIN } = MYLINKS;
+---
+
+<header
+  class="sticky top-2 md:px-5 bg-background self-end mx-4 w-fit md:mx-auto z-10 rounded-lg shadow-primary-25 shadow-md select-none mb-5"
+>
+  <nav
+    class="p-3 md:p-5 flex flex-col md:gap-5 lg:flex-row justify-between items-center"
+  >
+    <button
+      aria-label="Menu"
+      id="menu-button"
+      class="flex justify-between w-fit md:w-auto items-center cursor-pointer md:hidden"
+      ><Icon name="menu" size={24} /></button
+    >
+    <section
+      class="hidden py-4 md:py-0 text-base lg:text-lg text-body flex-col gap-3 md:flex md:flex-row md:gap-x-10 items-center justify-center"
+    >
+      <ul
+        class="text-body flex-col gap-3 md:flex md:flex-row md:gap-x-6 md:justify-end"
+      >
+        {
+          navLinks.map(({ title, href }) => (
+            <NavElement title={title} href={href} />
+          ))
+        }
+      </ul>
+      <a
+        href={CV}
+        target="_blank"
+        class="bg-accent text-body py-2 px-4 rounded-md shadow-body-10 transition hover:bg-accent-50 active:scale-95 flex gap-2 items-center"
+        >Descargar CV <Icon name="download" size={20} />
+      </a>
+    </section>
+  </nav>
+</header>
+
+<aside
+  id="nav-list"
+  class="hidden flex-col fixed top-0 w-full z-10 bg-background text-lg px-4 py-4 min-h-screen"
+>
+  <button
+    aria-label="close"
+    id="close-button"
+    class="flex justify-between w-fit lg:w-auto items-center cursor-pointer lg:hidden self-end absolute top-4 right-6"
+    ><Icon name="close" size={28} /></button
+  >
+  <section class="py-8 flex flex-col gap-3 flex-1">
+    <ul class="flex-col gap-3 lg:flex lg:flex-row lg:gap-x-6 lg:justify-end">
+      {
+        navLinks.map(({ title, href }) => (
+          <NavElement title={title} href={href} />
+        ))
+      }
+    </ul>
+    <div class="flex-1"></div>
+    <a
+      href="/projects"
+      class="bg-accent py-2 px-4 rounded-md shadow-body-10 transition hover:bg-accent-50 active:scale-95 flex gap-2 items-center justify-center"
+      >Descargar CV <Icon name="download" size={20} />
+    </a>
+  </section>
+</aside>
+
+<script>
+  const sidebar = document.querySelector("#nav-list");
+  const menuButton = document.querySelector("#menu-button");
+  const closeButton = document.querySelector("#close-button");
+  menuButton.addEventListener("click", () => {
+    sidebar.classList.toggle("hidden");
+    /* sidebar.classList.add("flex"); */
+  });
+  closeButton.addEventListener("click", () => {
+    sidebar.classList.toggle("hidden");
+    /* sidebar.classList.remove("flex"); */
+  });
+</script>

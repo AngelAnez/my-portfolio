@@ -1,0 +1,29 @@
+---
+interface Props {
+  title: string;
+  href: string;
+}
+const { title, href } = Astro.props;
+
+const path = Astro.url.pathname;
+---
+
+<li class="flex flex-col py-1 px-1 lg:px-2 gap-1 w-fit">
+  <div class="border-t-2 border-transparent" />
+  <a
+    class:list={["w-full", {"text-primary md:text-body": path === href}]}
+    href={href}
+  >
+    {title}
+  </a>
+  {
+    path === href ? (
+      <div
+        class="border-b-2 border-transparent md:border-primary"
+        transition:name="navElement-border"
+      />
+    ) : (
+      <div class="border-b-2 border-transparent" />
+    )
+  }
+</li>
