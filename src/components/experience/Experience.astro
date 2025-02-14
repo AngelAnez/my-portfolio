@@ -2,12 +2,13 @@
 import Title from "@components/shared/Title.astro";
 import { EXPERIENCE as experience } from "@data/db";
 import ExperienceInfo from "./ExperienceInfo.astro";
+const workExperience = experience.reverse()
 ---
 
-<section id="experience" class="pt-12 md:pt-24 px-4">
-  <Title>Experiencia</Title>
+<section id="experience" class="">
+  <Title>Experiencia Laboral</Title>
   <ul class="flex flex-col gap-y-10 py-4">
-    {experience.reverse().map(exp => (
+    {experience.map(exp => (
         <ExperienceInfo exp={exp}/>
     ))}
   </ul>

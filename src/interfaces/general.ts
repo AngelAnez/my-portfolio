@@ -19,3 +19,11 @@ interface Project {
   github?: string;
   demo?: string,
 }
+
+interface Testimonial {
+  image: string;
+  name: string;
+  role: string;
+  text: string;
+  linkedin: string;
+}

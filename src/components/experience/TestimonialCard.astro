@@ -1,0 +1,44 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  name: string;
+  text: string;
+  image: string;
+  role: string;
+  linkedin: string;
+}
+
+const { text, name, role, image, linkedin } = Astro.props;
+---
+
+<article
+  class={`testimonial-card`}
+>
+  <p class="text-sm whitespace-pre-line">"{text}"</p>
+  <footer class="flex gap-2 items-center">
+    {
+      image ? (
+        <img src={image} alt="Imagen" class="size-12 rounded-full" />
+      ) : (
+        <div class="bg-red-500 rounded-full shadow-md shadow-white p-3" />
+      )
+    }
+
+    <div class="flex flex-col justify-center text-sm">
+      <a href={linkedin} class="font-semibold hover:underline transition">{name}</a>
+      <span class="text-body-75">{role}</span>
+    </div>
+  </footer>
+</article>
+
+<style>
+    @reference "@styles/global.css";
+
+  .testimonial-card {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+    @apply flex flex-col gap-y-4 px-4 py-6 h-full justify-between bg-secondary-10 border border-primary-10 shadow-md shadow-primary-10 rounded-xl my-4;
+  }
+</style>

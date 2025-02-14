@@ -1,0 +1,24 @@
+---
+import Title from "@components/shared/Title.astro";
+import TestimonialCard from "./TestimonialCard.astro";
+import { TESTIMONIALS as testimonials } from "@data/db";
+---
+
+<section class="py-8">
+  <Title>Recomendaciones</Title>
+    <p class="my-2">Estas recomendaciones son extraídas directamente de mi perfil de LinkedIn. También puedes hacer click en el nombre de cada autor para visitar su perfil.</p>
+  <ul class="masonry-grid">
+    {
+      testimonials.map(({ name, text, image, role, linkedin }) => (
+        <TestimonialCard name={name} text={text} image={image} role={role} linkedin={linkedin} />
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  .masonry-grid {
+    column-width: 350px;
+    column-gap: 20px;
+  }
+</style>
