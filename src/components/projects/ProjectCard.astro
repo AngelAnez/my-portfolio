@@ -13,21 +13,22 @@ const { project, index } = Astro.props;
 ---
 
 <article
-  class="rounded-lg flex flex-col max-w-[400px] md:max-w-full md:flex-row w-full justify-between gap-x-2 gap-y-4 h-full"
+  class="rounded-lg flex flex-col max-w-[400px] md:max-w-full md:flex-row w-full justify-between gap-x-2 gap-y-4 h-full mx-auto md:mx-0"
 >
   <figure class="flex items-center justify-center w-full md:max-w-[50%]">
     <Image
       class="rounded-lg shadow-md shadow-body-25"
       loading={index < 2 ? "eager" : "lazy" }
-      src={project.image}
+      src={project.preview}
       alt={project.title}
+      transition:name=`${project.title.toLowerCase().split(" ").join("-")}-image`
       
     />
   </figure>
   <section class="flex flex-col gap-2 pb-4 md:p-4 flex-1">
     <div class="flex flex-col flex-1 gap-3 md:gap-4">
       <div class="flex justify-between items-center gap-2">
-        <h3 class="text-base lg:text-xl font-bold text-body flex-1">
+        <h3 transition:name=`${project.title.toLowerCase().split(" ").join("-")}` class="text-base lg:text-xl font-bold text-body flex-1">
           {project.title}
         </h3>
         {
@@ -55,7 +56,7 @@ const { project, index } = Astro.props;
         }
       </div>
       <p class="text-sm lg:text-base line-clamp-5 text-body-75">
-        {project.description[0]}
+        {project.description}
       </p>
       <ul class="flex flex-wrap gap-x-4 gap-y-3">
         {
@@ -75,7 +76,7 @@ const { project, index } = Astro.props;
         title="Ver una demostración del proyecto"
         aria-label="Ver una demostración del proyecto"
       >
-        Conocer más <Icon name="right-arrow" size={20} />
+        Conocer más <Icon name="arrow-right" size={20} />
       </a>
     </footer>
   </section>

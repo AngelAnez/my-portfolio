@@ -8,7 +8,7 @@ import ProjectCard from "./ProjectCard.astro";
   <Title>Proyectos</Title>
   <ul class="flex flex-col gap-y-10 pt-6 md:py-10 justify-items-center overflow-x-hidden">
     {
-      projects.map((project, index) => {
+      projects.reverse().map((project, index) => {
         return <ProjectCard project={project} index={index} />;
       })
     }

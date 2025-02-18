@@ -2,38 +2,103 @@
 import type { GetStaticPaths } from "astro";
 import { PROJECTS as projects } from "../../data/db";
 import Layout from "../../layout/Layout.astro";
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
 
 export const getStaticPaths = (() => {
   return projects.map((project) => ({
     params: {
       name: project.title.toLowerCase().split(" ").join("-"),
     },
+    props: {
+      title: project.title,
+      description: project.description,
+      images: project.images,
+      team: project.team,
+    },
   }));
 }) satisfies GetStaticPaths;
 
-const { name } = Astro.params;
-
-const projectName = name.split("-").join(" ");
+const { title, description, images, team } = Astro.props;
 ---
 
-<Layout title="Angel Añez | ">
-  <section class="pt-20 flex flex-col gap-4 text-xl">
-    <h1>Titulo del Proyecto: <span class="capitalize">{projectName}</span></h1>
+<Layout title=`Angel Añez | ${title}`>
+  <article class="pt-10 flex flex-col gap-4 w-full relative">
+    <a
+      href="/projects"
+      class="text-lg absolute top-0 left-0 flex items-center gap-2 border-b border-transparent hover:border-white transition pb-1"
+    >
+      <Icon name="arrow-left" size={20} /> Regresar
+    </a>
+    <!-- Slider de Imágenes del Proyecto -->
 
-    <h2>Objetivo</h2>
+    <Image
+      src={images[0]}
+      alt={title}
+      class="max-h-[550px] w-fit mx-auto rounded-lg drop-shadow-[0_2px_10px_rgba(255,255,255,0.3)]"
+      loading="eager"
+      transition:name=`${title.toLowerCase().split(" ").join("-")}-image`
+    />
+    <section class="flex flex-col gap-4 md:px-10">
+      <h1
+        class="text-2xl font-semibold text-center"
+        transition:name=`${title.toLowerCase().split(" ").join("-")}`
+      >
+        {title}
+      </h1>
 
-    <h2>Problemática</h2>
+      <div>
+        <h2 class="sub-title font-semibold">Descripción</h2>
+        <p>
+          {description}
+        </p>
+      </div>
 
-    <h2>Solución</h2>
+      <h2 class="sub-title font-semibold">Problemática</h2>
 
-    <h2>Rol en el proyecto</h2>
+      <h2 class="sub-title font-semibold">Solución</h2>
 
-    <h2>Tecnologías utilizadas</h2>
+      <h2 class="sub-title font-semibold">Mi rol en el proyecto</h2>
 
-    <h2>Enlaces del Proyecto</h2>
+      <div>
+        <h2 class="sub-title font-semibold">Tecnologías utilizadas</h2>
+        <ul>li</ul>
+      </div>
 
-    <h2>Colaboradores</h2>
+      <h2 class="sub-title font-semibold">Enlaces del Proyecto</h2>
 
-    <h2>Imágenes del Proyecto</h2>
-  </section>
+      {
+        team && (
+          <div class="flex flex-col gap-2">
+            <h2 class="sub-title font-semibold">Colaboradores</h2>
+            <ul class="flex flex-wrap gap-4">
+              {team.map((member) => (
+                <li class="p-4 rounded-lg bg-secondary-25 border border-white flex items-center gap-2 mx-auto sm:mx-0">
+                  <Image
+                    inferSize
+                    loading="lazy"
+                    src={member.image}
+                    alt={member.name}
+                    class="size-12 rounded-full"
+                  />
+                  <div class="flex flex-col">
+                    <span class="font-semibold text-sm">{member.name}</span>
+                    <span class="text-body-75 text-sm">{member.role}</span>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )
+      }
+    </section>
+  </article>
 </Layout>
+
+<style>
+  @reference "@styles/global.css";
+
+  .sub-title {
+    @apply text-lg;
+  }
+</style>

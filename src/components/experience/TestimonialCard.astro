@@ -20,7 +20,7 @@ const { text, name, role, image, linkedin } = Astro.props;
   <footer class="flex gap-2 items-center">
     {
       image ? (
-        <Image src={image} alt={name} class="size-12 rounded-full" inferSize />
+        <Image src={image} alt={name} loading="lazy" class="size-12 rounded-full" inferSize />
       ) : (
         <div class="bg-red-500 rounded-full shadow-md shadow-white p-3" />
       )

@@ -14,11 +14,13 @@ interface Experience {
 
 interface Project {
   title: string;
-  description: string[];
+  description: string;
+  preview: ImageMetadata;
   stack: string[];
-  image: ImageMetadata;
+  images: ImageMetadata[];
   github?: string;
-  demo?: string,
+  demo?: string;
+  team?: TeamMember[];
 }
 
 interface Testimonial {
@@ -27,4 +29,10 @@ interface Testimonial {
   role: string;
   text: string;
   linkedin: string;
+}
+
+interface TeamMember{
+  name: string;
+  image: string;
+  role: string;
 }

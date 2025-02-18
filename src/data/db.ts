@@ -1,31 +1,18 @@
-/* Skills */
-import HTMLLogo from "@images/logos/html.svg";
-import CSSLogo from "@images/logos/css.svg";
-import JavaScriptLogo from "@images/logos/javascript.svg";
-import BootstrapLogo from "@images/logos/bootstrap.svg";
-import TailwindCSSLogo from "@images/logos/tailwindcss.svg";
-import NodeJSLogo from "@images/logos/nodejs.svg";
-import ExpressJSLogo from "@images/logos/expressjs.svg";
-import PHPLogo from "@images/logos/php.svg";
-import PythonLogo from "@images/logos/python.svg";
-import MySQLLogo from "@images/logos/mysql.svg";
-import GitLogo from "@images/logos/git.svg";
-import GithubLogo from "@images/logos/github.svg";
-import EJSLogo from "@images/logos/ejs.svg";
-import TypeScriptLogo from "@images/logos/typescript.svg";
-import ReactLogo from "@images/logos/react.svg";
-import AstroLogo from "@images/logos/astro.svg";
-import DockerLogo from "@images/logos/docker.svg";
-import MaterialUILogo from "@images/logos/materialui.svg";
-import ZustandLogo from "@images/logos/zustand.svg";
-
-/* Projects */
-import ZooSystem from "@images/projects/zoo-system.webp";
-import MyPortfolio from "@images/projects/my-portfolio.webp";
-import Emoticare from "@images/projects/emoticare.webp";
-import Rentify from "@images/projects/rentify.webp";
-import FinanciaAl from "@images/projects/financia.al.webp";
-import SubastArt from "@images/projects/subastart.webp";
+import {
+  EmoticareImages,
+  EmoticarePreview,
+  FinanciaAlImages,
+  FinanciaAlPreview,
+  MyPortfolioImages,
+  MyPortfolioPreview,
+  RentifyImages,
+  RentifyPreview,
+  skillLogos,
+  SubastArtImages,
+  SubastArtPreview,
+  ZooSystemImages,
+  ZooSystemPreview,
+} from "@images/index";
 
 export const MYLINKS = {
   CV: "https://drive.google.com/file/d/1Ad-R33SOG9fnXSQb5CoqNz9vVxv-bnb2/view?usp=sharing",
@@ -37,97 +24,97 @@ export const MYLINKS = {
 export const SKILLS: Skill[] = [
   {
     name: "HTML",
-    logo: HTMLLogo,
+    logo: skillLogos.html,
     type: "Frontend",
   },
   {
     name: "CSS",
-    logo: CSSLogo,
+    logo: skillLogos.css,
     type: "Frontend",
   },
   {
     name: "JavaScript",
-    logo: JavaScriptLogo,
+    logo: skillLogos.javascript,
     type: "Frontend",
   },
   {
     name: "Bootstrap",
-    logo: BootstrapLogo,
+    logo: skillLogos.bootstrap,
     type: "Frontend",
   },
   {
     name: "TailwindCSS",
-    logo: TailwindCSSLogo,
+    logo: skillLogos.tailwindcss,
     type: "Frontend",
   },
   {
     name: "NodeJS",
-    logo: NodeJSLogo,
+    logo: skillLogos.nodejs,
     type: "Backend",
   },
   {
     name: "ExpressJS",
-    logo: ExpressJSLogo,
+    logo: skillLogos.expressjs,
     type: "Backend",
   },
   {
     name: "PHP",
-    logo: PHPLogo,
+    logo: skillLogos.php,
     type: "Backend",
   },
   {
     name: "Python",
-    logo: PythonLogo,
+    logo: skillLogos.python,
     type: "Backend",
   },
   {
     name: "MySQL",
-    logo: MySQLLogo,
+    logo: skillLogos.mysql,
     type: "Backend",
   },
   {
     name: "Git",
-    logo: GitLogo,
+    logo: skillLogos.git,
     type: "Desarrollo",
   },
   {
     name: "GitHub",
-    logo: GithubLogo,
+    logo: skillLogos.github,
     type: "Desarrollo",
   },
   {
     name: "EJS",
-    logo: EJSLogo,
+    logo: skillLogos.ejs,
     type: "Backend",
   },
   {
     name: "TypeScript",
-    logo: TypeScriptLogo,
+    logo: skillLogos.typescript,
     type: "Frontend",
   },
   {
     name: "React",
-    logo: ReactLogo,
+    logo: skillLogos.react,
     type: "Frontend",
   },
   {
     name: "Astro",
-    logo: AstroLogo,
+    logo: skillLogos.astro,
     type: "Frontend",
   },
   {
     name: "Docker",
-    logo: DockerLogo,
+    logo: skillLogos.docker,
     type: "Desarrollo",
   },
   {
     name: "MaterialUI",
-    logo: MaterialUILogo,
+    logo: skillLogos.materialui,
     type: "Frontend",
   },
   {
     name: "Zustand",
-    logo: ZustandLogo,
+    logo: skillLogos.zustand,
     type: "Frontend",
   },
 ];
@@ -163,10 +150,8 @@ export const EXPERIENCE: Experience[] = [
 export const PROJECTS: Project[] = [
   {
     title: "Registro de Visitantes",
-    description: [
+    description:
       "Sistema web desarrollado a medida para el Zoológico Paraguaná con el objetivo de registrar los datos de los visitantes. Además del registro digital, cuenta con un historial de visitas, estadísticas y reportes por fecha, y una sección para guardar novedades.",
-      "Además de registrar visitantes, cuenta con secciones para ver el historial de cada visita, conocer las estadísticas generales en un rango de fechas y exportarlas a PDF, generar novedades, administrar las cuentas de usuario y modificar el precio de las entradas.",
-    ],
     stack: [
       "HTML",
       "CSS",
@@ -177,69 +162,117 @@ export const PROJECTS: Project[] = [
       "EJS",
       "MySQL",
     ],
-    image: ZooSystem,
+    preview: ZooSystemPreview,
+    images: ZooSystemImages,
     github: "https://github.com/AngelAnez/registro-zoo-paraguana",
   },
   {
     title: "Portafolio Personal",
-    description: [
+    description:
       "Mi sitio web personal enfocado en mi camino como desarrollador de software, donde se puede visualizar mi experiencia laboral, proyectos, recomendaciones de otros compañeros, certificaciones y más.",
-      "Este proyecto permitió prácticar el uso de Astro para generar sitios estáticos, crear componentes reutilizables, y prácticar los estilos con TailwindCSS.",
-    ],
+    /* "Este proyecto permitió prácticar el uso de Astro para generar sitios estáticos, crear componentes reutilizables, y prácticar los estilos con TailwindCSS." */
     stack: ["Astro", "TailwindCSS"],
-    image: MyPortfolio,
+    preview: MyPortfolioPreview,
+    images: MyPortfolioImages,
     demo: "/",
     github: "https://github.com/AngelAnez/my-portfolio",
   },
   {
     title: "Emoticare",
-    description: [
+    description:
       "Plataforma de telemedicina que permite a los usuarios agendar citas médicas con especialistas de la salud mental y llevar a cabo estas consultas a través de videollamada.",
-      "En este proyecto, trabajé en la parte del Frontend y pude prácticar mis conocimientos en React y TypeScript, así como el trabajo en equipo a través de ramas de Git y GitHub",
-    ],
-    stack: ["React", "TypeScript", "TailwindCSS", "Git", "Github"],
-    image: Emoticare,
+    /* "En este proyecto, trabajé en la parte del Frontend y pude prácticar mis conocimientos en React y TypeScript, así como el trabajo en equipo a través de ramas de Git y GitHub" */
+    stack: ["TypeScript", "React", "TailwindCSS", "Git", "Github"],
+    preview: EmoticarePreview,
+    images: EmoticareImages,
     github: "https://github.com/AngelAnez/c20-41-n-node-react",
     demo: "https://emoticare-demo.onrender.com",
   },
   {
     title: "Rentify",
-    description: [
+    description:
       "Aplicación web que simplifica el proceso de alquiler de propiedades, conectando a propietarios e inquilinos en un entorno intuitivo y seguro. Tanto propietarios como inquilinos pueden gestionar sus propiedades y búsquedas de manera eficiente.",
-      "En este proyecto, trabajé con Material UI como librería de componentens en conjunto con React y TypeScript para desarrollar las interfaces de forma más óptima",
-    ],
-    stack: ["React", "TypeScript", "Material UI", "Git", "Github"],
-    image: Rentify,
+    /* "En este proyecto, trabajé con Material UI como librería de componentens en conjunto con React y TypeScript para desarrollar las interfaces de forma más óptima", */
+    stack: ["TypeScript", "React", "Material UI", "Git", "Github"],
+    preview: RentifyPreview,
+    images: RentifyImages,
     github: "https://github.com/AngelAnez/S18-23-n-java-react",
     demo: "https://rentify-demo.onrender.com/",
   },
   {
     title: "Financia.al",
-    description: [
+    description:
       "Financia.al es una plataforma web fintech que busca conectar a inversores interesados en financiar la venta de terrenos en distintos países de Latinoamérica con potenciales compradores, ofreciendo una experiencia simplificada y segura para todos los usuarios.",
-      "En este proyecto, trabajé con Material UI como librería de componentens en conjunto con React y TypeScript para desarrollar las interfaces de forma más óptima",
-    ],
-    stack: ["React", "TypeScript", "TailwindCSS", "Zustand", "Git", "Github"],
-    image: FinanciaAl,
+    /* "En este proyecto, trabajé con Material UI como librería de componentens en conjunto con React y TypeScript para desarrollar las interfaces de forma más óptima", */
+    stack: ["TypeScript", "React", "TailwindCSS", "Zustand", "Git", "Github"],
+    preview: FinanciaAlPreview,
+    images: FinanciaAlImages,
     github: "https://github.com/AngelAnez/equipo-h3-18-proptech",
     demo: "https://equipo-h3-18-proptech-desarrollo.onrender.com/",
+    team: [
+      {
+        name: "Abel Montes Vega",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4D35AQFpwnZVlIzYxw/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1735909161044?e=1740157200&v=beta&t=EG5OhNAQy5LlnN7GqbqyVgmpTX0VIkP_SBRKM7BA3Fo",
+        role: "Backend Developer",
+      },
+      {
+        name: "Deivison Jimenez",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4E35AQEBCtuhlg1X3A/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1728668908296?e=1740157200&v=beta&t=hvzwCJQekqwpIsOEMuGFL5b5D9p9MKk2ycXs5hFgJJQ",
+        role: "Backend Developer",
+      },
+      {
+        name: "Emanuel Capo",
+        image:
+          "https://media.licdn.com/dms/image/v2/C4D03AQE8oaeOOU4fdA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1655414851207?e=1745452800&v=beta&t=1w9Axdu1MzRy9siavev_fwgGvc1OTGuUsjUORO8yDOU",
+        role: "Frontend Developer",
+      },
+      {
+        name: "Natalia Caniza",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4D35AQEJ9iUZBjVKVQ/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1738527190006?e=1740157200&v=beta&t=lyQvPjphwdR2gmSiQ2G7Qma5NZm1863COeAfv-3baTg",
+        role: "UX/UI Designer",
+      },
+    ],
   },
   {
     title: "SubastArt",
-    description: [
+    description:
       "Plataforma de subastas online, donde los usuarios pueden publicar y vender obras de arte o participar en emocionantes subastas en vivo para conseguir obras exclusivas.",
-      "En este proyecto, pude aprender y practicar la conexión con WebSockets con React y JavaScript, así como mejorar en el uso de las View Transitions.",
-    ],
+    /* "En este proyecto, pude aprender y practicar la conexión con WebSockets con React y JavaScript, así como mejorar en el uso de las View Transitions.", */
     stack: [
       "JavaScript",
       "React",
       "TailwindCSS",
+      "Zustand",
       "WebSockets",
       "Git",
       "Github",
     ],
-    image: SubastArt,
+    preview: SubastArtPreview,
+    images: SubastArtImages,
     demo: "https://s20-04-n-frontend.onrender.com/",
+    team: [
+      {
+        name: "Leon Lederhos",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4D03AQFil0rLZ-WdEw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1727624547253?e=1744848000&v=beta&t=jJc-wq0RdA1N0WCPIIYInFGN9zzkxEVHddFBuKIiXxk",
+        role: "Backend Developer",
+      },
+      {
+        name: "Brian Diaz",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4D03AQEfI4-56WowZg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1666802397424?e=1744848000&v=beta&t=3wqT-RgKcuP0zZuHdhn0z9yO-yiJJjImEMZ4fPNLCUI",
+        role: "Backend Developer",
+      },
+      {
+        name: "Leandro Martínez",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4D03AQGu2097XB4VfQ/profile-displayphoto-shrink_100_100/B4DZUBmoqBGcAU-/0/1739488660896?e=1745452800&v=beta&t=-A6-aWY_2ObRgqxgzCHyAa3N6-He5UChjaAK3iy4v-g",
+        role: "Frontend Developer",
+      },
+    ],
   },
 ];
 
