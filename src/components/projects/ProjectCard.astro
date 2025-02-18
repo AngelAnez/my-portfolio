@@ -13,8 +13,7 @@ const { project, index } = Astro.props;
 ---
 
 <article
-  data-animate="project-card"
-  class="rounded-lg flex flex-col max-w-[400px] md:max-w-full md:flex-row w-full justify-between gap-x-2 gap-y-4 h-full slide-out"
+  class="rounded-lg flex flex-col max-w-[400px] md:max-w-full md:flex-row w-full justify-between gap-x-2 gap-y-4 h-full"
 >
   <figure class="flex items-center justify-center w-full md:max-w-[50%]">
     <Image
@@ -82,15 +81,15 @@ const { project, index } = Astro.props;
   </section>
 </article>
 
-<script>
+<!-- <script>
   document.addEventListener("astro:page-load", () => {
     const cards = document.querySelectorAll("[data-animate='project-card']");
     if (cards) {
       const callback = (entries) => {
         entries.forEach((entry) => {
           const target = entry.target as HTMLElement
-          target.classList.toggle("slide-in", entry.isIntersecting)
-          target.classList.toggle("slide-out", !entry.isIntersecting)
+          target.classList.toggle("md:slide-in", entry.isIntersecting)
+          target.classList.toggle("md:slide-out", !entry.isIntersecting)
         });
       };
       const options = {
@@ -106,4 +105,4 @@ const { project, index } = Astro.props;
       })
     }
   });
-</script>
+</script> -->

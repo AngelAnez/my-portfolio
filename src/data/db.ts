@@ -16,6 +16,8 @@ import TypeScriptLogo from "@images/logos/typescript.svg";
 import ReactLogo from "@images/logos/react.svg";
 import AstroLogo from "@images/logos/astro.svg";
 import DockerLogo from "@images/logos/docker.svg";
+import MaterialUILogo from "@images/logos/materialui.svg";
+import ZustandLogo from "@images/logos/zustand.svg";
 
 /* Projects */
 import ZooSystem from "@images/projects/zoo-system.webp";
@@ -118,6 +120,16 @@ export const SKILLS: Skill[] = [
     logo: DockerLogo,
     type: "Desarrollo",
   },
+  {
+    name: "MaterialUI",
+    logo: MaterialUILogo,
+    type: "Frontend",
+  },
+  {
+    name: "Zustand",
+    logo: ZustandLogo,
+    type: "Frontend",
+  },
 ];
 
 export const EXPERIENCE: Experience[] = [
@@ -152,7 +164,7 @@ export const PROJECTS: Project[] = [
   {
     title: "Registro de Visitantes",
     description: [
-      "Sistema diseñado con el objetivo de ayudar al Zoológico Paraguaná a automatizar su flujo de trabajo en la taquilla.",
+      "Sistema web desarrollado a medida para el Zoológico Paraguaná con el objetivo de registrar los datos de los visitantes. Además del registro digital, cuenta con un historial de visitas, estadísticas y reportes por fecha, y una sección para guardar novedades.",
       "Además de registrar visitantes, cuenta con secciones para ver el historial de cada visita, conocer las estadísticas generales en un rango de fechas y exportarlas a PDF, generar novedades, administrar las cuentas de usuario y modificar el precio de las entradas.",
     ],
     stack: [
@@ -171,7 +183,7 @@ export const PROJECTS: Project[] = [
   {
     title: "Portafolio Personal",
     description: [
-      "Carta de presentación para mostrar mi experiencia, proyectos, tecnologías y datos de contacto.",
+      "Mi sitio web personal enfocado en mi camino como desarrollador de software, donde se puede visualizar mi experiencia laboral, proyectos, recomendaciones de otros compañeros, certificaciones y más.",
       "Este proyecto permitió prácticar el uso de Astro para generar sitios estáticos, crear componentes reutilizables, y prácticar los estilos con TailwindCSS.",
     ],
     stack: ["Astro", "TailwindCSS"],

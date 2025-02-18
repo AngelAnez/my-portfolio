@@ -13,7 +13,7 @@ const { text, name, role, image, linkedin } = Astro.props;
 ---
 
 <article
-  class={`testimonial-card fade-out`}
+  class={`testimonial-card`}
   data-animate="testimonial-card"
 >
   <p class="text-sm whitespace-pre-line">"{text}"</p>
@@ -44,7 +44,7 @@ const { text, name, role, image, linkedin } = Astro.props;
   }
 </style>
 
-<script>
+<!-- <script>
   document.addEventListener("astro:page-load", () => {
     const elements = document.querySelectorAll("[data-animate='testimonial-card']");
     if (elements) {
@@ -68,4 +68,4 @@ const { text, name, role, image, linkedin } = Astro.props;
       })
     }
   });
-</script>
+</script> -->

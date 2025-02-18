@@ -1,53 +1,79 @@
 ---
 import Title from "@components/shared/Title.astro";
 import { SKILLS as skills } from "@data/db";
+import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
 const skillsByType = Object.groupBy(skills, (skill) => skill.type);
 ---
 
-<section
-  id="skills"
-  class="py-4 px-4 flex flex-col gap-y-5 md:gap-y-10"
->
-  <Title>Tecnologías y Habilidades</Title>
-  <ul
-    class="grid grid-cols-2 gap-x-8 gap-y-4 md:grid-cols-4 lg:grid-cols-5 md:gap-x-2"
-  >
-    {
-      skills.map((skill) => (
-        <li class="flex flex-col gap-1 mx-auto hover:scale-125 transition-transform select-none duration-300">
-          <Image
-            class="w-full max-w-[80px] aspect-square mx-auto"
-            loading="lazy"
-            src={skill.logo}
-            alt={`${skill.name} logo`}
-          />
-          <p class="text-center text-base md:text-lg">{skill.name}</p>
-        </li>
-      ))
-    }
-  </ul>
+<section id="skills" class="py-4 md:px-4">
+  <Title>Tecnologías</Title>
+  <p class="my-2 text-sm md:text-base">
+    Listado de tecnologías, lenguajes, frameworks y bibliotecas que he podido
+    utilizar en mis proyectos.
+  </p>
+  <div class="flex flex-col gap-y-5 mt-8">
+    <h2 class="skill-type"><Icon name={"frontend"} size={20} /> Frontend</h2>
+    <ul class="skill-list">
+      {
+        skillsByType.Frontend.map((skill) => (
+          <li class="flex flex-col gap-1 mx-auto hover:scale-125 transition-transform select-none duration-300">
+            <Image
+              class="w-full max-w-[50px] aspect-square mx-auto"
+              loading="lazy"
+              src={skill.logo}
+              alt={`${skill.name} logo`}
+            />
+            <p class="text-center text-base">{skill.name}</p>
+          </li>
+        ))
+      }
+    </ul>
+    <h2 class="skill-type"><Icon name={"backend"} size={20} /> Backend</h2>
+    <ul class="skill-list">
+      {
+        skillsByType.Backend.map((skill) => (
+          <li class="flex flex-col gap-1 mx-auto hover:scale-125 transition-transform select-none duration-300">
+            <Image
+              class="w-full max-w-[40px] aspect-square mx-auto"
+              loading="lazy"
+              src={skill.logo}
+              alt={`${skill.name} logo`}
+            />
+            <p class="text-center text-base md:text-lg">{skill.name}</p>
+          </li>
+        ))
+      }
+    </ul>
+    <h2 class="skill-type">
+      <Icon name={"development"} size={20} /> Desarrollo
+    </h2>
+    <ul class="skill-list">
+      {
+        skillsByType.Desarrollo.map((skill) => (
+          <li class="flex flex-col gap-1 mx-auto hover:scale-125 transition-transform select-none duration-300">
+            <Image
+              class="w-full max-w-[40px] aspect-square mx-auto"
+              loading="lazy"
+              src={skill.logo}
+              alt={`${skill.name} logo`}
+            />
+            <p class="text-center text-base md:text-lg">{skill.name}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </section>
 
-<script>
-  document.addEventListener("astro:page-load", () => {
-    const element = document.getElementById("skills");
-    if (element) {
-      const callback = (entries) => {
-        entries.forEach((entry) => {
-          const target = entry.target as HTMLElement
-          target.classList.toggle("fade-in", entry.isIntersecting)
-          target.classList.toggle("fade-out", !entry.isIntersecting)
-        });
-      };
-      const options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.25,
-      };
-      const observer = new IntersectionObserver(callback, options);
+<style>
+  @reference "@styles/global.css";
 
-      observer.observe(element);
-    }
-  });
-</script>
+  .skill-list {
+    @apply grid grid-cols-2 gap-x-4 gap-y-3 md:grid-cols-5 lg:grid-cols-10 md:gap-x-2;
+  }
+
+  .skill-type {
+    @apply font-semibold text-lg flex gap-2 items-center;
+  }
+</style>
