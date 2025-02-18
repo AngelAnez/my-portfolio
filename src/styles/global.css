@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 @theme {
-    
+
     /* Font Family*/
     --font-title: "Mali", serif;
     --font-body: "Mali", serif;
@@ -45,6 +45,9 @@
     --color-background-50: hsl(from var(--color-background) h s l / 50%);
     --color-background-75: hsl(from var(--color-background) h s l / 75%);
     --color-background-90: hsl(from var(--color-background) h s l / 90%);
+
+    /* Animations */
+
 
     /*
     Paleta Antigua
@@ -101,4 +104,20 @@ html {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-primary-25);
+}
+
+.fade-in {
+    @apply opacity-100 transition delay-150 duration-1000;
+}
+
+.fade-out {
+    @apply opacity-0 transition delay-150 duration-500;
+}
+
+.slide-in {
+    @apply translate-x-0 opacity-100 transition delay-150 duration-500;
+}
+
+.slide-out {
+    @apply translate-x-200 opacity-0 transition delay-150 duration-500;
 }

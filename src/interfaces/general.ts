@@ -1,6 +1,7 @@
 interface Skill {
   name: string;
-  logo: string;
+  logo: ImageMetadata;
+  type: "Frontend" | "Backend" | "Desarrollo"
 }
 
 interface Experience {
@@ -15,7 +16,7 @@ interface Project {
   title: string;
   description: string[];
   stack: string[];
-  image: string;
+  image: ImageMetadata;
   github?: string;
   demo?: string,
 }

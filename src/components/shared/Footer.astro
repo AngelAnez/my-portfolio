@@ -1,28 +1,66 @@
 ---
 import { MYLINKS } from "@data/db";
 import Title from "./Title.astro";
-const {EMAIL, LINKEDIN} = MYLINKS
+import { Icon } from "astro-icon/components";
+const { EMAIL, LINKEDIN, GITHUB } = MYLINKS;
 ---
 
 <footer
-  id="contact"
   class="p-6 mt-10 flex flex-col gap-y-4 select-none border-t-2 border-primary-50"
 >
-  <Title>Contacto</Title>
-  <ul class="flex flex-col md:flex-row justify-center gap-x-12 gap-y-4 text-base md:text-lg">
+  <section class="flex gap-y-8 gap-x-4 flex-col-reverse md:flex-row justify-around mx-auto md:mx-0">
+    <div class="flex flex-col items-start gap-y-2">
+      <h3 class="text-xl font-semibold mb-2">Contacto</h3>
+
+        <a href={GITHUB} class="contact-badge bg-gray-900">
+          <Icon name={"github"} size={18} /> AngelAnez
+        </a>
+        <a href={LINKEDIN} class="contact-badge bg-sky-600">
+          <Icon name={"linkedin"} size={18} /> Angel Añez
+        </a>
+        <a
+          href={`mailto:${EMAIL}`}
+          class="contact-badge border-black bg-slate-100 text-black"
+        >
+          <Icon name={"mail"} size={18} /> angdavid2910@gmail.com
+        </a>
+    </div>
+
+    <div class="flex flex-col items-start justify-center gap-y-2">
+      <h3 class="text-xl font-semibold mb-2">
+        Explorar
+      </h3>
+      <a href="/" class="transition hover:text-primary-75 duration-200"> Sobre mí </a>
+      <a href="/experience" class="transition hover:text-primary-75 duration-200"> Experiencia y Recomendaciones </a>
+      <a href="/projects" class="transition hover:text-primary-75 duration-200"> Proyectos y Habilidades </a>
+      <a href="/certifications" class="transition hover:text-primary-75 duration-200"> Certificaciones y Cursos </a>
+    </div>
+  </section>
+
+  <!-- <ul class="flex flex-col md:flex-row justify-center gap-x-12 gap-y-4 text-base md:text-lg">
     <li>
       <a class="flex gap-4 items-center hover:text-primary" href=`mailto:${EMAIL}`>
-<!--         <Mail className="size-8 md:size-12" /> -->
+         <Mail className="size-8 md:size-12" />
         angdavid2910@gmail.com
       </a>
     </li>
     <li>
       <a class="flex gap-4 items-center hover:text-primary" href=`${LINKEDIN}` target="_blank">
-<!--         <Linkedin className="size-8 md:size-12" /> -->
+        <Linkedin className="size-8 md:size-12" />
         Angel Añez
       </a>
     </li>
-  </ul>
+  </ul> -->
 
-  <p class="text-center text-sm md:text-base mt-5">Copyright © {new Date().getFullYear()} - Angel Añez</p>
+  <p class="text-center text-sm md:text-base mt-5">
+    Copyright © {new Date().getFullYear()} - Angel Añez
+  </p>
 </footer>
+
+<style>
+  @reference "@styles/global.css";
+
+  .contact-badge {
+    @apply border border-white shadow shadow-body-10 rounded-full flex gap-2 items-center justify-center px-2 py-1;
+  }
+</style>

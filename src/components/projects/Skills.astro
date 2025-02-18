@@ -1,22 +1,23 @@
 ---
 import Title from "@components/shared/Title.astro";
 import { SKILLS as skills } from "@data/db";
+import { Image } from "astro:assets";
+const skillsByType = Object.groupBy(skills, (skill) => skill.type);
 ---
 
 <section
   id="skills"
-  class="pt-12 md:pt-24 px-4 flex flex-col gap-y-5 md:gap-y-10"
+  class="py-4 px-4 flex flex-col gap-y-5 md:gap-y-10"
 >
-  <Title>Tecnologías</Title>
+  <Title>Tecnologías y Habilidades</Title>
   <ul
     class="grid grid-cols-2 gap-x-8 gap-y-4 md:grid-cols-4 lg:grid-cols-5 md:gap-x-2"
   >
     {
       skills.map((skill) => (
-        <li class="mx-auto hover:scale-125 transition-transform select-none duration-300">
-          <img
-            class="w-[40px] md:w-[80px] aspect-square"
-            decoding="async"
+        <li class="flex flex-col gap-1 mx-auto hover:scale-125 transition-transform select-none duration-300">
+          <Image
+            class="w-full max-w-[80px] aspect-square mx-auto"
             loading="lazy"
             src={skill.logo}
             alt={`${skill.name} logo`}
@@ -27,3 +28,26 @@ import { SKILLS as skills } from "@data/db";
     }
   </ul>
 </section>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const element = document.getElementById("skills");
+    if (element) {
+      const callback = (entries) => {
+        entries.forEach((entry) => {
+          const target = entry.target as HTMLElement
+          target.classList.toggle("fade-in", entry.isIntersecting)
+          target.classList.toggle("fade-out", !entry.isIntersecting)
+        });
+      };
+      const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.25,
+      };
+      const observer = new IntersectionObserver(callback, options);
+
+      observer.observe(element);
+    }
+  });
+</script>

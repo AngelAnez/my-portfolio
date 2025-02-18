@@ -1,19 +1,15 @@
 ---
 import Title from "@components/shared/Title.astro";
 import { PROJECTS as projects } from "@data/db";
-import Card from "./Card.astro";
+import ProjectCard from "./ProjectCard.astro";
 ---
 
-<section id="projects" class="pt-12 md:pt-24 px-4">
+<section id="projects" class="py-4 sm:px-4">
   <Title>Proyectos</Title>
-  <ul class="flex gap-6 py-6 justify-items-center flex-wrap">
+  <ul class="flex flex-col gap-y-10 pt-6 md:py-10 justify-items-center overflow-x-hidden">
     {
-      projects.map((project) => {
-        return (
-          <li>
-            <Card project={project} />
-          </li>
-        );
+      projects.map((project, index) => {
+        return <ProjectCard project={project} index={index} />;
       })
     }
   </ul>

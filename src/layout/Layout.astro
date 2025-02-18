@@ -39,9 +39,25 @@ const { title = "Angel Añez | Home" } = Astro.props;
       content="Angel Añez, Angel Anez, Desarrollador de Software, Ingeniero de Sistemas"
     />
     <title>{title}</title>
-    <link rel="icon" type="image/svg" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.svg" type="image/svg" />
 
-    <ClientRouter/>
+    <!-- Light mode favicon -->
+    <link
+      rel="icon"
+      href="/favicon-light.svg"
+      type="image/svg"
+      media="(prefers-color-scheme: light)"
+    />
+
+    <!-- Dark mode favicon -->
+    <link
+      rel="icon"
+      href="/favicon-dark.svg"
+      type="image/svg"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <ClientRouter />
   </head>
   <body class="bg-background text-white font-body flex flex-col">
     <Navbar />

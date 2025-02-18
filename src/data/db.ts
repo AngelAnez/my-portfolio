@@ -1,3 +1,30 @@
+/* Skills */
+import HTMLLogo from "@images/logos/html.svg";
+import CSSLogo from "@images/logos/css.svg";
+import JavaScriptLogo from "@images/logos/javascript.svg";
+import BootstrapLogo from "@images/logos/bootstrap.svg";
+import TailwindCSSLogo from "@images/logos/tailwindcss.svg";
+import NodeJSLogo from "@images/logos/nodejs.svg";
+import ExpressJSLogo from "@images/logos/expressjs.svg";
+import PHPLogo from "@images/logos/php.svg";
+import PythonLogo from "@images/logos/python.svg";
+import MySQLLogo from "@images/logos/mysql.svg";
+import GitLogo from "@images/logos/git.svg";
+import GithubLogo from "@images/logos/github.svg";
+import EJSLogo from "@images/logos/ejs.svg";
+import TypeScriptLogo from "@images/logos/typescript.svg";
+import ReactLogo from "@images/logos/react.svg";
+import AstroLogo from "@images/logos/astro.svg";
+import DockerLogo from "@images/logos/docker.svg";
+
+/* Projects */
+import ZooSystem from "@images/projects/zoo-system.webp";
+import MyPortfolio from "@images/projects/my-portfolio.webp";
+import Emoticare from "@images/projects/emoticare.webp";
+import Rentify from "@images/projects/rentify.webp";
+import FinanciaAl from "@images/projects/financia.al.webp";
+import SubastArt from "@images/projects/subastart.webp";
+
 export const MYLINKS = {
   CV: "https://drive.google.com/file/d/1Ad-R33SOG9fnXSQb5CoqNz9vVxv-bnb2/view?usp=sharing",
   LINKEDIN: "https://www.linkedin.com/in/angel-anez/",
@@ -8,71 +35,88 @@ export const MYLINKS = {
 export const SKILLS: Skill[] = [
   {
     name: "HTML",
-    logo: "/images/html.svg",
+    logo: HTMLLogo,
+    type: "Frontend",
   },
   {
     name: "CSS",
-    logo: "/images/css.svg",
+    logo: CSSLogo,
+    type: "Frontend",
   },
   {
     name: "JavaScript",
-    logo: "/images/javascript.svg",
+    logo: JavaScriptLogo,
+    type: "Frontend",
   },
   {
     name: "Bootstrap",
-    logo: "/images/bootstrap.svg",
+    logo: BootstrapLogo,
+    type: "Frontend",
   },
   {
     name: "TailwindCSS",
-    logo: "/images/tailwindcss.svg",
+    logo: TailwindCSSLogo,
+    type: "Frontend",
   },
   {
     name: "NodeJS",
-    logo: "/images/nodejs.svg",
+    logo: NodeJSLogo,
+    type: "Backend",
   },
   {
     name: "ExpressJS",
-    logo: "/images/expressjs.svg",
+    logo: ExpressJSLogo,
+    type: "Backend",
   },
   {
     name: "PHP",
-    logo: "/images/php.svg",
+    logo: PHPLogo,
+    type: "Backend",
   },
   {
     name: "Python",
-    logo: "/images/python.svg",
+    logo: PythonLogo,
+    type: "Backend",
   },
   {
     name: "MySQL",
-    logo: "/images/mysql.svg",
+    logo: MySQLLogo,
+    type: "Backend",
   },
   {
     name: "Git",
-    logo: "/images/git.svg",
+    logo: GitLogo,
+    type: "Desarrollo",
   },
   {
     name: "GitHub",
-    logo: "/images/github.svg",
+    logo: GithubLogo,
+    type: "Desarrollo",
   },
   {
     name: "EJS",
-    logo: "/images/ejs.svg",
+    logo: EJSLogo,
+    type: "Backend",
   },
   {
     name: "TypeScript",
-    logo: "/images/typescript.svg",
+    logo: TypeScriptLogo,
+    type: "Frontend",
   },
   {
     name: "React",
-    logo: "/images/react.svg",
+    logo: ReactLogo,
+    type: "Frontend",
   },
   {
     name: "Astro",
-    logo: "/images/astro.svg",
+    logo: AstroLogo,
+    type: "Frontend",
   },
   {
     name: "Docker",
-    logo: "/images/docker.svg",
+    logo: DockerLogo,
+    type: "Desarrollo",
   },
 ];
 
@@ -121,7 +165,7 @@ export const PROJECTS: Project[] = [
       "EJS",
       "MySQL",
     ],
-    image: "zoo-system.webp",
+    image: ZooSystem,
     github: "https://github.com/AngelAnez/registro-zoo-paraguana",
   },
   {
@@ -130,30 +174,60 @@ export const PROJECTS: Project[] = [
       "Carta de presentación para mostrar mi experiencia, proyectos, tecnologías y datos de contacto.",
       "Este proyecto permitió prácticar el uso de Astro para generar sitios estáticos, crear componentes reutilizables, y prácticar los estilos con TailwindCSS.",
     ],
-    stack: ["HTML", "CSS", "JavaScript", "TailwindCSS", "Astro"],
-    image: "my-portfolio.webp",
+    stack: ["Astro", "TailwindCSS"],
+    image: MyPortfolio,
     demo: "/",
     github: "https://github.com/AngelAnez/my-portfolio",
   },
   {
     title: "Emoticare",
     description: [
-      "Plataforma de telemedicina realizada en equipo que permite a los usuarios agendar citas médicas con especialistas de la salud mental y llevar a cabo estas consultas a través de videollamada.",
+      "Plataforma de telemedicina que permite a los usuarios agendar citas médicas con especialistas de la salud mental y llevar a cabo estas consultas a través de videollamada.",
       "En este proyecto, trabajé en la parte del Frontend y pude prácticar mis conocimientos en React y TypeScript, así como el trabajo en equipo a través de ramas de Git y GitHub",
     ],
+    stack: ["React", "TypeScript", "TailwindCSS", "Git", "Github"],
+    image: Emoticare,
+    github: "https://github.com/AngelAnez/c20-41-n-node-react",
+    demo: "https://emoticare-demo.onrender.com",
+  },
+  {
+    title: "Rentify",
+    description: [
+      "Aplicación web que simplifica el proceso de alquiler de propiedades, conectando a propietarios e inquilinos en un entorno intuitivo y seguro. Tanto propietarios como inquilinos pueden gestionar sus propiedades y búsquedas de manera eficiente.",
+      "En este proyecto, trabajé con Material UI como librería de componentens en conjunto con React y TypeScript para desarrollar las interfaces de forma más óptima",
+    ],
+    stack: ["React", "TypeScript", "Material UI", "Git", "Github"],
+    image: Rentify,
+    github: "https://github.com/AngelAnez/S18-23-n-java-react",
+    demo: "https://rentify-demo.onrender.com/",
+  },
+  {
+    title: "Financia.al",
+    description: [
+      "Financia.al es una plataforma web fintech que busca conectar a inversores interesados en financiar la venta de terrenos en distintos países de Latinoamérica con potenciales compradores, ofreciendo una experiencia simplificada y segura para todos los usuarios.",
+      "En este proyecto, trabajé con Material UI como librería de componentens en conjunto con React y TypeScript para desarrollar las interfaces de forma más óptima",
+    ],
+    stack: ["React", "TypeScript", "TailwindCSS", "Zustand", "Git", "Github"],
+    image: FinanciaAl,
+    github: "https://github.com/AngelAnez/equipo-h3-18-proptech",
+    demo: "https://equipo-h3-18-proptech-desarrollo.onrender.com/",
+  },
+  {
+    title: "SubastArt",
+    description: [
+      "Plataforma de subastas online, donde los usuarios pueden publicar y vender obras de arte o participar en emocionantes subastas en vivo para conseguir obras exclusivas.",
+      "En este proyecto, pude aprender y practicar la conexión con WebSockets con React y JavaScript, así como mejorar en el uso de las View Transitions.",
+    ],
     stack: [
-      "HTML",
-      "CSS",
       "JavaScript",
-      "TailwindCSS",
       "React",
-      "TypeScript",
+      "TailwindCSS",
+      "WebSockets",
       "Git",
       "Github",
     ],
-    image: "Emoticare-3.webp",
-    github: "https://github.com/AngelAnez/c20-41-n-node-react",
-    demo: "https://emoticare-demo.onrender.com",
+    image: SubastArt,
+    demo: "https://s20-04-n-frontend.onrender.com/",
   },
 ];
 
@@ -193,7 +267,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     name: "Emanuel Capo",
     image:
-      "https://media.licdn.com/dms/image/v2/D4E35AQH0eEIsCaJfvA/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1707224774819?e=1740157200&v=beta&t=iLqQaisBLjs5Zz_GQgfQmIm7DY5AP0TO8aLiCcUm08M",
+      "https://media.licdn.com/dms/image/v2/C4D03AQE8oaeOOU4fdA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1655414851207?e=1745452800&v=beta&t=1w9Axdu1MzRy9siavev_fwgGvc1OTGuUsjUORO8yDOU",
     role: "FullStack Developer",
     text: `Angel es un profesional muy organizado, proactivo y trabajador. Es muy comunicativo para expresar sus ideas y siempre está dispuesto a ayudar. Tiene un gran conocimiento de React y Typescript y su aporte fue fundamental para llevar adelante el proyecto que compartimos.`,
     linkedin: "https://www.linkedin.com/in/emanuel-capo",
@@ -214,8 +288,7 @@ Sin dudas, trabajar con él fue una experiencia muy enriquecedora y sé que cual
       "https://media.licdn.com/dms/image/v2/D4D35AQFpwnZVlIzYxw/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1735909161044?e=1740157200&v=beta&t=EG5OhNAQy5LlnN7GqbqyVgmpTX0VIkP_SBRKM7BA3Fo",
     role: "Backend Developer",
     text: `Trabajé junto a Ángel durante una hackathon, donde demostró su capacidad como desarrollador frontend. Supo trabajar de manera eficiente a la par con el backend, logrando una integración completa del proyecto. Además, tuvimos una comunicación fluida que facilitó el desarrollo del trabajo en equipo. Su proactividad y eficacia fueron claves para alcanzar los objetivos del proyecto.`,
-    linkedin:
-      "https://www.linkedin.com/in/abel-montes-vega",
+    linkedin: "https://www.linkedin.com/in/abel-montes-vega",
   },
   {
     name: "Leon Lederhos",
