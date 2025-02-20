@@ -10,7 +10,7 @@ const navLinks = [
   { title: "Certificaciones", href: "/certifications/" },
 ];
 
-const {CV, GITHUB, LINKEDIN } = MYLINKS;
+const { CV, GITHUB, LINKEDIN } = MYLINKS;
 ---
 
 <header
@@ -75,15 +75,15 @@ const {CV, GITHUB, LINKEDIN } = MYLINKS;
 </aside>
 
 <script>
-  const sidebar = document.querySelector("#nav-list");
-  const menuButton = document.querySelector("#menu-button");
-  const closeButton = document.querySelector("#close-button");
-  menuButton.addEventListener("click", () => {
-    sidebar.classList.toggle("hidden");
-    /* sidebar.classList.add("flex"); */
-  });
-  closeButton.addEventListener("click", () => {
-    sidebar.classList.toggle("hidden");
-    /* sidebar.classList.remove("flex"); */
+  document.addEventListener("astro:page-load", () => {
+    const sidebar = document.querySelector("#nav-list");
+    const menuButton = document.querySelector("#menu-button");
+    const closeButton = document.querySelector("#close-button");
+    menuButton.addEventListener("click", () => {
+      sidebar.classList.toggle("hidden");
+    });
+    closeButton.addEventListener("click", () => {
+      sidebar.classList.toggle("hidden");
+    });
   });
 </script>

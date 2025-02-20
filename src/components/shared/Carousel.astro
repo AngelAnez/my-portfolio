@@ -1,0 +1,145 @@
+---
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+
+interface Props {
+  images: ImageMetadata[];
+  transitionName: string;
+}
+
+const { images, transitionName } = Astro.props;
+const carouselSize = images.length;
+---
+
+<section class:list={["grid w-full"]}>
+  <div class="relative overflow-hidden" aria-label="Carousel">
+    <div class="w-full aspect-video" transition:name=`${transitionName}`>
+    </div>
+    {
+      carouselSize > 1 && (
+        <button
+          class="cursor-pointer absolute top-[47%] left-[3%] carousel-arrow z-2"
+          aria-label="Anterior"
+        >
+          <Icon
+            name={"slide-left"}
+            class="size-5 md:size-8 bg-body-75 hover:bg-body-50 text-black rounded-lg transition active:scale-95"
+          />
+        </button>
+      )
+    }
+    {
+      images &&
+        images.map((image, index) => {
+          return (
+            <figure
+              class:list={[
+                "carousel-item",
+                {
+                  active: index === 0,
+                  prev: carouselSize > 2 && index === carouselSize - 1,
+                  next: carouselSize > 2 && index === 1,
+                },
+              ]}
+            >
+              <Image
+                src={image}
+                class="w-full mx-auto rounded-lg"
+                alt="Hola Mundo"
+                loading="eager"
+              />
+            </figure>
+          );
+        })
+    }
+    {
+      carouselSize > 1 && (
+        <button
+          class="cursor-pointer transition absolute top-[47%] right-[3%] carousel-arrow z-2"
+          aria-label="Siguiente"
+        >
+          <Icon
+            name={"slide-right"}
+            class="size-5 md:size-8 bg-body-75 hover:bg-body-50 text-black rounded-lg transition active:scale-95"
+          />
+        </button>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  @reference "@styles/global.css";
+
+  .carousel-item {
+    transform: translate(-50%, -50%);
+    transition: all 500ms ease-in-out;
+    z-index: -1;
+    opacity: 0;
+    @apply absolute top-[50%] left-[50%] w-[96%] drop-shadow-[0_2px_4px_rgba(255,255,255,0.4)] md:drop-shadow-[0_2px_10px_rgba(255,255,255,0.4)] mx-auto;
+  }
+
+  .active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .prev {
+    transform: translate(-150%, -50%);
+    z-index: 2;
+  }
+
+  .next {
+    transform: translate(50%, -50%);
+    z-index: 2;
+  }
+</style>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const slides = document.querySelectorAll(".carousel-item");
+    const button = document.querySelectorAll(".carousel-arrow");
+
+    let current = 0;
+    let prev = slides.length - 1;
+    let next = 1;
+
+    for (let i = 0; i < button.length; i++) {
+      button[i].addEventListener("click", () =>
+        i == 0 ? gotoPrev() : gotoNext()
+      );
+    }
+
+    const gotoPrev = () =>
+      current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+
+    const gotoNext = () =>
+      current < slides.length - 1 ? gotoNum(current + 1) : gotoNum(0);
+
+    const gotoNum = (number: number) => {
+      current = number;
+      prev = current - 1;
+      next = current + 1;
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+        slides[i].classList.remove("prev");
+        slides[i].classList.remove("next");
+      }
+
+      if (next >= slides.length) {
+        next = 0;
+      }
+
+      if (prev < 0) {
+        prev = slides.length - 1;
+      }
+
+      slides[current].classList.add("active");
+      if (slides.length > 2) {
+        slides[next].classList.add("next");
+        slides[prev].classList.add("prev");
+      }
+    };
+  });
+</script>

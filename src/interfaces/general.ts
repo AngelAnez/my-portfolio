@@ -18,6 +18,9 @@ interface Project {
   preview: ImageMetadata;
   stack: string[];
   images: ImageMetadata[];
+  problem?: string;
+  result?: string;
+  role?: string;
   github?: string;
   demo?: string;
   team?: TeamMember[];

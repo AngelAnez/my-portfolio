@@ -121,7 +121,7 @@ export const SKILLS: Skill[] = [
 
 export const EXPERIENCE: Experience[] = [
   {
-    position: "Practicante",
+    position: "Pasantías de Ingeniero de Sistemas",
     company: "PDVSA",
     "start-date": "Abril 2023",
     "end-date": "Agosto 2023",
@@ -132,7 +132,16 @@ export const EXPERIENCE: Experience[] = [
     ],
   },
   {
-    position: "Frontend Web Developer",
+    position: "Desarrollador Web Freelance",
+    company: "Zoológico Paraguaná",
+    "start-date": "Octubre 2023",
+    "end-date": "Marzo 2024",
+    "job-duty": [
+      "Desarrollé un sistema para digitalizar el registro y control de visitantes del Zoológico",
+    ],
+  },
+  {
+    position: "Desarrollador Web Frontend",
     company: "No Country",
     "start-date": "Agosto 2024",
     "end-date": "Enero 2025",
@@ -164,6 +173,23 @@ export const PROJECTS: Project[] = [
     ],
     preview: ZooSystemPreview,
     images: ZooSystemImages,
+    problem: "",
+    result: `Para poder controlar la información de los visitantes de mejor forma, se desarrolló este sistema dividiéndolo en los siguientes módulos:
+
+    📝 Registro de Visitantes: Permite registrar cada visita conociendo la cantidad de miembros en función al género y la edad, su datos de pago, y los datos de contacto del representante familiar.
+    🔎 Historial de Visitas: Muestra una tabla que enlista todas las visitas registradas, permitiendo filtrar las búsquedas y conocer toda la información de cada visita. También, los usuarios administradores pueden editar la información de alguna visita en caso de ser necesario.
+    📊 Estadísticas Generales: Muestra a través de gráficas la cantidad de visitantes totales en función a un rango de fecha establecido. A su vez, permite descargar esta información a través de informes en formato PDF.
+    ❗️ Registro y Control de Novedades: Permite registrar novedades o acontecimientos que ocurran durante la jornada, como por ejemplo, la donación de alimento por parte de alguna familia o institución.
+    👥 Administración de Usuarios: Sección única para administradores que permite promover, modificar o eliminar usuarios del sistema.
+    ⚙️ Configuraciones: Permite ajustar ciertos parámetros del sistema, como el valor de las entradas, o especificar una tasa personalizada para el dolar.
+    
+    Gracias a estos módulos, el Sistema de Registro de Visitantes del Zoológico Paraguaná pudo:
+    
+    - Mejorar la calidad de los datos, evitando redundancia y facilitando la búsqueda
+    - Reducir costos en papel, impresoras, archivadores y demás herramientas para almacenar la información
+    - Obtener en tiempo real el valor del dolar y el cálculo del precio a pagar por cada visita
+    - Mejorar la toma de decisiones gracias a las estadísticas y los reportes
+    - Reducir el impacto ambiental causado por la producción de papel`,
     github: "https://github.com/AngelAnez/registro-zoo-paraguana",
   },
   {
@@ -174,6 +200,8 @@ export const PROJECTS: Project[] = [
     stack: ["Astro", "TailwindCSS"],
     preview: MyPortfolioPreview,
     images: MyPortfolioImages,
+    problem:
+      "Como un estudiante recién egresado de la universidad, resulta complicado conseguir el primer empleo como desarrollador de software. Al carecer de experiencia laboral, es necesario buscar otras formas de demostrar las habilidades y conocimientos que se poseen para aportar valor a cualquier empresa, proyecto o equipo de trabajo. Es por ello que es necesario poseer una herramienta que pueda complementar al currículum y que permita reflejar el talento y la experiencia de un desarrollador. De aquí nace la idea de un portafolio web, donde puedan exhibirse los proyectos realizados, las tecnologías conocidas, la creatividad, los testimonios de otros compañeros de trabajo y demás información relevante de un desarrollador.",
     demo: "/",
     github: "https://github.com/AngelAnez/my-portfolio",
   },
@@ -187,6 +215,32 @@ export const PROJECTS: Project[] = [
     images: EmoticareImages,
     github: "https://github.com/AngelAnez/c20-41-n-node-react",
     demo: "https://emoticare-demo.onrender.com",
+    team: [
+      {
+        name: "Rafael García",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4E03AQFVSVk3IBYBqQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1701292502757?e=1745452800&v=beta&t=o83Le-xWCs6wNIGBMtyqYxid8tC5Ld7UsjwLCyjbngM",
+        role: "Frontend Developer",
+      },
+      {
+        name: "Victor Hugo Murcio Mansilla",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4E03AQEf6kV2efVT5Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1718381042944?e=1745452800&v=beta&t=xRIXojfGliw-wTedne2y4ce_wNrWHja3jJQwxpdw2zY",
+        role: "Frontend Developer",
+      },
+      {
+        name: "Marcos Román Derbas",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4D03AQESqRO2WAvLBw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1680135799486?e=1745452800&v=beta&t=NFgHe3uAa37iFUuVr8LUEqcvBI_N5_mrKo9zp8Al9O8",
+        role: "Backend Developer",
+      },
+      {
+        name: "Erich Armijo",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4D35AQGLURTtAMjNfg/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1721225957335?e=1740668400&v=beta&t=u0Pt20umeFUDFRdqlwhHf3jN_Cj0m8qPeoC-Q3SDowU",
+        role: "Backend Developer",
+      },
+    ],
   },
   {
     title: "Rentify",
@@ -198,6 +252,86 @@ export const PROJECTS: Project[] = [
     images: RentifyImages,
     github: "https://github.com/AngelAnez/S18-23-n-java-react",
     demo: "https://rentify-demo.onrender.com/",
+    team: [
+      {
+        name: "Triana Devia",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4D03AQHjUgeOwmUtdw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1728234699056?e=1744848000&v=beta&t=Gv3aN3FdnaP05iCof7_Oc0BHTRI07SgftQE25f7B41A",
+        role: "Project Manager",
+      },
+      {
+        name: "Kenti Gabriel Antezana",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4D03AQHHR31kfQEIIg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1671717691480?e=1744848000&v=beta&t=tAi7bi67swIAz6O8scN2qri_r_BG6cR2TBxIi5whB4o",
+        role: "Backend Developer",
+      },
+      {
+        name: "Rafael Enrique Cortez",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4D03AQHKzfD3rGfKsA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1730396990188?e=1744848000&v=beta&t=6MDUk2smiETgvDRqeR1aHIe2fj-kQfkq64kYxelFDNI",
+        role: "Backend Developer",
+      },
+      {
+        name: "Jhosep Tinta",
+        image:
+          "https://media.licdn.com/dms/image/v2/C4E03AQHBJTn1qiruaQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1568034056095?e=1745452800&v=beta&t=6saawt9PVnKPoF1jYOTOeWkFkCKydfIqqx3GzoDI60E",
+        role: "Frontend Developer",
+      },
+      {
+        name: "Edgar Camberos",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4D03AQG94zsQ9s5T7g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1720605912276?e=1745452800&v=beta&t=Rmew_gYmfD1IqdABogZoxZsXn1WI13j85z2fUV3j6IM",
+        role: "Backend Developer",
+      },
+      {
+        name: "William Polanco",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4D03AQHRaNYyyrpbRQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1716217605329?e=1745452800&v=beta&t=rlT_UsG0Xo3VZKWEc2gINyQaKJI_lpz3YCBH_pxxfpk",
+        role: "Frontend Developer",
+      },
+      {
+        name: "Manuel Filgueira Marin",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4E35AQGsr5BoU_nqXA/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1730480297649?e=1740664800&v=beta&t=hWuRTMhQW3g2vm8TqF5YW9cocSh4CLKqO0alWo738DI",
+        role: "Frontend Developer",
+      },
+      {
+        name: "Gabriel Romero",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4D35AQG4vY3Y37HRIA/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1697292176024?e=1740664800&v=beta&t=pWouayhTIrWxtdZNoAeM0Z0KYCz9a6T-HGP33syMhx8",
+        role: "Backend Developer",
+      },
+      {
+        name: "Oliver Barahona",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4D35AQG-8JuMZq_Vpw/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1698553819121?e=1740664800&v=beta&t=7fNyhxqWaXCHt95Akjaz8i0Y1l18D2eiXbCS2fgQwEQ",
+        role: "Backend Developer",
+      },
+      {
+        name: "Matias Badano",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4D35AQG_70VHivqFSw/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1691640364890?e=1740664800&v=beta&t=Tmr8K5c8hJ-ud-MZCgh-SzAo1tdLTX7mGbcPrB98UOM",
+        role: "Backend Developer",
+      },
+      {
+        name: "Diego Agustin Jorges",
+        image:
+          "https://media.licdn.com/dms/image/v2/C4D03AQEO3-HilvXyUw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1660006874063?e=1745452800&v=beta&t=YFkrpyTWFBWyV41-kCVmLvAy3Ugd4YhWpZTfZguTSXE",
+        role: "Backend Developer",
+      },
+      {
+        name: "Joaquín Herrera",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4D03AQEv7Xyp6KkP7A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1709747738298?e=1745452800&v=beta&t=j9Z3ev65CaS7JAZM2NW6efvSUvqKdoQgW3pwEPWPaaY",
+        role: "Frontend Developer",
+      },
+      {
+        name: "Nestor Rubiano",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4D35AQGxHP3zM8VbYA/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1683771078424?e=1740664800&v=beta&t=9Bb-3ZGfpRbXDU7jWVBgakCdgLc4fgazdeDEEi5qtD4",
+        role: "UX/UI Designer",
+      },
+    ],
   },
   {
     title: "Financia.al",
@@ -207,6 +341,7 @@ export const PROJECTS: Project[] = [
     stack: ["TypeScript", "React", "TailwindCSS", "Zustand", "Git", "Github"],
     preview: FinanciaAlPreview,
     images: FinanciaAlImages,
+    role: "Frontend Developer",
     github: "https://github.com/AngelAnez/equipo-h3-18-proptech",
     demo: "https://equipo-h3-18-proptech-desarrollo.onrender.com/",
     team: [
@@ -252,6 +387,7 @@ export const PROJECTS: Project[] = [
     ],
     preview: SubastArtPreview,
     images: SubastArtImages,
+    role: `Durante este proyecto me desempeñé como Frontend Developer. Al ser un equipo tan pequeño, la toma de decisiones para el Frontend recayó principalemente en Leandro y en mí, con sugerencias ocasionales de nuestros otros compañeros. Sin embargo, la buena comunicación que tuvimos Leandro y yo revisando lo que el otro hacía y sugiriendo mejoras en donde fuera necesario nos permitió distribuir y desarrollar nuestras tareas sin muchas complicaciones. A su vez, mi participación en las reuniones con mis compañeros en el Backend me permitió comentar sugerencias y puntos de mejora en la API que nos ayudó a solucionar problemas que fueron surgiendo para así poder terminar de desarrollar el MVP.`,
     demo: "https://s20-04-n-frontend.onrender.com/",
     team: [
       {

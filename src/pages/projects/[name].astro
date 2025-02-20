@@ -1,9 +1,10 @@
 ---
 import type { GetStaticPaths } from "astro";
-import { PROJECTS as projects } from "../../data/db";
+import { PROJECTS as projects, SKILLS as skills } from "../../data/db";
 import Layout from "../../layout/Layout.astro";
 import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
+import Carousel from "@components/shared/Carousel.astro";
 
 export const getStaticPaths = (() => {
   return projects.map((project) => ({
@@ -14,63 +15,137 @@ export const getStaticPaths = (() => {
       title: project.title,
       description: project.description,
       images: project.images,
+      problem: project.problem,
+      result: project.result,
       team: project.team,
+      role: project.role,
+      stack: project.stack,
+      demo: project.demo,
+      github: project.github,
     },
   }));
 }) satisfies GetStaticPaths;
 
-const { title, description, images, team } = Astro.props;
+const {
+  title,
+  description,
+  images,
+  problem,
+  result,
+  team,
+  role,
+  stack,
+  demo,
+  github,
+} = Astro.props;
 ---
 
 <Layout title=`Angel Añez | ${title}`>
-  <article class="pt-10 flex flex-col gap-4 w-full relative">
+  <article class="pt-10 flex flex-col gap-2 md:gap-4 w-full relative">
     <a
-      href="/projects"
-      class="text-lg absolute top-0 left-0 flex items-center gap-2 border-b border-transparent hover:border-white transition pb-1"
+      href="/projects/"
+      class="text-sm md:text-xl absolute top-0 left-0 flex items-center gap-2 border-b border-transparent hover:border-white transition pb-1"
     >
-      <Icon name="arrow-left" size={20} /> Regresar
+      <Icon name="arrow-left" class="size-4 md:size-6" /> Regresar
     </a>
-    <!-- Slider de Imágenes del Proyecto -->
 
-    <Image
-      src={images[0]}
-      alt={title}
-      class="max-h-[550px] w-fit mx-auto rounded-lg drop-shadow-[0_2px_10px_rgba(255,255,255,0.3)]"
-      loading="eager"
-      transition:name=`${title.toLowerCase().split(" ").join("-")}-image`
-    />
-    <section class="flex flex-col gap-4 md:px-10">
-      <h1
-        class="text-2xl font-semibold text-center"
-        transition:name=`${title.toLowerCase().split(" ").join("-")}`
-      >
-        {title}
-      </h1>
+    <h1
+      class="text-xl md:text-3xl font-semibold text-center"
+      transition:name=`${title.toLowerCase().split(" ").join("-")}`
+    >
+      {title}
+    </h1>
 
-      <div>
-        <h2 class="sub-title font-semibold">Descripción</h2>
+    <Carousel images={images} transitionName={`${title.toLowerCase().split(" ").join("-")}-image`}/>
+
+    <section class="flex flex-col gap-8">
+
+      <div class="sub-container">
+        <h2 class="sub-title">
+          <Icon name={"description"} class="size-5 md:size-6" /> Descripción
+        </h2>
         <p>
           {description}
         </p>
       </div>
 
-      <h2 class="sub-title font-semibold">Problemática</h2>
-
-      <h2 class="sub-title font-semibold">Solución</h2>
-
-      <h2 class="sub-title font-semibold">Mi rol en el proyecto</h2>
-
-      <div>
-        <h2 class="sub-title font-semibold">Tecnologías utilizadas</h2>
-        <ul>li</ul>
+      <div class="sub-container">
+        <h2 class="sub-title">
+          <Icon name={"problem"} class="size-5 md:size-6" /> ¿Cómo surgió el proyecto?
+        </h2>
+        <p>
+          {problem}
+        </p>
       </div>
 
-      <h2 class="sub-title font-semibold">Enlaces del Proyecto</h2>
+      <div class="sub-container">
+        <h2 class="sub-title"><Icon name={"solution"} class="size-5 md:size-6" /> Resultado</h2>
+        <p>
+          {result}
+        </p>
+      </div>
+
+      {
+        role && (
+          <div class="sub-container">
+            <h2 class="sub-title">
+              <Icon name={"target"} class="size-5 md:size-6" /> Mi rol en el proyecto
+            </h2>
+            <p>{role}</p>
+          </div>
+        )
+      }
+
+      <div class="sub-container">
+        <h2 class="sub-title">
+          <Icon name={"development"} class="size-5 md:size-6" /> Tecnologías utilizadas
+        </h2>
+        <ul class="flex flex-wrap gap-4 items-center">
+          {
+            stack.map((tech) => (
+              <li class="text-sm lg:text-base px-2 py-1 rounded-lg border border-white shadow shadow-body-50 select-none">
+                {tech}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div class="sub-container">
+        <h2 class="sub-title">
+          <Icon name={"link"} class="size-5 md:size-6" /> Enlaces del proyecto
+        </h2>
+        <div class="flex gap-2 flex-wrap items-center">
+          {
+            demo && (
+              <a
+                class="bg-primary-50 hover:bg-primary-25 active:scale-95 transition px-2 py-2 text-sm md:text-base rounded-lg w-fit flex gap-2 items-center border border-body-50"
+                href={demo}
+              >
+                <Icon name={"web"} size={24} /> Sitio Web
+              </a>
+            )
+          }
+          {
+            github && (
+              <a
+                class="bg-gray-900 hover:bg-gray-950 active:scale-95 transition px-2 py-2 text-sm md:text-base rounded-lg w-fit flex gap-2 items-center border border-body-50"
+                href={github}
+              >
+                <Icon name={"github"} size={24} /> Repositorio
+              </a>
+            )
+          }
+        </div>
+      </div>
 
       {
         team && (
-          <div class="flex flex-col gap-2">
-            <h2 class="sub-title font-semibold">Colaboradores</h2>
+          <div class="sub-container">
+            <h2 class="sub-title">
+              {" "}
+              <Icon name={"collaborators"} class="size-5 md:size-6" /> Colaboradores
+            </h2>
             <ul class="flex flex-wrap gap-4">
               {team.map((member) => (
                 <li class="p-4 rounded-lg bg-secondary-25 border border-white flex items-center gap-2 mx-auto sm:mx-0">
@@ -98,7 +173,15 @@ const { title, description, images, team } = Astro.props;
 <style>
   @reference "@styles/global.css";
 
+  .sub-container {
+    @apply flex flex-col gap-2;
+  }
+
   .sub-title {
-    @apply text-lg;
+    @apply text-base md:text-xl font-semibold flex gap-2 items-center text-primary-75;
+  }
+
+  p {
+    @apply text-sm md:text-lg whitespace-pre-line;
   }
 </style>

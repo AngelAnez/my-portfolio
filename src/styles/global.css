@@ -105,19 +105,3 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-primary-25);
 }
-
-.fade-in {
-    @apply opacity-100 transition delay-150 duration-1000;
-}
-
-.fade-out {
-    @apply opacity-0 transition delay-150 duration-500;
-}
-
-.slide-in {
-    @apply translate-x-0 opacity-100 transition delay-150 duration-500;
-}
-
-.slide-out {
-    @apply translate-x-200 opacity-0 transition delay-150 duration-500;
-}
