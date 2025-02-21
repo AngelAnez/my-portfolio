@@ -150,10 +150,12 @@ const {
               {team.map((member) => (
                 <li class="p-4 rounded-lg bg-secondary-25 border border-white flex items-center gap-2 mx-auto sm:mx-0">
                   <Image
-                    inferSize
                     loading="lazy"
-                    src={member.image}
+                    src={member?.image}
                     alt={member.name}
+                    onerror={`this.onerror=null;this.src='https://eu.ui-avatars.com/api/?name=${member.name.split(" ").join("+")}&size=100'`}
+                    width={100}
+                    height={100}
                     class="size-12 rounded-full"
                   />
                   <div class="flex flex-col">

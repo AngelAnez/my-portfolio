@@ -12,29 +12,36 @@ interface Props {
 const { text, name, role, image, linkedin } = Astro.props;
 ---
 
-<article
-  class={`testimonial-card`}
-  data-animate="testimonial-card"
->
+<article class={`testimonial-card`} data-animate="testimonial-card">
   <p class="text-sm whitespace-pre-line">"{text}"</p>
   <footer class="flex gap-2 items-center">
     {
       image ? (
-        <Image src={image} alt={name} loading="lazy" class="size-12 rounded-full" inferSize />
+        <Image
+          src={image}
+          alt={name}
+          onerror={`this.onerror=null;this.src='https://eu.ui-avatars.com/api/?name=${name.split(" ").join("+")}&size=100'`}
+          loading="lazy"
+          class="size-12 rounded-full"
+          width={100}
+          height={100}
+        />
       ) : (
         <div class="bg-red-500 rounded-full shadow-md shadow-white p-3" />
       )
     }
 
     <div class="flex flex-col justify-center text-sm">
-      <a href={linkedin} class="font-semibold hover:underline transition">{name}</a>
+      <a href={linkedin} target="_blank" class="font-semibold hover:underline transition"
+        >{name}</a
+      >
       <span class="text-body-75">{role}</span>
     </div>
   </footer>
 </article>
 
 <style>
-    @reference "@styles/global.css";
+  @reference "@styles/global.css";
 
   .testimonial-card {
     -webkit-column-break-inside: avoid;
@@ -43,29 +50,3 @@ const { text, name, role, image, linkedin } = Astro.props;
     @apply flex flex-col gap-y-4 px-4 py-6 h-full justify-between bg-secondary-10 border border-primary-10 shadow-md shadow-primary-10 rounded-xl my-4;
   }
 </style>
-
-<!-- <script>
-  document.addEventListener("astro:page-load", () => {
-    const elements = document.querySelectorAll("[data-animate='testimonial-card']");
-    if (elements) {
-      const callback = (entries) => {
-        entries.forEach((entry) => {
-          const target = entry.target as HTMLElement
-          target.classList.toggle("fade-in", entry.isIntersecting)
-          target.classList.toggle("fade-out", !entry.isIntersecting)
-        });
-      };
-      const options = {
-        root: null,
-        rootMargin: "20px",
-        threshold: 0,
-      };
-      const observer = new IntersectionObserver(callback, options);
-
-      elements.forEach(element => {
-        observer.observe(element);
-
-      })
-    }
-  });
-</script> -->

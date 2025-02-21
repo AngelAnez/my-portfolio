@@ -33,7 +33,7 @@ const { project, index } = Astro.props;
         </h3>
         {
           project.github && (
-            <a href={project.github} aria-label="Enlace al Repositorio del Proyecto">
+            <a href={project.github} target="_blank" aria-label="Enlace al Repositorio del Proyecto">
               <Icon
                 name={"github"}
                 size={24}
@@ -45,7 +45,7 @@ const { project, index } = Astro.props;
 
         {
           project.demo && (
-            <a href={project.demo} aria-label="Enlace a una Demo del Proyecto">
+            <a href={project.demo} target="_blank" aria-label="Enlace a una Demo del Proyecto">
               <Icon
                 name={"web"}
                 size={24}

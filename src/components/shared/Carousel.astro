@@ -13,8 +13,7 @@ const carouselSize = images.length;
 
 <section class:list={["grid w-full"]}>
   <div class="relative overflow-hidden" aria-label="Carousel">
-    <div class="w-full aspect-video" transition:name=`${transitionName}`>
-    </div>
+    <div class="w-full aspect-video" transition:name=`${transitionName}`></div>
     {
       carouselSize > 1 && (
         <button
@@ -116,7 +115,10 @@ const carouselSize = images.length;
     const gotoNext = () =>
       current < slides.length - 1 ? gotoNum(current + 1) : gotoNum(0);
 
-    const gotoNum = (number: number) => {
+    const gotoNum = async (number: number) => {
+      button.forEach((btn) => {
+        btn.setAttribute("disabled", "");
+      });
       current = number;
       prev = current - 1;
       next = current + 1;
@@ -140,6 +142,9 @@ const carouselSize = images.length;
         slides[next].classList.add("next");
         slides[prev].classList.add("prev");
       }
+      button.forEach((btn) => {
+        setTimeout(() => btn.removeAttribute("disabled"), 500);
+      });
     };
   });
 </script>

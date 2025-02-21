@@ -1,7 +1,35 @@
 ---
+import Title from "@components/shared/Title.astro";
+import { certificateList } from "@images/index";
 import Layout from "@layout/Layout.astro";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Angel Añez | Certificaciones">
-    <h1>Certificaciones</h1>
+  <article class="w-full flex flex-col py-4 sm:px-4">
+    <Title>Certificaciones</Title>
+    <p class="my-2 text-sm md:text-base">
+      Estas certificaciones corresponden a diferentes formaciones en cursos,
+      proyectos e instituciones que he participado. Puedes hacer click sobre
+      ellas para verlas con más detalle.
+    </p>
+    <ul
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-10"
+    >
+      {
+        certificateList.reverse().map((certificate, index) => (
+          <a href={`/certifications/${certificate.title.toLowerCase().replace(" - ", " ").split(" ").join("-")}`} class="flex flex-col gap-2">
+            <Image
+              class="aspect-[4/3]"
+              src={certificate.image}
+              alt={certificate.title}
+              loading={index < 8 ? "eager" : "lazy"}
+              transition:name={certificate.title.toLowerCase().replace(" - ", " ").split(" ").join("-")}
+            />
+            <span class="text-center">{certificate.title}</span>
+          </a>
+        ))
+      }
+    </ul>
+  </article>
 </Layout>

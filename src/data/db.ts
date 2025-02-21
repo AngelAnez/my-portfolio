@@ -53,8 +53,8 @@ export const SKILLS: Skill[] = [
     type: "Backend",
   },
   {
-    name: "ExpressJS",
-    logo: skillLogos.expressjs,
+    name: "Express",
+    logo: skillLogos.express,
     type: "Backend",
   },
   {
@@ -121,13 +121,13 @@ export const SKILLS: Skill[] = [
 
 export const EXPERIENCE: Experience[] = [
   {
-    position: "Pasantías de Ingeniero de Sistemas",
+    position: "Prácticas Profesionales",
     company: "PDVSA",
     "start-date": "Abril 2023",
     "end-date": "Agosto 2023",
     "job-duty": [
       "Construí una API utilizando Python que recopila la información de los equipos monitoreados por Nagios",
-      "Desarrollé un módulo en Python para enviar notificaciones y alertas de estado de los equipos críticos a través de un bot de Telegram",
+      "Desarrollé un módulo en Nagios con Python para enviar notificaciones y alertas de estado de los equipos críticos a través de un bot de Telegram",
       "Implementé la generación reportes en PDF sobre el estado general de equipos y servicios en la interfaz web de Nagios haciendo uso de JavaScript y PHP",
     ],
   },
@@ -141,10 +141,10 @@ export const EXPERIENCE: Experience[] = [
     ],
   },
   {
-    position: "Desarrollador Web Frontend",
+    position: "Desarrollador Frontend",
     company: "No Country",
     "start-date": "Agosto 2024",
-    "end-date": "Enero 2025",
+    "end-date": "Febrero 2025",
     "job-duty": [
       "Desarrollé interfaces de usuario llamativas adaptadas al diseño responsivo haciendo uso de React y TypeScript",
       "Apliqué estilos a las vistas de las aplicaciones haciendo uso de Tailwind CSS y Material UI",
@@ -173,30 +173,29 @@ export const PROJECTS: Project[] = [
     ],
     preview: ZooSystemPreview,
     images: ZooSystemImages,
-    problem: "",
+    problem: `Desde su creación, el Zoológico Paraguaná ha llevado el control de cada visitante y los pagos de forma manual, registrando cada visita en libros y documentos que posteriormente tenían que transcribir al computador. En sus inicios, esto no era un inconveniente ya que el Zoológico contaba con mucho personal a disposición. Pero hoy en día, con un grupo de trabajo más reducido, resulta evidente la necesidad de una herramienta que permita digitalizar el proceso. Es por ello que se les ofreció una aplicación web para poder automatizar el control de la información referente a visitas y pagos, almacenando de forma segura los datos, y con nuevas funcionalidades que les permitan mejorar la toma de decisiones y reducir la carga de trabajo.`,
     result: `Para poder controlar la información de los visitantes de mejor forma, se desarrolló este sistema dividiéndolo en los siguientes módulos:
 
-    📝 Registro de Visitantes: Permite registrar cada visita conociendo la cantidad de miembros en función al género y la edad, su datos de pago, y los datos de contacto del representante familiar.
-    🔎 Historial de Visitas: Muestra una tabla que enlista todas las visitas registradas, permitiendo filtrar las búsquedas y conocer toda la información de cada visita. También, los usuarios administradores pueden editar la información de alguna visita en caso de ser necesario.
-    📊 Estadísticas Generales: Muestra a través de gráficas la cantidad de visitantes totales en función a un rango de fecha establecido. A su vez, permite descargar esta información a través de informes en formato PDF.
-    ❗️ Registro y Control de Novedades: Permite registrar novedades o acontecimientos que ocurran durante la jornada, como por ejemplo, la donación de alimento por parte de alguna familia o institución.
-    👥 Administración de Usuarios: Sección única para administradores que permite promover, modificar o eliminar usuarios del sistema.
-    ⚙️ Configuraciones: Permite ajustar ciertos parámetros del sistema, como el valor de las entradas, o especificar una tasa personalizada para el dolar.
+    📌 Registro de Visitantes: Permite registrar cada visita conociendo la cantidad de miembros en función al género y la edad, su datos de pago, y los datos de contacto del representante familiar.
+    📌 Historial de Visitas: Muestra una tabla que enlista todas las visitas registradas, permitiendo filtrar las búsquedas y conocer toda la información de cada visita. También, los usuarios administradores pueden editar la información de alguna visita en caso de ser necesario.
+    📌 Estadísticas Generales: Muestra a través de gráficas la cantidad de visitantes totales en función a un rango de fecha establecido. A su vez, permite descargar esta información a través de informes en formato PDF.
+    📌 Registro y Control de Novedades: Permite registrar novedades o acontecimientos que ocurran durante la jornada, como por ejemplo, la donación de alimento por parte de alguna familia o institución.
+    📌 Administración de Usuarios: Sección exclusiva para administradores que permite promover, modificar o eliminar usuarios del sistema.
+    📌 Configuraciones: Permite ajustar ciertos parámetros del sistema, como el valor de las entradas, o especificar una tasa personalizada para el dolar.
     
     Gracias a estos módulos, el Sistema de Registro de Visitantes del Zoológico Paraguaná pudo:
     
-    - Mejorar la calidad de los datos, evitando redundancia y facilitando la búsqueda
-    - Reducir costos en papel, impresoras, archivadores y demás herramientas para almacenar la información
-    - Obtener en tiempo real el valor del dolar y el cálculo del precio a pagar por cada visita
-    - Mejorar la toma de decisiones gracias a las estadísticas y los reportes
-    - Reducir el impacto ambiental causado por la producción de papel`,
+    ✅ Mejorar la calidad de los datos, evitando redundancia y facilitando la búsqueda
+    ✅ Reducir costos en papel, impresoras, archivadores y demás herramientas para almacenar la información
+    ✅ Obtener en tiempo real el valor del dolar y el cálculo del precio a pagar por cada visita
+    ✅ Mejorar la toma de decisiones gracias a las estadísticas y los reportes
+    ✅ Reducir el impacto ambiental causado por la producción de papel`,
     github: "https://github.com/AngelAnez/registro-zoo-paraguana",
   },
   {
     title: "Portafolio Personal",
     description:
       "Mi sitio web personal enfocado en mi camino como desarrollador de software, donde se puede visualizar mi experiencia laboral, proyectos, recomendaciones de otros compañeros, certificaciones y más.",
-    /* "Este proyecto permitió prácticar el uso de Astro para generar sitios estáticos, crear componentes reutilizables, y prácticar los estilos con TailwindCSS." */
     stack: ["Astro", "TailwindCSS"],
     preview: MyPortfolioPreview,
     images: MyPortfolioImages,
@@ -209,12 +208,12 @@ export const PROJECTS: Project[] = [
     title: "Emoticare",
     description:
       "Plataforma de telemedicina que permite a los usuarios agendar citas médicas con especialistas de la salud mental y llevar a cabo estas consultas a través de videollamada.",
-    /* "En este proyecto, trabajé en la parte del Frontend y pude prácticar mis conocimientos en React y TypeScript, así como el trabajo en equipo a través de ramas de Git y GitHub" */
     stack: ["TypeScript", "React", "TailwindCSS", "Git", "Github"],
     preview: EmoticarePreview,
     images: EmoticareImages,
     github: "https://github.com/AngelAnez/c20-41-n-node-react",
     demo: "https://emoticare-demo.onrender.com",
+    role: "Frontend Developer",
     team: [
       {
         name: "Rafael García",
@@ -237,7 +236,7 @@ export const PROJECTS: Project[] = [
       {
         name: "Erich Armijo",
         image:
-          "https://media.licdn.com/dms/image/v2/D4D35AQGLURTtAMjNfg/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1721225957335?e=1740668400&v=beta&t=u0Pt20umeFUDFRdqlwhHf3jN_Cj0m8qPeoC-Q3SDowU",
+          "https://media.licdn.com/dms/image/v2/D4E03AQHriuo-3XZ53w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1710788903755?e=2147483647&v=beta&t=QfDDr7palgejA-pZdJXjFGxZn1KApqj91X6jgsM60QM",
         role: "Backend Developer",
       },
     ],
@@ -246,12 +245,12 @@ export const PROJECTS: Project[] = [
     title: "Rentify",
     description:
       "Aplicación web que simplifica el proceso de alquiler de propiedades, conectando a propietarios e inquilinos en un entorno intuitivo y seguro. Tanto propietarios como inquilinos pueden gestionar sus propiedades y búsquedas de manera eficiente.",
-    /* "En este proyecto, trabajé con Material UI como librería de componentens en conjunto con React y TypeScript para desarrollar las interfaces de forma más óptima", */
     stack: ["TypeScript", "React", "Material UI", "Git", "Github"],
     preview: RentifyPreview,
     images: RentifyImages,
     github: "https://github.com/AngelAnez/S18-23-n-java-react",
     demo: "https://rentify-demo.onrender.com/",
+    role: "Frontend Developer",
     team: [
       {
         name: "Triana Devia",
@@ -292,25 +291,25 @@ export const PROJECTS: Project[] = [
       {
         name: "Manuel Filgueira Marin",
         image:
-          "https://media.licdn.com/dms/image/v2/D4E35AQGsr5BoU_nqXA/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1730480297649?e=1740664800&v=beta&t=hWuRTMhQW3g2vm8TqF5YW9cocSh4CLKqO0alWo738DI",
+          "https://media.licdn.com/dms/image/v2/C4E03AQHR_GR1yH6hDw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516952538346?e=2147483647&v=beta&t=49L8OBhhZEYLNVYxECbL3vmumlnZEMrs1LtNxOiSqZE",
         role: "Frontend Developer",
       },
       {
         name: "Gabriel Romero",
         image:
-          "https://media.licdn.com/dms/image/v2/D4D35AQG4vY3Y37HRIA/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1697292176024?e=1740664800&v=beta&t=pWouayhTIrWxtdZNoAeM0Z0KYCz9a6T-HGP33syMhx8",
+          "https://media.licdn.com/dms/image/v2/D4D03AQFhS9COR0kI5w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1697292174367?e=2147483647&v=beta&t=WM8gOL5qzpud_JFGc7TvZUnSl7SWTEXGPoKHf78fJyw",
         role: "Backend Developer",
       },
       {
         name: "Oliver Barahona",
         image:
-          "https://media.licdn.com/dms/image/v2/D4D35AQG-8JuMZq_Vpw/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1698553819121?e=1740664800&v=beta&t=7fNyhxqWaXCHt95Akjaz8i0Y1l18D2eiXbCS2fgQwEQ",
+          "https://media.licdn.com/dms/image/v2/D4D03AQF3hQ-D_gfPSQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1698553817424?e=2147483647&v=beta&t=1dN-beZCdDXZjDdCkMNUU8yjYN5fTfSKrtrhgW7HdtE",
         role: "Backend Developer",
       },
       {
         name: "Matias Badano",
         image:
-          "https://media.licdn.com/dms/image/v2/D4D35AQG_70VHivqFSw/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1691640364890?e=1740664800&v=beta&t=Tmr8K5c8hJ-ud-MZCgh-SzAo1tdLTX7mGbcPrB98UOM",
+          "https://media.licdn.com/dms/image/v2/D4D03AQHO7GgAzxp7nw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691640362479?e=2147483647&v=beta&t=qMXWnr1fN5C5ouOBemsx-MywK_25_AkpxA_NSqcPUDM",
         role: "Backend Developer",
       },
       {
@@ -328,7 +327,7 @@ export const PROJECTS: Project[] = [
       {
         name: "Nestor Rubiano",
         image:
-          "https://media.licdn.com/dms/image/v2/D4D35AQGxHP3zM8VbYA/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1683771078424?e=1740664800&v=beta&t=9Bb-3ZGfpRbXDU7jWVBgakCdgLc4fgazdeDEEi5qtD4",
+          "https://media.licdn.com/dms/image/v2/D4D03AQGJqgTp8sCeBQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1683770616612?e=2147483647&v=beta&t=HO64oSeFbTFSE9D_fNrVo9gkjkeO7pGHLIxYpR7aIrQ",
         role: "UX/UI Designer",
       },
     ],
@@ -337,24 +336,33 @@ export const PROJECTS: Project[] = [
     title: "Financia.al",
     description:
       "Financia.al es una plataforma web fintech que busca conectar a inversores interesados en financiar la venta de terrenos en distintos países de Latinoamérica con potenciales compradores, ofreciendo una experiencia simplificada y segura para todos los usuarios.",
-    /* "En este proyecto, trabajé con Material UI como librería de componentens en conjunto con React y TypeScript para desarrollar las interfaces de forma más óptima", */
     stack: ["TypeScript", "React", "TailwindCSS", "Zustand", "Git", "Github"],
     preview: FinanciaAlPreview,
     images: FinanciaAlImages,
     role: "Frontend Developer",
     github: "https://github.com/AngelAnez/equipo-h3-18-proptech",
     demo: "https://equipo-h3-18-proptech-desarrollo.onrender.com/",
+    result: `Tras 5 semanas de mucho esfuerzo y trabajo, se pudo presentar de forma satisfactoria el MVP de Financia.al en la presentación final para el cliente. Este MVP contó con las siguientes funcionalidades principales:
+
+    📌 Gestión de Financiamiento: Herramientas que permite a los usuarios definir términos de pago, tasas de interés y plazos personalizados.
+    📌 Simulador de Crédito: Un simulador interactivo que permite a los compradores e inversores simular diferentes escenarios de crédito y visualizar los resultados, estimando el monto de las cuotas mensuales basadas en el capital solicitado, tasa de interés y plazo.
+    📌 Evaluación de Riesgo Crediticio: Herramienta que permite evaluar el riesgo crediticio de los usuarios compradores, brindando transparencia para los inversores.
+    📌 Autenticación de Usuarios: Proceso de verificación riguroso que asegura la identidad de todos los usuarios para garantizar la confidencialidad y seguridad.
+    📌 Panel de Control de Usuarios: Muestra un resumen de las finanzas realizadas por el usuario. A los compradores les muestra la información de sus préstamos y cuotas a pagar. Mientras que a los inversores les muestra un resumen completo de su inversión y las ganancias por mes.
+    📌 Chatbot de Atención al Cliente: Chatbot que responde a preguntas frecuentes sobre la plataforma.
+    
+    Finalmente, quedamos como equipo finalista de la Hackaton, obteniendo el 3er lugar.`,
     team: [
       {
         name: "Abel Montes Vega",
         image:
-          "https://media.licdn.com/dms/image/v2/D4D35AQFpwnZVlIzYxw/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1735909161044?e=1740157200&v=beta&t=EG5OhNAQy5LlnN7GqbqyVgmpTX0VIkP_SBRKM7BA3Fo",
+          "https://media.licdn.com/dms/image/v2/D4D03AQGUZl1TBu_bgw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1724166166352?e=2147483647&v=beta&t=m2WM9Gyx7jNeSMc5zD9i1AIiSS3KIzMuqWkDD7VpVB4",
         role: "Backend Developer",
       },
       {
         name: "Deivison Jimenez",
         image:
-          "https://media.licdn.com/dms/image/v2/D4E35AQEBCtuhlg1X3A/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1728668908296?e=1740157200&v=beta&t=hvzwCJQekqwpIsOEMuGFL5b5D9p9MKk2ycXs5hFgJJQ",
+          "https://media.licdn.com/dms/image/v2/C5103AQFCoHZnMOd7Pw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1517534765267?e=2147483647&v=beta&t=DYzzwwSrFoKIiJwPPPiNaKRr6_4lxCceZsJ7udk67yU",
         role: "Backend Developer",
       },
       {
@@ -366,7 +374,7 @@ export const PROJECTS: Project[] = [
       {
         name: "Natalia Caniza",
         image:
-          "https://media.licdn.com/dms/image/v2/D4D35AQEJ9iUZBjVKVQ/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1738527190006?e=1740157200&v=beta&t=lyQvPjphwdR2gmSiQ2G7Qma5NZm1863COeAfv-3baTg",
+          "https://media.licdn.com/dms/image/v2/D4D03AQHH3kTDeVbXrg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1710448319684?e=2147483647&v=beta&t=eO58dKeX0OOrxbCNsPqYeLhijvhuudkR65nujrHlTew",
         role: "UX/UI Designer",
       },
     ],
@@ -375,7 +383,6 @@ export const PROJECTS: Project[] = [
     title: "SubastArt",
     description:
       "Plataforma de subastas online, donde los usuarios pueden publicar y vender obras de arte o participar en emocionantes subastas en vivo para conseguir obras exclusivas.",
-    /* "En este proyecto, pude aprender y practicar la conexión con WebSockets con React y JavaScript, así como mejorar en el uso de las View Transitions.", */
     stack: [
       "JavaScript",
       "React",
@@ -389,6 +396,14 @@ export const PROJECTS: Project[] = [
     images: SubastArtImages,
     role: `Durante este proyecto me desempeñé como Frontend Developer. Al ser un equipo tan pequeño, la toma de decisiones para el Frontend recayó principalemente en Leandro y en mí, con sugerencias ocasionales de nuestros otros compañeros. Sin embargo, la buena comunicación que tuvimos Leandro y yo revisando lo que el otro hacía y sugiriendo mejoras en donde fuera necesario nos permitió distribuir y desarrollar nuestras tareas sin muchas complicaciones. A su vez, mi participación en las reuniones con mis compañeros en el Backend me permitió comentar sugerencias y puntos de mejora en la API que nos ayudó a solucionar problemas que fueron surgiendo para así poder terminar de desarrollar el MVP.`,
     demo: "https://s20-04-n-frontend.onrender.com/",
+    problem: "Como parte de la simulación laboral de No Country, se buscaba desarrollar un MVP de una aplicación web para resolver una problemática. En este caso, en el equipo surgió la idea de una plataforma de subastas para artistas. Hoy en día, existen muchas plataformas para comprar o vender productos. Sin embargo, hace falta una plataforma donde los artistas y amantes del arte puedan vender sus mejores obras a través de subastas en vivo, donde sean los propios compradores los que le pongan precio a sus obras, logrando así crear un espacio para que los amantes del arte puedan apreciar, competir y conocer el valor de sus obras. De allí nació SubasArt.",
+    result: ` Tras el período de 5 semanas de la simulación laboral, se pudo desarrollar de forma satisfactoria un MVP de una plataforma de subastas de obra de arte que cuenta con las siguientes funcionalidades:
+
+    📌 Registro y Autenticación: Registro de usuarios interesados en subastar sus obras o participar en las subastas de la plataforma.
+    📌 Gestor de Subastas: Los usuarios pueden subir sus obras para crear subastas, editarlas, eliminarlas o ver los detalles de las mismas.
+    📌 Explorar Subastas: Búsqueda de las subastas publicadas por todos los usuarios de la plataforma con filtros por nombre, categoría, precio o estado.
+    📌 Seguimiento de Obras Favoritas: Los usuarios pueden agregar obras en favoritos para llevar un mayor seguimiento de su estado. Y pueden ver sus obras favoritas desde su perfil.
+    📌 Sistema de Pujas en Vivo: Interfaz para participar en subastas en tiempo real, pujando por montos personalizados, con información del ranking actual para que en todo momento se pueda conocer el lider de la subasta y el tiempo restante de la subasta.`,
     team: [
       {
         name: "Leon Lederhos",
@@ -440,7 +455,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     name: "Deivison Jimenez",
     image:
-      "https://media.licdn.com/dms/image/v2/D4E35AQEBCtuhlg1X3A/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1728668908296?e=1740157200&v=beta&t=hvzwCJQekqwpIsOEMuGFL5b5D9p9MKk2ycXs5hFgJJQ",
+      "https://media.licdn.com/dms/image/v2/C5103AQFCoHZnMOd7Pw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1517534765267?e=2147483647&v=beta&t=DYzzwwSrFoKIiJwPPPiNaKRr6_4lxCceZsJ7udk67yU",
     role: "Backend Developer",
     text: `Me es grato poder realizar esta recomendacion a Angel Durante el proyecto de No-Contry, ha sido una persona muy dedicada, de gran valor para el equipo, desde el Frontend a Realizado un Gran trabajo lleno de mucho apoyo, aporte al proyecto, es una persona Proactiva, reciliente, y demostrado gran compromiso al proyecto`,
     linkedin: "https://www.linkedin.com/in/deivison-jimenez",
@@ -456,7 +471,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     name: "Natalia Caniza",
     image:
-      "https://media.licdn.com/dms/image/v2/D4D35AQEJ9iUZBjVKVQ/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1738527190006?e=1740157200&v=beta&t=lyQvPjphwdR2gmSiQ2G7Qma5NZm1863COeAfv-3baTg",
+      "https://media.licdn.com/dms/image/v2/D4D03AQHH3kTDeVbXrg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1710448319684?e=2147483647&v=beta&t=eO58dKeX0OOrxbCNsPqYeLhijvhuudkR65nujrHlTew",
     role: "UX/UI Designer",
     text: `Tuve la suerte de trabajar con Angel en un proyecto fintech que fue todo un desafío y no podría haber pedido un mejor compañero de equipo. Como programador front-end, su conocimiento técnico y atención a los detalles son impresionantes.
 Sus aportes fueron clave para el éxito del proyecto y me ayudaron muchísimo a desempeñar mejor mi rol, ya que siempre estaba dispuesto a compartir su conocimiento y colaborar con soluciones creativas.
@@ -466,7 +481,7 @@ Sin dudas, trabajar con él fue una experiencia muy enriquecedora y sé que cual
   {
     name: "Abel Montes Vega",
     image:
-      "https://media.licdn.com/dms/image/v2/D4D35AQFpwnZVlIzYxw/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1735909161044?e=1740157200&v=beta&t=EG5OhNAQy5LlnN7GqbqyVgmpTX0VIkP_SBRKM7BA3Fo",
+      "https://media.licdn.com/dms/image/v2/D4D03AQGUZl1TBu_bgw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1724166166352?e=2147483647&v=beta&t=m2WM9Gyx7jNeSMc5zD9i1AIiSS3KIzMuqWkDD7VpVB4",
     role: "Backend Developer",
     text: `Trabajé junto a Ángel durante una hackathon, donde demostró su capacidad como desarrollador frontend. Supo trabajar de manera eficiente a la par con el backend, logrando una integración completa del proyecto. Además, tuvimos una comunicación fluida que facilitó el desarrollo del trabajo en equipo. Su proactividad y eficacia fueron claves para alcanzar los objetivos del proyecto.`,
     linkedin: "https://www.linkedin.com/in/abel-montes-vega",
