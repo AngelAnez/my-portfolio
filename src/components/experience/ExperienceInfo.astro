@@ -2,16 +2,28 @@
 const { exp } = Astro.props;
 ---
 
-<li class="flex flex-col gap-y-2 border-s-2 border-primary p-5 bg-secondary-10 rounded-r-lg text-body">
-  <section class="flex justify-between">
-    <h3 class="text-lg md:text-xl font-bold">{exp.position}</h2>
-    <h3 class="text-lg md:text-xl font-semibold">{exp.company}</h3>
+<li
+  class="flex flex-col md:grid md:grid-cols-8 gap-x-2 gap-y-4 md:p-5 rounded-r-lg text-body"
+>
+  <section class="flex flex-col col-span-3">
+    <h2 class="text-base md:text-lg font-semibold text-primary">{exp.position}</h2>
+    <h3 class="text-base md:text-lg font-semibold">{exp.company}</h3>
+    <span class="z-0 text-sm text-body-75 mt-1"
+      >{exp["start-date"]} {exp["end-date"] != "" && `- ${exp["end-date"]}`}
+    </span>
   </section>
-  <span class="z-0 text-base md:text-lg text-body-75"
-    >{exp["start-date"]} {exp["end-date"] != "" && `- ${exp["end-date"]}`}
-  </span
-  >
-  <ul class="ps-5">
-    {exp["job-duty"].map((duty) => <li class="text-sm md:text-base max-w-[80ch] mb-3 list-disc	">{duty}</li>)}
-  </ul>
+  <section class="flex flex-col gap-y-3 col-span-5">
+    <p class="text-body-90 text-sm md:text-base">
+      {exp["job-duty"]}
+    </p>
+    <ul class="flex flex-wrap gap-x-4 gap-y-3">
+      {
+        exp.stack.map((tech: string) => (
+          <li class="text-xs lg:text-sm px-2 py-1 rounded-lg border border-white shadow shadow-body-50 select-none">
+            {tech}
+          </li>
+        ))
+      }
+    </ul>
+  </section>
 </li>

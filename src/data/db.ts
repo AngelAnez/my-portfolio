@@ -121,38 +121,29 @@ export const SKILLS: Skill[] = [
 
 export const EXPERIENCE: Experience[] = [
   {
-    position: "Prácticas Profesionales",
-    company: "PDVSA",
+    position: "Pasante",
+    company: "Petróleos de Venezuela, S.A.",
     "start-date": "Abril 2023",
     "end-date": "Agosto 2023",
-    "job-duty": [
-      "Construí una API utilizando Python que recopila la información de los equipos monitoreados por Nagios",
-      "Desarrollé un módulo en Nagios con Python para enviar notificaciones y alertas de estado de los equipos críticos a través de un bot de Telegram",
-      "Implementé la generación reportes en PDF sobre el estado general de equipos y servicios en la interfaz web de Nagios haciendo uso de JavaScript y PHP",
-    ],
+    "job-duty": "Implementé un nuevo módulo para el sistema Nagios de la empresa que automatiza el envío de alertas de estado de los equipos y servicios a través de Telegram. Y a su vez, puede generar reportes diarios sobre el estado general de los equipos y servicios monitoreados por el sistema. Este módulo logró optimizar el tiempo de detección de fallas de los equipos en un 80%, mejorando así la toma de decisiones en la Superintendencia.",
+    stack: ["JavaScript", "PHP", "Python", "Nagios", "Telegram"],
   },
   {
-    position: "Desarrollador Web Freelance",
+    position: "Freelancer",
     company: "Zoológico Paraguaná",
     "start-date": "Octubre 2023",
     "end-date": "Marzo 2024",
-    "job-duty": [
-      "Desarrollé un sistema para digitalizar el registro y control de visitantes del Zoológico",
-    ],
+    "job-duty":
+      "Construí un sistema para el control y registro de los visitantes del Zoológico Paraguaná para digitalizar la información, sustituir los registros en papel, generar reportes y gráficas automáticos, y mejorar la persistencia y seguridad de los datos, logrando optimizar tiempos de trabajo, facilitar el análisis de la información y sobretodo, obtener un nivel de satisfacción de los trabajadores con la nueva herramienta del 100%.",
+    stack: ["HTML", "CSS", "JavaScript", "Boostsrap", "NodeJS", "Express", "EJS", "MySQL"],
   },
   {
-    position: "Desarrollador Frontend",
+    position: "Desarrollador Web Frontend",
     company: "No Country",
     "start-date": "Agosto 2024",
     "end-date": "Febrero 2025",
-    "job-duty": [
-      "Desarrollé interfaces de usuario llamativas adaptadas al diseño responsivo haciendo uso de React y TypeScript",
-      "Apliqué estilos a las vistas de las aplicaciones haciendo uso de Tailwind CSS y Material UI",
-      "Implementé formularios haciendo uso de React Hook Form para proporcionarle al usuario mensajes de validación personalizados",
-      "Utilicé React Router para el manejo de las vistas a través de rutas en una SPA",
-      "Integré servicios y APIs externas haciendo uso de Axios",
-      "Colaboré con otros Frontend, Backend, Diseñadores y Project Manager para la distribución de tareas que nos permitiera llevar a cabo los proyectos en los plazos establecidos",
-    ],
+    "job-duty": "Colaboré en 3 proyectos en equipo y una Hackathon donde pude aprender sobre los distintos pasos y roles necesarios para la creación de un producto de software, participar y liderar la toma de decisiones dentro de un equipo de desarrollo y conocer distintas tecnologías y metodologías de trabajo, logrando como resultado desarrollar 3 MVPs innovadores de forma satisfactoria y conseguir el 3er lugar en una Hackathon Fintech.",
+    stack: ["JavaScript", "TypeScript", "React", "TailwindCSS"],
   },
 ];
 
@@ -396,7 +387,8 @@ export const PROJECTS: Project[] = [
     images: SubastArtImages,
     role: `Durante este proyecto me desempeñé como Frontend Developer. Al ser un equipo tan pequeño, la toma de decisiones para el Frontend recayó principalemente en Leandro y en mí, con sugerencias ocasionales de nuestros otros compañeros. Sin embargo, la buena comunicación que tuvimos Leandro y yo revisando lo que el otro hacía y sugiriendo mejoras en donde fuera necesario nos permitió distribuir y desarrollar nuestras tareas sin muchas complicaciones. A su vez, mi participación en las reuniones con mis compañeros en el Backend me permitió comentar sugerencias y puntos de mejora en la API que nos ayudó a solucionar problemas que fueron surgiendo para así poder terminar de desarrollar el MVP.`,
     demo: "https://s20-04-n-frontend.onrender.com/",
-    problem: "Como parte de la simulación laboral de No Country, se buscaba desarrollar un MVP de una aplicación web para resolver una problemática. En este caso, en el equipo surgió la idea de una plataforma de subastas para artistas. Hoy en día, existen muchas plataformas para comprar o vender productos. Sin embargo, hace falta una plataforma donde los artistas y amantes del arte puedan vender sus mejores obras a través de subastas en vivo, donde sean los propios compradores los que le pongan precio a sus obras, logrando así crear un espacio para que los amantes del arte puedan apreciar, competir y conocer el valor de sus obras. De allí nació SubasArt.",
+    problem:
+      "Como parte de la simulación laboral de No Country, se buscaba desarrollar un MVP de una aplicación web para resolver una problemática. En este caso, en el equipo surgió la idea de una plataforma de subastas para artistas. Hoy en día, existen muchas plataformas para comprar o vender productos. Sin embargo, hace falta una plataforma donde los artistas y amantes del arte puedan vender sus mejores obras a través de subastas en vivo, donde sean los propios compradores los que le pongan precio a sus obras, logrando así crear un espacio para que los amantes del arte puedan apreciar, competir y conocer el valor de sus obras. De allí nació SubasArt.",
     result: ` Tras el período de 5 semanas de la simulación laboral, se pudo desarrollar de forma satisfactoria un MVP de una plataforma de subastas de obra de arte que cuenta con las siguientes funcionalidades:
 
     📌 Registro y Autenticación: Registro de usuarios interesados en subastar sus obras o participar en las subastas de la plataforma.

@@ -12,7 +12,7 @@ interface Props {
 const { text, name, role, image, linkedin } = Astro.props;
 ---
 
-<article class={`testimonial-card`} data-animate="testimonial-card">
+<article class={`testimonial-card`}>
   <p class="text-sm whitespace-pre-line">"{text}"</p>
   <footer class="flex gap-2 items-center">
     {
@@ -22,7 +22,7 @@ const { text, name, role, image, linkedin } = Astro.props;
           alt={name}
           onerror={`this.onerror=null;this.src='https://eu.ui-avatars.com/api/?name=${name.split(" ").join("+")}&size=100'`}
           loading="lazy"
-          class="size-12 rounded-full"
+          class="size-10 md:size-12 rounded-full"
           width={100}
           height={100}
         />
@@ -47,6 +47,6 @@ const { text, name, role, image, linkedin } = Astro.props;
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid-column;
-    @apply flex flex-col gap-y-4 px-4 py-6 h-full justify-between bg-secondary-10 border border-primary-10 shadow-md shadow-primary-10 rounded-xl my-4;
+    @apply flex flex-col gap-y-4 px-4 py-4 md:py-6 h-full justify-between bg-secondary-10 border border-primary-10 shadow-md shadow-primary-10 rounded-xl my-4;
   }
 </style>

@@ -9,7 +9,8 @@ interface Experience {
   company: string;
   "start-date": string;
   "end-date": string;
-  "job-duty": string[];
+  "job-duty": string;
+  stack: string[];
 }
 
 interface Project {
