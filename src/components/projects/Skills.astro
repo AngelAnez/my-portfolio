@@ -3,7 +3,9 @@ import Title from "@components/shared/Title.astro";
 import { SKILLS as skills } from "@data/db";
 import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
-const skillsByType = Object.groupBy(skills, (skill) => skill.type);
+const FrontendSkills = skills.filter(skill => skill.type === "Frontend")
+const BackendSkills = skills.filter(skill => skill.type === "Backend")
+const DevelopmentSkills = skills.filter(skill => skill.type === "Desarrollo")
 ---
 
 <section id="skills" class="py-4 md:px-4">
@@ -16,7 +18,7 @@ const skillsByType = Object.groupBy(skills, (skill) => skill.type);
     <h2 class="skill-type"><Icon name={"frontend"} size={20} /> Frontend</h2>
     <ul class="skill-list">
       {
-        skillsByType.Frontend.map((skill) => (
+        FrontendSkills.map((skill) => (
           <li class="flex flex-col gap-1 mx-auto hover:scale-125 transition-transform select-none duration-300">
             <Image
               class="w-full max-w-[50px] aspect-square mx-auto"
@@ -32,7 +34,7 @@ const skillsByType = Object.groupBy(skills, (skill) => skill.type);
     <h2 class="skill-type"><Icon name={"backend"} size={20} /> Backend</h2>
     <ul class="skill-list">
       {
-        skillsByType.Backend.map((skill) => (
+        BackendSkills.map((skill) => (
           <li class="flex flex-col gap-1 mx-auto hover:scale-125 transition-transform select-none duration-300">
             <Image
               class="w-full max-w-[40px] aspect-square mx-auto"
@@ -50,7 +52,7 @@ const skillsByType = Object.groupBy(skills, (skill) => skill.type);
     </h2>
     <ul class="skill-list">
       {
-        skillsByType.Desarrollo.map((skill) => (
+        DevelopmentSkills.map((skill) => (
           <li class="flex flex-col gap-1 mx-auto hover:scale-125 transition-transform select-none duration-300">
             <Image
               class="w-full max-w-[40px] aspect-square mx-auto"
