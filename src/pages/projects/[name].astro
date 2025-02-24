@@ -119,7 +119,7 @@ const {
           {
             demo && (
               <a
-                class="bg-primary-50 hover:bg-primary-25 active:scale-95 transition px-2 py-2 text-sm md:text-base rounded-lg w-fit flex gap-2 items-center border border-body-50"
+                class="bg-primary-50 hover:bg-primary-25 active:scale-95 transition px-2 py-2 text-sm md:text-base rounded-lg w-fit flex gap-2 items-center border border-body-50 select-none"
                 href={demo}
               >
                 <Icon name={"web"} size={24} /> Sitio Web
@@ -129,7 +129,7 @@ const {
           {
             github && (
               <a
-                class="bg-gray-900 hover:bg-gray-950 active:scale-95 transition px-2 py-2 text-sm md:text-base rounded-lg w-fit flex gap-2 items-center border border-body-50"
+                class="bg-gray-900 hover:bg-gray-950 active:scale-95 transition px-2 py-2 text-sm md:text-base rounded-lg w-fit flex gap-2 items-center border border-body-50 select-none"
                 href={github}
               >
                 <Icon name={"github"} size={24} /> Repositorio
@@ -156,7 +156,7 @@ const {
                     onerror={`this.onerror=null;this.src='https://eu.ui-avatars.com/api/?name=${member.name.split(" ").join("+")}&size=100'`}
                     width={100}
                     height={100}
-                    class="size-12 rounded-full"
+                    class="size-12 rounded-full select-none"
                   />
                   <div class="flex flex-col">
                     <span class="font-semibold text-sm">{member.name}</span>

@@ -11,7 +11,7 @@ const { images, transitionName } = Astro.props;
 const carouselSize = images.length;
 ---
 
-<section class:list={["grid w-full"]}>
+<section class="grid w-full select-none">
   <div class="relative overflow-hidden" aria-label="Carousel">
     <div class="w-full aspect-video" transition:name=`${transitionName}`></div>
     {

@@ -26,8 +26,14 @@ import ZooSystem2 from "@images/projects/zoo-system2.webp";
 import ZooSystem3 from "@images/projects/zoo-system3.webp";
 import ZooSystem4 from "@images/projects/zoo-system4.webp";
 import ZooSystem5 from "@images/projects/zoo-system5.webp";
-import MyPortfolio from "@images/projects/my-portfolio-card.webp";
-import MyPortfolio1 from "@images/projects/my-portfolio1.webp";
+import MyPortfolio from "@images/projects/myportfolio-card.webp";
+import MyPortfolio1 from "@images/projects/myportfolio1.webp";
+import MyPortfolio2 from "@images/projects/myportfolio2.webp";
+import MyPortfolio3 from "@images/projects/myportfolio3.webp";
+import MyPortfolio4 from "@images/projects/myportfolio4.webp";
+import MyPortfolio5 from "@images/projects/myportfolio5.webp";
+import MyPortfolio6 from "@images/projects/myportfolio6.webp";
+import MyPortfolio7 from "@images/projects/myportfolio7.webp";
 import Emoticare from "@images/projects/emoticare-card.webp";
 import Emoticare1 from "@images/projects/emoticare1.webp";
 import Emoticare2 from "@images/projects/emoticare2.webp";
@@ -38,6 +44,15 @@ import Emoticare6 from "@images/projects/emoticare6.webp";
 import Rentify from "@images/projects/rentify-card.webp";
 import Rentify1 from "@images/projects/rentify1.webp";
 import Rentify2 from "@images/projects/rentify2.webp";
+import Rentify3 from "@images/projects/rentify3.webp";
+import Rentify4 from "@images/projects/rentify4.webp";
+import Rentify5 from "@images/projects/rentify5.webp";
+import Rentify6 from "@images/projects/rentify6.webp";
+import Rentify7 from "@images/projects/rentify7.webp";
+import Rentify8 from "@images/projects/rentify8.webp";
+import Rentify9 from "@images/projects/rentify9.webp";
+import Rentify10 from "@images/projects/rentify10.webp";
+import Rentify11 from "@images/projects/rentify11.webp";
 import FinanciaAl from "@images/projects/financiaal-card.webp";
 import FinanciaAl1 from "@images/projects/financiaal1.webp";
 import FinanciaAl2 from "@images/projects/financiaal2.webp";
@@ -117,7 +132,15 @@ export const ZooSystemImages = [
 ];
 
 export const MyPortfolioPreview = MyPortfolio;
-export const MyPortfolioImages = [MyPortfolio1];
+export const MyPortfolioImages = [
+  MyPortfolio1,
+  MyPortfolio2,
+  MyPortfolio3,
+  MyPortfolio4,
+  MyPortfolio5,
+  MyPortfolio6,
+  MyPortfolio7,
+];
 
 export const EmoticarePreview = Emoticare;
 export const EmoticareImages = [
@@ -130,10 +153,28 @@ export const EmoticareImages = [
 ];
 
 export const RentifyPreview = Rentify;
-export const RentifyImages = [Rentify1, Rentify2];
+export const RentifyImages = [
+  Rentify1,
+  Rentify2,
+  Rentify3,
+  Rentify4,
+  Rentify5,
+  Rentify6,
+  Rentify7,
+  Rentify8,
+  Rentify9,
+  Rentify10,
+  Rentify11,
+];
 
 export const FinanciaAlPreview = FinanciaAl;
-export const FinanciaAlImages = [FinanciaAl1,FinanciaAl2,FinanciaAl3,FinanciaAl4,FinanciaAl5];
+export const FinanciaAlImages = [
+  FinanciaAl1,
+  FinanciaAl2,
+  FinanciaAl3,
+  FinanciaAl4,
+  FinanciaAl5,
+];
 
 export const SubastArtPreview = SubastArt;
 export const SubastArtImages = [
@@ -153,7 +194,7 @@ export const certificateList = [
   {
     image: PlatziInglesA1Presente,
     title:
-      "Platzi - Curso de Inglés Básico A1, Prersente Simple y Vocabulario Común",
+      "Platzi - Curso de Inglés Básico A1, Presente Simple y Vocabulario Común",
   },
   {
     image: PlatziInglesA1Descripciones,

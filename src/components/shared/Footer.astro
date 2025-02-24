@@ -12,17 +12,17 @@ const { EMAIL, LINKEDIN, GITHUB } = MYLINKS;
     <div class="flex flex-col items-start gap-y-2">
       <h3 class="text-xl font-semibold mb-2">Contacto</h3>
 
-        <a href={GITHUB} class="contact-badge bg-gray-900">
-          <Icon name={"github"} size={18} /> AngelAnez
+        <a href={GITHUB} class="flex gap-2 items-center hover:underline">
+          <Icon name={"github"} size={20} /> AngelAnez
         </a>
-        <a href={LINKEDIN} class="contact-badge bg-sky-600">
-          <Icon name={"linkedin"} size={18} /> Angel Añez
+        <a href={LINKEDIN} class="flex gap-2 items-center hover:underline">
+          <Icon name={"linkedin"} size={20} /> Angel Añez
         </a>
         <a
           href={`mailto:${EMAIL}`}
-          class="contact-badge border-black bg-slate-100 text-black"
+          class="flex gap-2 items-center hover:underline"
         >
-          <Icon name={"mail"} size={18} /> angdavid2910@gmail.com
+          <Icon name={"mail"} size={20} /> angdavid2910@gmail.com
         </a>
     </div>
 

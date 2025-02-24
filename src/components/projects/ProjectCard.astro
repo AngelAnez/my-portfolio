@@ -17,7 +17,7 @@ const { project, index } = Astro.props;
 >
   <figure class="flex items-center justify-center w-full md:max-w-[50%]">
     <Image
-      class="rounded-lg shadow-md shadow-body-25"
+      class="rounded-lg shadow-md shadow-body-25 select-none"
       loading={index < 2 ? "eager" : "lazy" }
       src={project.preview}
       alt={project.title}
@@ -72,38 +72,12 @@ const { project, index } = Astro.props;
     <footer class="flex justify-end gap-4 mt-4">
       <a
         href={`/projects/${project.title.toLowerCase().split(" ").join("-")}`}
-        class="text-body w-fit pb-1 text-sm text-center flex gap-1 items-center justify-center border-b border-transparent hover:border-body transition"
-        title="Ver una demostración del proyecto"
-        aria-label="Ver una demostración del proyecto"
+        class="text-body w-fit pb-1 text-sm text-center flex gap-1 items-center justify-center border-b border-transparent hover:border-body transition select-none"
+        title="Conocer más sobre el proyecto"
+        aria-label="Conocer más sobre el proyecto"
       >
         Conocer más <Icon name="arrow-right" size={20} />
       </a>
     </footer>
   </section>
 </article>
-
-<!-- <script>
-  document.addEventListener("astro:page-load", () => {
-    const cards = document.querySelectorAll("[data-animate='project-card']");
-    if (cards) {
-      const callback = (entries) => {
-        entries.forEach((entry) => {
-          const target = entry.target as HTMLElement
-          target.classList.toggle("md:slide-in", entry.isIntersecting)
-          target.classList.toggle("md:slide-out", !entry.isIntersecting)
-        });
-      };
-      const options = {
-        root: null,
-        rootMargin: "10px",
-        threshold: 0.10,
-      };
-      const observer = new IntersectionObserver(callback, options);
-
-      cards.forEach(card => {
-        observer.observe(card);
-
-      })
-    }
-  });
-</script> -->
