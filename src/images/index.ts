@@ -18,6 +18,9 @@ import AstroLogo from "@images/logos/astro.svg";
 import DockerLogo from "@images/logos/docker.svg";
 import MaterialUILogo from "@images/logos/materialui.svg";
 import ZustandLogo from "@images/logos/zustand.svg";
+import NestJSLogo from "@images/logos/nestjs.svg";
+import PostgreSQLogo from "@images/logos/postgresql.svg";
+import PostmanLogo from "@images/logos/postman.svg";
 
 /* Projects */
 import ZooSystem from "@images/projects/zoo-system-card.webp";
@@ -66,6 +69,15 @@ import SubastArt3 from "@images/projects/subastart3.webp";
 import SubastArt4 from "@images/projects/subastart4.webp";
 import SubastArt5 from "@images/projects/subastart5.webp";
 import SubastArt6 from "@images/projects/subastart6.webp";
+import MatchProject from "@images/projects/matchproject-card.webp"
+import MatchProject1 from "@images/projects/matchproject1.webp"
+import MatchProject2 from "@images/projects/matchproject2.webp"
+import MatchProject3 from "@images/projects/matchproject3.webp"
+import MatchProject4 from "@images/projects/matchproject4.webp"
+import MatchProject5 from "@images/projects/matchproject5.webp"
+import MatchProject6 from "@images/projects/matchproject6.webp"
+import MatchProject7 from "@images/projects/matchproject7.webp"
+import MatchProject8 from "@images/projects/matchproject8.webp"
 
 /* Certificates */
 import PlatziJavaScriptBasico from "@images/certificates/Platzi-Curso-Básico-de-JavaScript.jpg";
@@ -120,6 +132,9 @@ export const skillLogos = {
   docker: DockerLogo,
   materialui: MaterialUILogo,
   zustand: ZustandLogo,
+  nestjs: NestJSLogo,
+  postgresql: PostgreSQLogo,
+  postman: PostmanLogo,
 };
 
 export const ZooSystemPreview = ZooSystem;
@@ -184,6 +199,18 @@ export const SubastArtImages = [
   SubastArt4,
   SubastArt5,
   SubastArt6,
+];
+
+export const MatchProjectPreview = MatchProject;
+export const MatchProjectImages = [
+  MatchProject1,
+  MatchProject2,
+  MatchProject3,
+  MatchProject4,
+  MatchProject5,
+  MatchProject6,
+  MatchProject7,
+  MatchProject8,
 ];
 
 export const certificateList = [

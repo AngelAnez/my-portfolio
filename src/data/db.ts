@@ -3,6 +3,8 @@ import {
   EmoticarePreview,
   FinanciaAlImages,
   FinanciaAlPreview,
+  MatchProjectImages,
+  MatchProjectPreview,
   MyPortfolioImages,
   MyPortfolioPreview,
   RentifyImages,
@@ -15,7 +17,7 @@ import {
 } from "@images/index";
 
 export const MYLINKS = {
-  CV: "https://drive.google.com/file/d/11AuJz6Ynx3-jA2eRa4pC4dJ0ihehHtor/view?usp=sharing",
+  CV: "https://drive.google.com/file/d/1EfwVYqGXbR2egVHb8OSwXYSn-JWYdKNu/view?usp=sharing",
   LINKEDIN: "https://www.linkedin.com/in/angel-anez/",
   GITHUB: "https://github.com/AngelAnez",
   EMAIL: "angdavid2910@gmail.com",
@@ -25,7 +27,7 @@ export const ABOUTME: string = `Oriundo de Venezuela, descubrí mi pasión por l
 
 Como Freelance empecé en 2024 ayudando al zoológico de mi ciudad con el desarrollo de una aplicación web para el registro y gestión de visitantes, logrando digitalizar todos sus procesos y brindando nuevas herramientas para mejorar la toma de decisiones. Posteriormente, he estado creando MVPs en equipo dentro de la empresa No Country, a través de sus simulaciones laborales y Hackathones.  En estos proyectos, desempeñé el rol de Desarrollador Web Frontend, donde pude poner en práctica todas mis horas de estudio y coincidir con grandes profesionales del rubro, logrando presentar con éxito cada MVP realizado y consiguiendo el 3er lugar en un Hackathon.
 
-Deseo seguir conociendo más de este mundo, y es por esa razón que busco demostrar todo ese conocimiento práctico que adquiero cada día para contribuir en la creación de productos de software capaces de conectar con las emociones en los usuarios, de la misma forma que la programación ha conectado conmigo.`
+Deseo seguir conociendo más de este mundo, y es por esa razón que busco demostrar todo ese conocimiento práctico que adquiero cada día para contribuir en la creación de productos de software capaces de conectar con las emociones en los usuarios, de la misma forma que la programación ha conectado conmigo.`;
 
 export const SKILLS: Skill[] = [
   {
@@ -64,6 +66,11 @@ export const SKILLS: Skill[] = [
     type: "Backend",
   },
   {
+    name: "NestJS",
+    logo: skillLogos.nestjs,
+    type: "Backend",
+  },
+  {
     name: "PHP",
     logo: skillLogos.php,
     type: "Backend",
@@ -79,6 +86,11 @@ export const SKILLS: Skill[] = [
     type: "Backend",
   },
   {
+    name: "PostgreSQL",
+    logo: skillLogos.postgresql,
+    type: "Backend",
+  },
+  {
     name: "Git",
     logo: skillLogos.git,
     type: "Desarrollo",
@@ -86,6 +98,11 @@ export const SKILLS: Skill[] = [
   {
     name: "GitHub",
     logo: skillLogos.github,
+    type: "Desarrollo",
+  },
+  {
+    name: "Postman",
+    logo: skillLogos.postman,
     type: "Desarrollo",
   },
   {
@@ -377,7 +394,8 @@ export const PROJECTS: Project[] = [
     role: "Dentro de este equipo me desempeñé como Frontend Developer. Al contar con una diseñadora UX/UI en el equipo, mi principal tarea fue maquetar los wireframes e implementar las funcionalidades básicas. Pero además, al ser una Hackathon, fueron necesarias varias reuniones para discutir y organizar como iba a funcionar el financiamiento y la inversión en la plataforma. Y debo destacar que el equipo siempre se mantuvo muy bien comunicado, donde todos tuvieron la oportunidad de sugerir y aportar ideas para hacer el mejor proyecto. Por mi parte, entre mis tareas como Frontend estuvieron la maquetación de todo el gran formulario para la solicitud de financiamiento, el simulador del comprador, y algunas vistas del administrador. Adicionalmente, como Emanuel y yo siempre estábamos comunicándonos, nos apoyabamos mútuamente con algún detalle que se nos hubiera pasado por alto. Por otro lado, también pude apoyar a Natalia con ciertas ideas de diseño para la plataforma, que fueron siempre bien recibidas por ella. Mientras que Abel y Deivison fueron la base del Backend a los cuales recurrí cuando tenía problemas para conectarme con la API y que también escuchaban mis propuestas para los endpoints. Definitivamente, un equipo excelente y muy profesional.",
     github: "https://github.com/AngelAnez/equipo-h3-18-proptech",
     demo: "https://equipo-h3-18-proptech-desarrollo.onrender.com/",
-    problem: "Este proyecto corresponde a una Hackathon de No Country, por lo tanto, la idea y temática fue designada por un cliente. Este cliente deseaba el desarrollo de una plataforma web fintech que pudiera ofrecer opciones de crédito accesible a las familias, para optar por la posibilidad de adquirir un terreno donde construir su hogar. Y que al mismo tiempo, proporcionara a quienes tienen capacidad de ahorro una forma de invertir sus fondos en la financiación de terrenos. Para ello, la plataforma debía ofrecer herramientas de análisis de inversión y métricas detalladas para compradores e inversores, permitiendoles evaluar el rendimiento y riesgo de sus decisiones. A partir de esa idea y más especificaciones del cliente, nuestro equipo desarrolló Financia.al.",
+    problem:
+      "Este proyecto corresponde a una Hackathon de No Country, por lo tanto, la idea y temática fue designada por un cliente. Este cliente deseaba el desarrollo de una plataforma web fintech que pudiera ofrecer opciones de crédito accesible a las familias, para optar por la posibilidad de adquirir un terreno donde construir su hogar. Y que al mismo tiempo, proporcionara a quienes tienen capacidad de ahorro una forma de invertir sus fondos en la financiación de terrenos. Para ello, la plataforma debía ofrecer herramientas de análisis de inversión y métricas detalladas para compradores e inversores, permitiendoles evaluar el rendimiento y riesgo de sus decisiones. A partir de esa idea y más especificaciones del cliente, nuestro equipo desarrolló Financia.al.",
     result: `Tras 5 semanas de mucho esfuerzo y trabajo, se pudo presentar de forma satisfactoria el MVP de Financia.al en la presentación final para el cliente. Este MVP contó con las siguientes funcionalidades principales:
 
     📌 Gestión de Financiamiento: Herramientas que permite a los usuarios definir términos de pago, tasas de interés y plazos personalizados.
@@ -461,6 +479,24 @@ export const PROJECTS: Project[] = [
         role: "Frontend Developer",
       },
     ],
+  },
+  {
+    title: "Match Project",
+    description:
+      "Plataforma web para la fundación Patas Pirque que permite conectar a mascotas rescatadas con personas interesadas en la adopción de mascotas. A través de una interfaz amigable, se busca que los usuarios logren hacer match con las mascotas para concretar adopciones responsables.",
+    preview: MatchProjectPreview,
+    images: MatchProjectImages,
+    stack: ["TypeScript", "NestJS", "PostgreSQL", "Git", "GitHub"],
+    role: "Backend Developer",
+    result: `Cumpliendo con los requerimientos propuestos por la stakeholder y en vista de la problemática, se desarrolló la plataforma web con las siguientes funcionalidades:
+
+    📌 Autenticación de Usuarios por Rol: La plataforma permite que puedan iniciar sesión tanto usuarios adoptantes como administradores, restrigiendo las funcionalidades y vistas en función a cada rol.
+    📌 Registro de Adoptantes: Registro de usuarios interesados en adoptar mascotas. Este registro consiste en un gran formulario que los usuarios deben llenar para que el sistema pueda recomendarle mascotas en función a sus condiciones en el hogar y preferencias.
+    📌 Visualización de Mascotas Compatibles: Los usuarios adoptantes pueden observar un listado de mascotas que posee la fundación disponibles para adoptar y que son compatibles con su estilo de vida. Cada usuario puede conocer más información de la mascota y hacer match con la que más le llame la atención.
+    📌 Seguimiento de Solicitud: Una vez los usuarios adoptantes hacen match con una mascota, pueden observar el estado de su solicitud de adopción en la plataforma, de forma que puedan conocer si los administradores han visto su solicitud y planean comunicarse con el usuario, o si ya fue aprobada o rechazada.
+    📌 Listado de Usuarios: Permite al administrador observar todos los usuarios adoptantes registrados en la plataforma. Cuenta con acciones para ver toda la información del adoptante o eliminarlo del sistema.
+    📌 Listado de Mascotas: Permite al administrador gestionar todas las mascotas en la plataforma. Cuenta con acciones para agregar mascotas, editar sus datos, visualizar su información completa o eliminarlas del sistema.
+    📌 Listado de Matches: Permite al administrador realizar un seguimiento de todos los matches que se han producido en la plataforma. Cuenta con acciones para visualizar el usuario y mascota asociado a cada match y para aprobar, rechazar o informar al usuario que su solicitud de adopción está en proceso.`,
   },
 ];
 
