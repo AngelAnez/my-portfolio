@@ -69,15 +69,15 @@ import SubastArt3 from "@images/projects/subastart3.webp";
 import SubastArt4 from "@images/projects/subastart4.webp";
 import SubastArt5 from "@images/projects/subastart5.webp";
 import SubastArt6 from "@images/projects/subastart6.webp";
-import MatchProject from "@images/projects/matchproject-card.webp"
-import MatchProject1 from "@images/projects/matchproject1.webp"
-import MatchProject2 from "@images/projects/matchproject2.webp"
-import MatchProject3 from "@images/projects/matchproject3.webp"
-import MatchProject4 from "@images/projects/matchproject4.webp"
-import MatchProject5 from "@images/projects/matchproject5.webp"
-import MatchProject6 from "@images/projects/matchproject6.webp"
-import MatchProject7 from "@images/projects/matchproject7.webp"
-import MatchProject8 from "@images/projects/matchproject8.webp"
+import MatchProject from "@images/projects/matchproject-card.webp";
+import MatchProject1 from "@images/projects/matchproject1.webp";
+import MatchProject2 from "@images/projects/matchproject2.webp";
+import MatchProject3 from "@images/projects/matchproject3.webp";
+import MatchProject4 from "@images/projects/matchproject4.webp";
+import MatchProject5 from "@images/projects/matchproject5.webp";
+import MatchProject6 from "@images/projects/matchproject6.webp";
+import MatchProject7 from "@images/projects/matchproject7.webp";
+import MatchProject8 from "@images/projects/matchproject8.webp";
 
 /* Certificates */
 import PlatziJavaScriptBasico from "@images/certificates/Platzi-Curso-Básico-de-JavaScript.jpg";
@@ -111,6 +111,7 @@ import NCOctober2024 from "@images/certificates/No-Country-Octubre-2024.webp";
 import NCNovember2024 from "@images/certificates/No-Country-Noviembre-2024.webp";
 import NCDecember2024 from "@images/certificates/No-Country-Diciembre-2024.webp";
 import NCJanuary2025 from "@images/certificates/No-Country-Enero-2025.webp";
+import FTGMatchProject from "@images/certificates/Foo-Talent-Group-Match-Project.webp";
 
 export const skillLogos = {
   html: HTMLLogo,
@@ -343,4 +344,8 @@ export const certificateList = [
     title: "No Country - Hackathon Diciembre 2024",
   },
   { image: NCJanuary2025, title: "No Country - Simulación Laboral Enero 2025" },
+  {
+    image: FTGMatchProject,
+    title: "Foo Talent Group - Match Project (Patas Pirque)",
+  },
 ];

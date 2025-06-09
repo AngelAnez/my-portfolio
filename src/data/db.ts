@@ -491,11 +491,17 @@ export const PROJECTS: Project[] = [
     result: `Cumpliendo con los requerimientos propuestos por la stakeholder y en vista de la problemática, se desarrolló la plataforma web con las siguientes funcionalidades:
 
     📌 Autenticación de Usuarios por Rol: La plataforma permite que puedan iniciar sesión tanto usuarios adoptantes como administradores, restrigiendo las funcionalidades y vistas en función a cada rol.
+
     📌 Registro de Adoptantes: Registro de usuarios interesados en adoptar mascotas. Este registro consiste en un gran formulario que los usuarios deben llenar para que el sistema pueda recomendarle mascotas en función a sus condiciones en el hogar y preferencias.
+
     📌 Visualización de Mascotas Compatibles: Los usuarios adoptantes pueden observar un listado de mascotas que posee la fundación disponibles para adoptar y que son compatibles con su estilo de vida. Cada usuario puede conocer más información de la mascota y hacer match con la que más le llame la atención.
+
     📌 Seguimiento de Solicitud: Una vez los usuarios adoptantes hacen match con una mascota, pueden observar el estado de su solicitud de adopción en la plataforma, de forma que puedan conocer si los administradores han visto su solicitud y planean comunicarse con el usuario, o si ya fue aprobada o rechazada.
+
     📌 Listado de Usuarios: Permite al administrador observar todos los usuarios adoptantes registrados en la plataforma. Cuenta con acciones para ver toda la información del adoptante o eliminarlo del sistema.
+
     📌 Listado de Mascotas: Permite al administrador gestionar todas las mascotas en la plataforma. Cuenta con acciones para agregar mascotas, editar sus datos, visualizar su información completa o eliminarlas del sistema.
+    
     📌 Listado de Matches: Permite al administrador realizar un seguimiento de todos los matches que se han producido en la plataforma. Cuenta con acciones para visualizar el usuario y mascota asociado a cada match y para aprobar, rechazar o informar al usuario que su solicitud de adopción está en proceso.`,
   },
 ];
