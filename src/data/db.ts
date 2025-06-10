@@ -14,7 +14,7 @@ import {
   SubastArtPreview,
   ZooSystemImages,
   ZooSystemPreview,
-} from "@images/index";
+} from "@data/images";
 
 export const MYLINKS = {
   CV: "https://drive.google.com/file/d/1EfwVYqGXbR2egVHb8OSwXYSn-JWYdKNu/view?usp=sharing",
