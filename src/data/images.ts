@@ -113,6 +113,247 @@ import NCDecember2024 from "@images/certificates/No-Country-Diciembre-2024.webp"
 import NCJanuary2025 from "@images/certificates/No-Country-Enero-2025.webp";
 import FTGMatchProject from "@images/certificates/Foo-Talent-Group-Match-Project.webp";
 
+/* Collaborators */
+
+export const collaboratorList = [
+  {
+    name: "Rafael García",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E03AQFVSVk3IBYBqQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1701292502757?e=2147483647&v=beta&t=X6W89l1PrZOO1gQTcZlOYVJbgkacoozYcZnP0_Bi6d8",
+    role: "Frontend Developer",
+  },
+  {
+    name: "Victor Hugo Murcio Mansilla",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E03AQEf6kV2efVT5Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1718381042944?e=2147483647&v=beta&t=PKxsXGby5V3dNYuPEJhnbKh9yykc1rejVw37gG-z2R8",
+    role: "Frontend Developer",
+  },
+  {
+    name: "Marcos Román Derbas",
+    image: null,
+    role: "Backend Developer",
+  },
+  {
+    name: "Erich Armijo",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E03AQHriuo-3XZ53w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1710788903755?e=2147483647&v=beta&t=QfDDr7palgejA-pZdJXjFGxZn1KApqj91X6jgsM60QM",
+    role: "Backend Developer",
+  },
+  {
+    name: "Triana Devia",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQHjUgeOwmUtdw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1728234699056?e=2147483647&v=beta&t=58YCaSTI9sw20MZ2AgjAydgE_N3jVLjl3CUXSuD8ZUc",
+    role: "Project Manager",
+  },
+  {
+    name: "Kenti Gabriel Antezana",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQHHR31kfQEIIg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1671717691480?e=2147483647&v=beta&t=4saNIPf39HERPJu2WEqLxeggj3542wKIyOP6-hK8Mhk",
+    role: "Backend Developer",
+  },
+  {
+    name: "Rafael Enrique Cortez",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQHKzfD3rGfKsA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1730396990188?e=2147483647&v=beta&t=_YNeM2H3iJvwktRMFcMRRx5fWRsjeJ6_RXGCT009xtA",
+    role: "Backend Developer",
+  },
+  {
+    name: "Jhosep Tinta",
+    image:
+      "https://media.licdn.com/dms/image/v2/C4E03AQHBJTn1qiruaQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1568034056095?e=2147483647&v=beta&t=KhRZHrD1n56PmMxdU2QxQ7iKJypo3ICqI22Dac0nvkg",
+    role: "Frontend Developer",
+  },
+  {
+    name: "Edgar Camberos",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQG94zsQ9s5T7g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1720605912276?e=2147483647&v=beta&t=CT558C0aeO80zyasVLa6S-6pR1_b9sVgd82MFwiTsEo",
+    role: "Backend Developer",
+  },
+  {
+    name: "William Polanco",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQHRaNYyyrpbRQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1716217605329?e=2147483647&v=beta&t=dO-ZOSz9tLiR0kK6CGQifW5uNzx-u67877UbKWEGgHQ",
+    role: "Frontend Developer",
+  },
+  {
+    name: "Manuel Filgueira Marin",
+    image:
+      "https://media.licdn.com/dms/image/v2/C4E03AQHR_GR1yH6hDw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516952538346?e=2147483647&v=beta&t=49L8OBhhZEYLNVYxECbL3vmumlnZEMrs1LtNxOiSqZE",
+    role: "Frontend Developer",
+  },
+  {
+    name: "Gabriel Romero",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQFhS9COR0kI5w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1697292174367?e=2147483647&v=beta&t=WM8gOL5qzpud_JFGc7TvZUnSl7SWTEXGPoKHf78fJyw",
+    role: "Backend Developer",
+  },
+  {
+    name: "Oliver Barahona",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQF3hQ-D_gfPSQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1698553817424?e=2147483647&v=beta&t=1dN-beZCdDXZjDdCkMNUU8yjYN5fTfSKrtrhgW7HdtE",
+    role: "Backend Developer",
+  },
+  {
+    name: "Matias Badano",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQHO7GgAzxp7nw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691640362479?e=2147483647&v=beta&t=qMXWnr1fN5C5ouOBemsx-MywK_25_AkpxA_NSqcPUDM",
+    role: "Backend Developer",
+  },
+  {
+    name: "Diego Agustin Jorges",
+    image:
+      "https://media.licdn.com/dms/image/v2/C4D03AQEO3-HilvXyUw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1660006874063?e=2147483647&v=beta&t=_IRWLJ7H2ViBdmFcurMAFbytoD8aOxVCgme-yKgp6Xk",
+    role: "Backend Developer",
+  },
+  {
+    name: "Joaquín Herrera",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQEv7Xyp6KkP7A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1709747738298?e=2147483647&v=beta&t=pddN4VBIfMqXYkr_E2Y8G-xTP9vvipdv2lWSvCj0z04",
+    role: "Frontend Developer",
+  },
+  {
+    name: "Nestor Rubiano",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQGJqgTp8sCeBQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1683770616612?e=2147483647&v=beta&t=HO64oSeFbTFSE9D_fNrVo9gkjkeO7pGHLIxYpR7aIrQ",
+    role: "UX/UI Designer",
+  },
+  {
+    name: "Abel Montes Vega",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQGUZl1TBu_bgw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1724166166352?e=2147483647&v=beta&t=m2WM9Gyx7jNeSMc5zD9i1AIiSS3KIzMuqWkDD7VpVB4",
+    role: "Backend Developer",
+  },
+  {
+    name: "Deivison Jimenez",
+    image:
+      "https://media.licdn.com/dms/image/v2/C5103AQFCoHZnMOd7Pw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1517534765267?e=2147483647&v=beta&t=DYzzwwSrFoKIiJwPPPiNaKRr6_4lxCceZsJ7udk67yU",
+    role: "Backend Developer",
+  },
+  {
+    name: "Emanuel Capo",
+    image:
+      "https://media.licdn.com/dms/image/v2/C4D03AQE8oaeOOU4fdA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1655414851207?e=2147483647&v=beta&t=fc17oSIdlRNDyNkDJ7j9Xr8YygbKJbQL0PY7X3k0fWQ",
+    role: "Frontend Developer",
+  },
+  {
+    name: "Natalia Caniza",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQHH3kTDeVbXrg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1710448319684?e=2147483647&v=beta&t=eO58dKeX0OOrxbCNsPqYeLhijvhuudkR65nujrHlTew",
+    role: "UX/UI Designer",
+  },
+  {
+    name: "Leon Lederhos",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQFil0rLZ-WdEw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1727624547253?e=2147483647&v=beta&t=8Cgonyr-MIotHx95wh53qvn7RTXQpVvnGDbT05plehc",
+    role: "Backend Developer",
+  },
+  {
+    name: "Brian Diaz",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQEfI4-56WowZg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1666802397424?e=2147483647&v=beta&t=7stWCI9tzHbdIb6wxk1Yc_VTHwtGPqoyTKLS8AvCtIc",
+    role: "Backend Developer",
+  },
+  {
+    name: "Leandro Martínez",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQGu2097XB4VfQ/profile-displayphoto-shrink_100_100/B4DZUBmoqBGcAU-/0/1739488660896?e=2147483647&v=beta&t=rsYMB64_iilixx18vUzH-HK4xUoweDjU_e4EPYpuj2M",
+    role: "Frontend Developer",
+  },
+  {
+    name: "Diana Mayorga",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E03AQFBi1cQ8uIddQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1729606584699?e=2147483647&v=beta&t=Hpp-rWDGTNi8RgqYPy0fYAHkWb8LiyYjF3xLPANaRTk",
+    role: "Backend Developer",
+  },
+  {
+    name: "Miriam Bautista Torres",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E03AQFx-ayljJCWCg/profile-displayphoto-shrink_100_100/B4EZWycAGUHcAU-/0/1742455440810?e=2147483647&v=beta&t=TnjzXGHBs0bZIqpVeDaXtNWPtL5aRzr2KEoilxjl5tM",
+    role: "Backend Developer",
+  },
+  {
+    name: "Sonny Pimentel",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E03AQEK6EIgMSJt_w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1722959386224?e=1755129600&v=beta&t=XDrHM2QhxK_oA_56USnC-6B25uoRgyd1RsKh7hIjtXg",
+    role: "Backend Developer",
+  },
+  {
+    name: "Ricardo Ortega",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E03AQE8FYZ8hao0AQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1712439643385?e=1755129600&v=beta&t=RnALVd4PLTTluhRFBUeTnyDwVKH0RL1SJsYq48U3rf0",
+    role: "Backend Developer",
+  },
+  {
+    name: "Christian Martínez",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E03AQGVgPmjVb3T0g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1710289958208?e=2147483647&v=beta&t=oEgC5cNO3w8p405ouFECR26m39txnMrofPDy0lTlZko",
+    role: "Frontend Developer",
+  },
+  {
+    name: "Eduardo Ismael Fuentes",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQEpUeXgJanQCw/profile-displayphoto-shrink_100_100/B4DZbekbraH8AU-/0/1747490815187?e=2147483647&v=beta&t=0yrOTb7j5qlg_T2CBJkhC-wkzeiCOabQcXHrLR8oLgQ",
+    role: "Frontend Developer",
+  },
+  {
+    name: "Luis Angel Quispe",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E03AQHSel9eLVJZJg/profile-displayphoto-shrink_100_100/B4EZZmGIZLHMAY-/0/1745469605873?e=2147483647&v=beta&t=R9mrD_JxQd-G4ZHxzCOA1Sl8AmjYspyhj-DE-IqjsQ0",
+    role: "Frontend Developer",
+  },
+  {
+    name: "Ingrid Paola Chaves",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E35AQFhzKMeLQouYg/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1725575362695?e=1750208400&v=beta&t=LieEGCKMnNx-2rSxIbpRI6_s5XPrv-9ZudHGyipTDi0",
+    role: "Frontend Developer",
+  },
+  {
+    name: "Carolina Castillo",
+    image: null,
+    role: "Frontend Developer",
+  },
+  {
+    name: "Anabel Somoza",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQFkn2HnI4UH3g/profile-displayphoto-shrink_100_100/B4DZWwC6jPHYAY-/0/1742415311477?e=2147483647&v=beta&t=qhPhg3599_mq9jXuSY0ENGq3JjtfE0KkRskykHAnA7o",
+    role: "UX/UI Designer",
+  },
+  {
+    name: "Daniela López Carrillo",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E03AQH_7i-wn1AZNw/profile-displayphoto-shrink_100_100/B4EZOZutIGHEAU-/0/1733450978560?e=2147483647&v=beta&t=nhI08GLJ3KA9aagrqZXXdRhiAzO9wavxdVsDJ9T5vqQ",
+    role: "UX/UI Designer",
+  },
+  {
+    name: "Nayely Rodriguez Aucassi",
+    image: null,
+    role: "UX/UI Designer",
+  },
+  {
+    name: "Camila Schamun",
+    image:
+      "https://media.licdn.com/dms/image/v2/C4D03AQH1AeVDX4mIHg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1648047562860?e=2147483647&v=beta&t=tQqDipwKSsuG1rAemzq7Ou2jhOJCEoCy-ANPsoBS1Hw",
+    role: "UX/UI Designer",
+  },
+  {
+    name: "Feliangela García",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E35AQGfH-KwDz8GAg/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1638842509124?e=1750208400&v=beta&t=2oA2R_UQntp4u9-S2eSxH7JqvkT2y-0Cuyrgp2H29OA",
+    role: "UX/UI Designer",
+  },
+  {
+    name: "Claudia Campos",
+    image: null,
+    role: "Project Manager",
+  },
+  {
+    name: "Juan Francisco Aguilar",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E03AQFMgQoAFxLx5A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725566476225?e=1755129600&v=beta&t=B2wR12fMXhHTUBxas_AykmtuZ2zCslppXJKTLf8nZlk",
+    role: "Analista Funcional",
+  },
+];
+
 export const skillLogos = {
   html: HTMLLogo,
   css: CSSLogo,

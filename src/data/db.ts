@@ -1,4 +1,5 @@
 import {
+  collaboratorList,
   EmoticareImages,
   EmoticarePreview,
   FinanciaAlImages,
@@ -257,32 +258,13 @@ export const PROJECTS: Project[] = [
     📌 Registrar Médicos: Los administradores cuentan con un formulario donde pueden registrar nuevos médicos en la plataforma, creandoles un perfil único a cada uno.
     📌 Listado de Médicos: Los administradores pueden observar todos los médicos de la plataforma, así como su especialidad.`,
     role: "Empecé mis simulaciones laborales como Frontend Developer. Como fue la primera simulación laboral de todos, al principio fue dificil comunicarnos eficientemente para aprovechar el tiempo de mejor manera. Sin embargo, con el pasar de las semanas, la comunicación fue fluyendo naturalmente y así todos pudimos desenvolvernos en nuestras tareas. En esta ocasión, entre mis compañeros Frontend, yo era el que más experiencia tenía, por lo que pude ayudarlos y guíarlos para desarrollar entre todos interfaces de usuario agradables y prácticas. Y con el apoyo de mis compañeros Backend, pudimos dar grandes avances en el MVP y presentar un producto inicial que sirvió para aprender mucho sobre el trabajo en equipo y la organización del tiempo.",
-    team: [
-      {
-        name: "Rafael García",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4E03AQFVSVk3IBYBqQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1701292502757?e=1745452800&v=beta&t=o83Le-xWCs6wNIGBMtyqYxid8tC5Ld7UsjwLCyjbngM",
-        role: "Frontend Developer",
-      },
-      {
-        name: "Victor Hugo Murcio Mansilla",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4E03AQEf6kV2efVT5Q/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1718381042944?e=1745452800&v=beta&t=xRIXojfGliw-wTedne2y4ce_wNrWHja3jJQwxpdw2zY",
-        role: "Frontend Developer",
-      },
-      {
-        name: "Marcos Román Derbas",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4D03AQESqRO2WAvLBw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1680135799486?e=1745452800&v=beta&t=NFgHe3uAa37iFUuVr8LUEqcvBI_N5_mrKo9zp8Al9O8",
-        role: "Backend Developer",
-      },
-      {
-        name: "Erich Armijo",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4E03AQHriuo-3XZ53w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1710788903755?e=2147483647&v=beta&t=QfDDr7palgejA-pZdJXjFGxZn1KApqj91X6jgsM60QM",
-        role: "Backend Developer",
-      },
-    ],
+    team: collaboratorList.filter(
+      (collaborator) =>
+        collaborator.name.match("Rafael García") ||
+        collaborator.name.match("Victor Hugo Murcio Mansilla") ||
+        collaborator.name.match("Marcos Román Derbas") ||
+        collaborator.name.match("Erich Armijo")
+    ),
   },
   {
     title: "Rentify",
@@ -303,86 +285,22 @@ export const PROJECTS: Project[] = [
     📌 Propiedad Detallada: Cada usuario puede conocer muchos detalles de cada propiedad para tomar mejores decisiones. Entre estos detalles están la ubicación geográfica, el número y tipo de habitaciones, antigüedad, y demás características especiales de cada propiedad.
     📌 Contacto Directo: Cada usuario registrado puede conocer la información de contacto del dueño de cada propiedad, para entablar negociaciones directas sin intermediarios.`,
     role: "En este proyecto ocupé el rol de Frontend Developer. A pesar de ser un grupo numeroso y que contabamos con una excelente Project Manager, la organización en el Frontend fue un poco complicada debido al horario de trabajo de muchos compañeros. Por esa razón, tomé un rol de líder entre los Frontend para poder organizar y distribuir las tareas que surgían en las charlas con el Backend y nuestra Project Manager. Entre mis tareas de Frontend, me encargué principalmente del registro de propiedades y del filtro de búsqueda, ya que eran las tareas en las que había que tener más comunicación con el Backend para consumir los endpoints y mostrar la información necesaria en cada sección. Pero en general, la buena organización y proactividad del equipo permitió que el proyecto fuera realizado satisfactoriamente.",
-    team: [
-      {
-        name: "Triana Devia",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4D03AQHjUgeOwmUtdw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1728234699056?e=1744848000&v=beta&t=Gv3aN3FdnaP05iCof7_Oc0BHTRI07SgftQE25f7B41A",
-        role: "Project Manager",
-      },
-      {
-        name: "Kenti Gabriel Antezana",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4D03AQHHR31kfQEIIg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1671717691480?e=1744848000&v=beta&t=tAi7bi67swIAz6O8scN2qri_r_BG6cR2TBxIi5whB4o",
-        role: "Backend Developer",
-      },
-      {
-        name: "Rafael Enrique Cortez",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4D03AQHKzfD3rGfKsA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1730396990188?e=1744848000&v=beta&t=6MDUk2smiETgvDRqeR1aHIe2fj-kQfkq64kYxelFDNI",
-        role: "Backend Developer",
-      },
-      {
-        name: "Jhosep Tinta",
-        image:
-          "https://media.licdn.com/dms/image/v2/C4E03AQHBJTn1qiruaQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1568034056095?e=1745452800&v=beta&t=6saawt9PVnKPoF1jYOTOeWkFkCKydfIqqx3GzoDI60E",
-        role: "Frontend Developer",
-      },
-      {
-        name: "Edgar Camberos",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4D03AQG94zsQ9s5T7g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1720605912276?e=1745452800&v=beta&t=Rmew_gYmfD1IqdABogZoxZsXn1WI13j85z2fUV3j6IM",
-        role: "Backend Developer",
-      },
-      {
-        name: "William Polanco",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4D03AQHRaNYyyrpbRQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1716217605329?e=1745452800&v=beta&t=rlT_UsG0Xo3VZKWEc2gINyQaKJI_lpz3YCBH_pxxfpk",
-        role: "Frontend Developer",
-      },
-      {
-        name: "Manuel Filgueira Marin",
-        image:
-          "https://media.licdn.com/dms/image/v2/C4E03AQHR_GR1yH6hDw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516952538346?e=2147483647&v=beta&t=49L8OBhhZEYLNVYxECbL3vmumlnZEMrs1LtNxOiSqZE",
-        role: "Frontend Developer",
-      },
-      {
-        name: "Gabriel Romero",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4D03AQFhS9COR0kI5w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1697292174367?e=2147483647&v=beta&t=WM8gOL5qzpud_JFGc7TvZUnSl7SWTEXGPoKHf78fJyw",
-        role: "Backend Developer",
-      },
-      {
-        name: "Oliver Barahona",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4D03AQF3hQ-D_gfPSQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1698553817424?e=2147483647&v=beta&t=1dN-beZCdDXZjDdCkMNUU8yjYN5fTfSKrtrhgW7HdtE",
-        role: "Backend Developer",
-      },
-      {
-        name: "Matias Badano",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4D03AQHO7GgAzxp7nw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691640362479?e=2147483647&v=beta&t=qMXWnr1fN5C5ouOBemsx-MywK_25_AkpxA_NSqcPUDM",
-        role: "Backend Developer",
-      },
-      {
-        name: "Diego Agustin Jorges",
-        image:
-          "https://media.licdn.com/dms/image/v2/C4D03AQEO3-HilvXyUw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1660006874063?e=1745452800&v=beta&t=YFkrpyTWFBWyV41-kCVmLvAy3Ugd4YhWpZTfZguTSXE",
-        role: "Backend Developer",
-      },
-      {
-        name: "Joaquín Herrera",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4D03AQEv7Xyp6KkP7A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1709747738298?e=1745452800&v=beta&t=j9Z3ev65CaS7JAZM2NW6efvSUvqKdoQgW3pwEPWPaaY",
-        role: "Frontend Developer",
-      },
-      {
-        name: "Nestor Rubiano",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4D03AQGJqgTp8sCeBQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1683770616612?e=2147483647&v=beta&t=HO64oSeFbTFSE9D_fNrVo9gkjkeO7pGHLIxYpR7aIrQ",
-        role: "UX/UI Designer",
-      },
-    ],
+    team: collaboratorList.filter(
+      (collaborator) =>
+        collaborator.name.match("Triana Devia") ||
+        collaborator.name.match("Kenti Gabriel Antezana") ||
+        collaborator.name.match("Rafael Enrique Cortez") ||
+        collaborator.name.match("Jhosep Tinta") ||
+        collaborator.name.match("Edgar Camberos") ||
+        collaborator.name.match("William Polanco") ||
+        collaborator.name.match("Manuel Filgueira Marin") ||
+        collaborator.name.match("Gabriel Romero") ||
+        collaborator.name.match("Oliver Barahona") ||
+        collaborator.name.match("Matias Badano") ||
+        collaborator.name.match("Diego Agustin Jorges") ||
+        collaborator.name.match("Joaquín Herrera") ||
+        collaborator.name.match("Nestor Rubiano")
+    ),
   },
   {
     title: "Financia.al",
@@ -406,32 +324,13 @@ export const PROJECTS: Project[] = [
     📌 Chatbot de Atención al Cliente: Chatbot que responde a preguntas frecuentes sobre la plataforma.
     
     Finalmente, quedamos como equipo finalista de la Hackaton, obteniendo el 3er lugar.`,
-    team: [
-      {
-        name: "Abel Montes Vega",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4D03AQGUZl1TBu_bgw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1724166166352?e=2147483647&v=beta&t=m2WM9Gyx7jNeSMc5zD9i1AIiSS3KIzMuqWkDD7VpVB4",
-        role: "Backend Developer",
-      },
-      {
-        name: "Deivison Jimenez",
-        image:
-          "https://media.licdn.com/dms/image/v2/C5103AQFCoHZnMOd7Pw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1517534765267?e=2147483647&v=beta&t=DYzzwwSrFoKIiJwPPPiNaKRr6_4lxCceZsJ7udk67yU",
-        role: "Backend Developer",
-      },
-      {
-        name: "Emanuel Capo",
-        image:
-          "https://media.licdn.com/dms/image/v2/C4D03AQE8oaeOOU4fdA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1655414851207?e=1745452800&v=beta&t=1w9Axdu1MzRy9siavev_fwgGvc1OTGuUsjUORO8yDOU",
-        role: "Frontend Developer",
-      },
-      {
-        name: "Natalia Caniza",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4D03AQHH3kTDeVbXrg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1710448319684?e=2147483647&v=beta&t=eO58dKeX0OOrxbCNsPqYeLhijvhuudkR65nujrHlTew",
-        role: "UX/UI Designer",
-      },
-    ],
+    team: collaboratorList.filter(
+      (collaborator) =>
+        collaborator.name.match("Abel Montes Vega") ||
+        collaborator.name.match("Deivison Jimenez") ||
+        collaborator.name.match("Emanuel Capo") ||
+        collaborator.name.match("Natalia Caniza")
+    ),
   },
   {
     title: "SubastArt",
@@ -459,26 +358,12 @@ export const PROJECTS: Project[] = [
     📌 Explorar Subastas: Búsqueda de las subastas publicadas por todos los usuarios de la plataforma con filtros por nombre, categoría, precio o estado.
     📌 Seguimiento de Obras Favoritas: Los usuarios pueden agregar obras en favoritos para llevar un mayor seguimiento de su estado. Y pueden ver sus obras favoritas desde su perfil.
     📌 Sistema de Pujas en Vivo: Interfaz para participar en subastas en tiempo real, pujando por montos personalizados, con información del ranking actual para que en todo momento se pueda conocer el lider de la subasta y el tiempo restante de la subasta.`,
-    team: [
-      {
-        name: "Leon Lederhos",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4D03AQFil0rLZ-WdEw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1727624547253?e=1744848000&v=beta&t=jJc-wq0RdA1N0WCPIIYInFGN9zzkxEVHddFBuKIiXxk",
-        role: "Backend Developer",
-      },
-      {
-        name: "Brian Diaz",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4D03AQEfI4-56WowZg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1666802397424?e=1744848000&v=beta&t=3wqT-RgKcuP0zZuHdhn0z9yO-yiJJjImEMZ4fPNLCUI",
-        role: "Backend Developer",
-      },
-      {
-        name: "Leandro Martínez",
-        image:
-          "https://media.licdn.com/dms/image/v2/D4D03AQGu2097XB4VfQ/profile-displayphoto-shrink_100_100/B4DZUBmoqBGcAU-/0/1739488660896?e=1745452800&v=beta&t=-A6-aWY_2ObRgqxgzCHyAa3N6-He5UChjaAK3iy4v-g",
-        role: "Frontend Developer",
-      },
-    ],
+    team: collaboratorList.filter(
+      (collaborator) =>
+        collaborator.name.match("Leon Lederhos") ||
+        collaborator.name.match("Brian Diaz") ||
+        collaborator.name.match("Leandro Martínez")
+    ),
   },
   {
     title: "Match Project",
@@ -487,6 +372,8 @@ export const PROJECTS: Project[] = [
     preview: MatchProjectPreview,
     images: MatchProjectImages,
     stack: ["TypeScript", "NestJS", "PostgreSQL", "Git", "GitHub"],
+    problem:
+      "Patas Pirque es una fundación sin fines de lucro que se encarga de rescatar y dar en adopción perros y gatos callejeros en Chile. Esta fundación solo cuenta con 2 personas a cargo de todo el cuidado y alimentación de mascotas, su logística, y la gestión de los adoptantes, procesos que llevan a cabo de forma manual o a través de aplicaciones de mensajería como Whatsapp. Sin embargo, presentan una problemática: Varios adoptantes a los pocos meses devuelven a las mascotas nuevamente a la fundación. En vista de esta problemática, y para visibilizar las mascotas en adopción, se plantea el desarrollo de una aplicación web que tiene como objetivo principal conectar a personas para fomentar la adopción responsable de animales. A través de una interfaz amigable y funcionalidades específicas, se busca reducir el tiempo de búsqueda, difundir casos de mascotas rescatadas y rehabilitadas, y facilitar la interacción entre usuarios de forma rápida y segura, de manera de concretar adopciones responsables.",
     role: "Backend Developer",
     result: `Cumpliendo con los requerimientos propuestos por la stakeholder y en vista de la problemática, se desarrolló la plataforma web con las siguientes funcionalidades:
 
@@ -503,73 +390,86 @@ export const PROJECTS: Project[] = [
     📌 Listado de Mascotas: Permite al administrador gestionar todas las mascotas en la plataforma. Cuenta con acciones para agregar mascotas, editar sus datos, visualizar su información completa o eliminarlas del sistema.
     
     📌 Listado de Matches: Permite al administrador realizar un seguimiento de todos los matches que se han producido en la plataforma. Cuenta con acciones para visualizar el usuario y mascota asociado a cada match y para aprobar, rechazar o informar al usuario que su solicitud de adopción está en proceso.`,
+    demo: "https://match-adopcion-mascotas.vercel.app",
+    github: "https://github.com/AngelAnez/match_project",
+    team: collaboratorList.filter(
+      (collaborator) =>
+        collaborator.name.match("Diana Mayorga") ||
+        collaborator.name.match("Miriam Bautista") ||
+        collaborator.name.match("Sonny Pimentel") ||
+        collaborator.name.match("Ricardo Ortega") ||
+        collaborator.name.match("Christian Martínez") ||
+        collaborator.name.match("Eduardo Ismael Fuentes") ||
+        collaborator.name.match("Luis Angel Quispe") ||
+        collaborator.name.match("Ingrid Paola Chaves") ||
+        collaborator.name.match("Carolina Castillo") ||
+        collaborator.name.match("Anabel Somoza") ||
+        collaborator.name.match("Daniela López Carrillo") ||
+        collaborator.name.match("Nayely Rodriguez Aucassi") ||
+        collaborator.name.match("Camila Schamun") ||
+        collaborator.name.match("Feliangela García") ||
+        collaborator.name.match("Claudia Campos") ||
+        collaborator.name.match("Juan Francisco Aguilar")
+    ),
   },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
   {
-    name: "Rafael Enrique Cortez",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4D03AQHKzfD3rGfKsA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1730396990188?e=1744848000&v=beta&t=6MDUk2smiETgvDRqeR1aHIe2fj-kQfkq64kYxelFDNI",
-    role: "Backend Developer",
+    ...collaboratorList.find(
+      (collaborator) => collaborator.name === "Rafael Enrique Cortez"
+    ),
     text: `Angel es solidario con sus compañeros, siempre dispuesto a ayudar, una persona muy comprometida y responsable.`,
     linkedin: "https://www.linkedin.com/in/rafael-ecortez",
   },
   {
-    name: "Triana Devia",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4D03AQHjUgeOwmUtdw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1728234699056?e=1744848000&v=beta&t=Gv3aN3FdnaP05iCof7_Oc0BHTRI07SgftQE25f7B41A",
-    role: "Project Manager",
+    ...collaboratorList.find(
+      (collaborator) => collaborator.name === "Triana Devia"
+    ),
     text: `Ángel es un líder nato, habiendo dirigido el equipo de Frontend con excelencia. Su carisma, participación activa y actitud solidaria han sido clave para el éxito del proyecto.`,
     linkedin: "https://www.linkedin.com/in/triana-devia",
   },
   {
-    name: "Kenti Gabriel Antezana",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4D03AQHHR31kfQEIIg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1671717691480?e=1744848000&v=beta&t=tAi7bi67swIAz6O8scN2qri_r_BG6cR2TBxIi5whB4o",
-    role: "Backend Developer",
+    ...collaboratorList.find(
+      (collaborator) => collaborator.name === "Kenti Gabriel Antezana"
+    ),
     text: `Tuve la oportunidad de trabajar con Ángel en No Country. Es un profesional impecable, bien predispuesto, con unas admirables habilidades en el desarrollo frontend. Posee grandes habilidades comunicativas, es una persona empatica y que se sabe comunicar muy bien. Ademas destaco su buen compañerismo y proactividad, con un perfil orientado al cumplimiento de objetivos. Sin dudas es alguien que recomiendo para trabajar.`,
     linkedin: "https://www.linkedin.com/in/kenti-gabriel-antezana-16364725b",
   },
   {
-    name: "Deivison Jimenez",
-    image:
-      "https://media.licdn.com/dms/image/v2/C5103AQFCoHZnMOd7Pw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1517534765267?e=2147483647&v=beta&t=DYzzwwSrFoKIiJwPPPiNaKRr6_4lxCceZsJ7udk67yU",
-    role: "Backend Developer",
+    ...collaboratorList.find(
+      (collaborator) => collaborator.name === "Deivison Jimenez"
+    ),
     text: `Me es grato poder realizar esta recomendacion a Angel Durante el proyecto de No-Contry, ha sido una persona muy dedicada, de gran valor para el equipo, desde el Frontend a Realizado un Gran trabajo lleno de mucho apoyo, aporte al proyecto, es una persona Proactiva, reciliente, y demostrado gran compromiso al proyecto`,
     linkedin: "https://www.linkedin.com/in/deivison-jimenez",
   },
   {
-    name: "Emanuel Capo",
-    image:
-      "https://media.licdn.com/dms/image/v2/C4D03AQE8oaeOOU4fdA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1655414851207?e=1745452800&v=beta&t=1w9Axdu1MzRy9siavev_fwgGvc1OTGuUsjUORO8yDOU",
-    role: "FullStack Developer",
+    ...collaboratorList.find(
+      (collaborator) => collaborator.name === "Emanuel Capo"
+    ),
     text: `Angel es un profesional muy organizado, proactivo y trabajador. Es muy comunicativo para expresar sus ideas y siempre está dispuesto a ayudar. Tiene un gran conocimiento de React y Typescript y su aporte fue fundamental para llevar adelante el proyecto que compartimos.`,
     linkedin: "https://www.linkedin.com/in/emanuel-capo",
   },
   {
-    name: "Natalia Caniza",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4D03AQHH3kTDeVbXrg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1710448319684?e=2147483647&v=beta&t=eO58dKeX0OOrxbCNsPqYeLhijvhuudkR65nujrHlTew",
-    role: "UX/UI Designer",
+    ...collaboratorList.find(
+      (collaborator) => collaborator.name === "Natalia Caniza"
+    ),
     text: `Tuve la suerte de trabajar con Angel en un proyecto fintech que fue todo un desafío y no podría haber pedido un mejor compañero de equipo. Como programador front-end, su conocimiento técnico y atención a los detalles son impresionantes.
 Sus aportes fueron clave para el éxito del proyecto y me ayudaron muchísimo a desempeñar mejor mi rol, ya que siempre estaba dispuesto a compartir su conocimiento y colaborar con soluciones creativas.
 Sin dudas, trabajar con él fue una experiencia muy enriquecedora y sé que cualquier equipo que lo tenga será afortunado.`,
     linkedin: "https://www.linkedin.com/in/naticaniza",
   },
   {
-    name: "Abel Montes Vega",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4D03AQGUZl1TBu_bgw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1724166166352?e=2147483647&v=beta&t=m2WM9Gyx7jNeSMc5zD9i1AIiSS3KIzMuqWkDD7VpVB4",
-    role: "Backend Developer",
+    ...collaboratorList.find(
+      (collaborator) => collaborator.name === "Abel Montes Vega"
+    ),
     text: `Trabajé junto a Ángel durante una hackathon, donde demostró su capacidad como desarrollador frontend. Supo trabajar de manera eficiente a la par con el backend, logrando una integración completa del proyecto. Además, tuvimos una comunicación fluida que facilitó el desarrollo del trabajo en equipo. Su proactividad y eficacia fueron claves para alcanzar los objetivos del proyecto.`,
     linkedin: "https://www.linkedin.com/in/abel-montes-vega",
   },
   {
-    name: "Leon Lederhos",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4D03AQFil0rLZ-WdEw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1727624547253?e=1744848000&v=beta&t=jJc-wq0RdA1N0WCPIIYInFGN9zzkxEVHddFBuKIiXxk",
-    role: "Backend Developer",
+    ...collaboratorList.find(
+      (collaborator) => collaborator.name === "Leon Lederhos"
+    ),
     text: `Trabaje con Angel desarrollando un MVP en NO-Country. Es una persona excelente completa en todos los ambitos:
 - demostro escucha activa y una resolucion de problemas eficaz para cualquier situacion que se plantease
 - una puntualidad excelente todos los dias
@@ -581,10 +481,9 @@ En definitiva fue un placer trabajar con Angel y haber desarrollado el MVP Subas
     linkedin: "https://www.linkedin.com/in/leonlederhos",
   },
   {
-    name: "Brian Díaz",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4D03AQEfI4-56WowZg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1666802397424?e=1744848000&v=beta&t=3wqT-RgKcuP0zZuHdhn0z9yO-yiJJjImEMZ4fPNLCUI",
-    role: "Backend Developer",
+    ...collaboratorList.find(
+      (collaborator) => collaborator.name === "Brian Diaz"
+    ),
     text: `Tuve la oportunidad de trabajar con Ángel en el desarrollo de un MVP, donde se encargó de la parte frontend con React. Desde el primer momento, destacó por su proactividad y excelente comunicación, lo que facilitó enormemente la integración entre el frontend y el backend.
 
 Su capacidad para resolver problemas y optimizar la interfaz de usuario fue clave para garantizar una experiencia fluida y atractiva. Además, siempre estuvo dispuesto a proponer mejoras, investigar nuevas soluciones y adaptarse a los cambios con rapidez.

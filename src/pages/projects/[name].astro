@@ -151,7 +151,7 @@ const {
                 <li class="p-4 rounded-lg bg-secondary-25 border border-white flex items-center gap-2 mx-auto sm:mx-0">
                   <Image
                     loading="lazy"
-                    src={member?.image}
+                    src={member?.image || `https://eu.ui-avatars.com/api/?name=${member.name.split(" ").join("+")}&size=100`}
                     alt={member.name}
                     onerror={`this.onerror=null;this.src='https://eu.ui-avatars.com/api/?name=${member.name.split(" ").join("+")}&size=100'`}
                     width={100}
