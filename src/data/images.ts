@@ -78,6 +78,15 @@ import MatchProject5 from "@images/projects/matchproject5.webp";
 import MatchProject6 from "@images/projects/matchproject6.webp";
 import MatchProject7 from "@images/projects/matchproject7.webp";
 import MatchProject8 from "@images/projects/matchproject8.webp";
+import Raiz from "@images/projects/raiz-card.webp";
+import Raiz1 from "@images/projects/raiz1.webp";
+import Raiz2 from "@images/projects/raiz2.webp";
+import Raiz3 from "@images/projects/raiz3.webp";
+import Raiz4 from "@images/projects/raiz4.webp";
+import Raiz5 from "@images/projects/raiz5.webp";
+import Raiz6 from "@images/projects/raiz6.webp";
+import Raiz7 from "@images/projects/raiz7.webp";
+import Raiz8 from "@images/projects/raiz8.webp";
 
 /* Certificates */
 import PlatziJavaScriptBasico from "@images/certificates/Platzi-Curso-Básico-de-JavaScript.webp";
@@ -342,6 +351,12 @@ export const collaboratorList = [
     role: "UX/UI Designer",
   },
   {
+    name: "Gabriela Beatriz Pardo",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQHEGg1mdOmxMQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1704762977364?e=2147483647&v=beta&t=Yl33bH-crKV3plCjgGik3SsCLH_tYB3w5jUuNFpSitA",
+    role: "QA Tester",
+  },
+  {
     name: "Claudia Campos",
     image: null,
     role: "Project Manager",
@@ -351,6 +366,36 @@ export const collaboratorList = [
     image:
       "https://media.licdn.com/dms/image/v2/D4E03AQFMgQoAFxLx5A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725566476225?e=1755129600&v=beta&t=B2wR12fMXhHTUBxas_AykmtuZ2zCslppXJKTLf8nZlk",
     role: "Analista Funcional",
+  },
+  {
+    name: "Mateo Lopez Yapur",
+    image: "https://media.licdn.com/dms/image/v2/D4D03AQGk-G9RHdAWSA/profile-displayphoto-shrink_100_100/B4DZV3uCzvHAAU-/0/1741470314274?e=2147483647&v=beta&t=38YFXDVXukwSPBZqbQVGyG687IOC03jjrZmOrS754HI",
+    role: "Frontend Developer",
+  },
+  {
+    name: "Geraldine Cardozo",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQEpExaDwCC-sg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1724884121336?e=1755129600&v=beta&t=l7eY6iQL2AwaY1PDY3QKRlnoZ1MBLGLjOfUEYg6hffc",
+    role: "UX/UI Designer",
+  },
+  {
+    name: "Giuliano Nissero",
+    image: "https://media.licdn.com/dms/image/v2/D4E35AQFWKafESvQy7g/profile-framedphoto-shrink_100_100/B4EZWmJSUuH0Ao-/0/1742249207431?e=1750287600&v=beta&t=rCzQI_ZxDqG7_ES8wGGfIHJ4f6oBquyOc1IjBvHAI9M",
+    role: "Blockchain Developer",
+  },
+  {
+    name: "Jonathan Narváez Urresta",
+    image: "https://media.licdn.com/dms/image/v2/D4E35AQHmIOIkVrp-7Q/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1724377527918?e=1750287600&v=beta&t=DHAKTmkzMzD3Q43j9yT_KsnHa7TKBAfkEFRxuvufa9g",
+    role: "Blockchain Developer",
+  },
+  {
+    name: "Eudes Mieres",
+    image: "https://media.licdn.com/dms/image/v2/D4D03AQGW0VMkFXanjA/profile-displayphoto-shrink_100_100/B4DZW6gSVzHYAY-/0/1742590781684?e=2147483647&v=beta&t=SXC7HYFlMxNtekJkTQd5lWDBd32hTtGZwAV7g8v2bIQ",
+    role: "QA Tester",
+  },
+  {
+    name: "Marcelo Peralta",
+    image: "https://media.licdn.com/dms/image/v2/D4D03AQGNeZtTb1y7yA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1727808579674?e=1755129600&v=beta&t=KLCbGBZviEiHtjoN1DyNTiR7NVz7l6qb9GSb8UwW0dQ",
+    role: "AI Solutions Architect",
   },
 ];
 
@@ -453,6 +498,18 @@ export const MatchProjectImages = [
   MatchProject6,
   MatchProject7,
   MatchProject8,
+];
+
+export const RaizPreview = Raiz;
+export const RaizImages = [
+  Raiz1,
+  Raiz2,
+  Raiz3,
+  Raiz4,
+  Raiz5,
+  Raiz6,
+  Raiz7,
+  Raiz8,
 ];
 
 export const certificateList = [

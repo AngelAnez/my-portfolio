@@ -8,6 +8,8 @@ import {
   MatchProjectPreview,
   MyPortfolioImages,
   MyPortfolioPreview,
+  RaizImages,
+  RaizPreview,
   RentifyImages,
   RentifyPreview,
   skillLogos,
@@ -408,8 +410,43 @@ export const PROJECTS: Project[] = [
         collaborator.name.match("Nayely Rodriguez Aucassi") ||
         collaborator.name.match("Camila Schamun") ||
         collaborator.name.match("Feliangela García") ||
+        collaborator.name.match("Gabriela Beatriz Pardo") ||
         collaborator.name.match("Claudia Campos") ||
         collaborator.name.match("Juan Francisco Aguilar")
+    ),
+  },
+  {
+    title: "Raiz",
+    description:
+      "Plataforma descentralizada que permite a personas e instituciones productoras emitir certificados digitales de sus productos en blockchain y también verificar el origen de los productos registrados escaneando su QR.",
+    preview: RaizPreview,
+    images: RaizImages,
+    problem:
+      "Actualmente, si un productor desea hacer la validación de certificados de sus productos, depende de autoridades centralizadas, procesos manuales y bases de datos privadas. Esto no solo dificulta la verificación rápida, sino que también genera vulnerabilidades ante la falsificación y la pérdida de información, generando una pérdida de confianza en la autenticidad y calidad de los productos certificados digitalmente. En este sentido, con la adopción de tecnologías blockchain, existe una oportunidad única de eliminar intermediarios, garantizar inmutabilidad, y permitir validaciones automáticas en segundos. De esta forma, surge la idea de desarrollar Raiz como una plataforma descentralizada que ayude a productores y compradores a emitir y verificar certificados digitales sin intermediarios.",
+    stack: ["JavaScript", "React", "TailwindCSS", "Blockchain"],
+    result: `Combinando la Web2 y la Web3, nace Raiz como aplicación web que cuenta con las siguientes funcionalidades:
+    
+    📌 Autenticación de Productores con Wallet: Permite a cualquier productor registrarse en la plataforma solo ingresando con su Wallet a través de la extensión web de MetaMask.
+    
+    📌 Registro de Nuevos Certificados: Los productores pueden generar nuevos certificados llenando un formulario con el nombre de producto, tipo de producto, institución emisora, fecha de produccion y fecha de emision.
+    
+    📌 Listado de Productos Certificados: Los productores pueden ver el listado de sus productos certificados, contando con la posibilidad de descargar la información de cada producto en formato PDF o sólo su código QR que lo identifica.
+    
+    📌 Escaneo de QR: Cualquier usuario sin necesidad de registro puede verificar la validez de un producto escaneando su código QR.
+    
+    📌 Chatbot Inteligente: Los usuarios tienen acceso a un chatbot con Inteligencia Artificial que puede responder cualquier duda sobre la aplicación`,
+    role: "Frontend Developer",
+    demo: "https://raiz-gold.vercel.app",
+    github: "https://github.com/Yappur/Raiz",
+    team: collaboratorList.filter(
+      (collaborator) =>
+        collaborator.name.match("Triana Devia") ||
+        collaborator.name.match("Mateo Lopez Yapur") ||
+        collaborator.name.match("Geraldine Cardozo") ||
+        collaborator.name.match("Giuliano Nissero") ||
+        collaborator.name.match("Jonathan Narváez Urresta") ||
+        collaborator.name.match("Eudes Mieres") ||
+        collaborator.name.match("Marcelo Peralta")
     ),
   },
 ];
