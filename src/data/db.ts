@@ -145,7 +145,7 @@ export const SKILLS: Skill[] = [
 
 export const EXPERIENCE: Experience[] = [
   {
-    position: "Pasante",
+    position: "Pasante de Ingeniería de Sistemas",
     company: "Petróleos de Venezuela, S.A.",
     "start-date": "Abril 2023",
     "end-date": "Agosto 2023",
@@ -154,7 +154,7 @@ export const EXPERIENCE: Experience[] = [
     stack: ["JavaScript", "PHP", "Python", "Nagios", "Telegram"],
   },
   {
-    position: "Freelancer",
+    position: "Desarrollador de Software",
     company: "Zoológico Paraguaná",
     "start-date": "Octubre 2023",
     "end-date": "Marzo 2024",
@@ -172,7 +172,7 @@ export const EXPERIENCE: Experience[] = [
     ],
   },
   {
-    position: "Desarrollador Web Frontend",
+    position: "Desarrollador Frontend",
     company: "No Country",
     "start-date": "Agosto 2024",
     "end-date": "Enero 2025",
