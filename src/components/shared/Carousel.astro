@@ -94,7 +94,7 @@ const carouselSize = images.length;
   }
 </style>
 
-<script>
+<script is:inline data-astro-rerun>
   document.addEventListener("astro:page-load", () => {
     const slides = document.querySelectorAll(".carousel-item");
     const button = document.querySelectorAll(".carousel-arrow");
@@ -115,7 +115,7 @@ const carouselSize = images.length;
     const gotoNext = () =>
       current < slides.length - 1 ? gotoNum(current + 1) : gotoNum(0);
 
-    const gotoNum = async (number: number) => {
+    const gotoNum = async (number) => {
       button.forEach((btn) => {
         btn.setAttribute("disabled", "");
       });
