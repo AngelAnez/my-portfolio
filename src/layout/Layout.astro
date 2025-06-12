@@ -20,41 +20,22 @@ const { title = "Angel Añez | Home" } = Astro.props;
     <meta
       name="title"
       property="og:title"
-      content="Angel Añez | Desarrollador Web"
+      content="Angel Añez | Ingeniero de Sistemas"
     />
     <meta name="type" property="og:type" content="website" />
-    <meta
-      name="url"
-      property="og:url"
-      content="https://angel-anez.vercel.app/"
-    />
+    <meta name="url" property="og:url" content="https://angel-anez.com/" />
 
     <meta
       name="description"
       property="og:description"
-      content="Hola, soy Angel Añez. Ingeniero de Sistemas especializado en el Desarrollo Web. ¡Bienvenido a mi Portafolio!"
+      content="Hola, soy Angel Añez. Ingeniero de Sistemas especializado en el desarrollo FullStack. ¡Bienvenido a mi Portafolio!"
     />
     <meta
       name="keywords"
-      content="Angel Añez, Angel Anez, Desarrollador Web, Ingeniero de Sistemas"
+      content="Angel Añez, Angel Anez, Desarrollador FullStack, Ingeniero de Sistemas, Venezuela"
     />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
-
-    <!-- Light mode favicon -->
-    <link
-      rel="icon"
-      href="/favicon-light.svg"
-      type="image/svg"
-      media="(prefers-color-scheme: light)"
-    />
-
-    <!-- Dark mode favicon -->
-    <link
-      rel="icon"
-      href="/favicon-dark.svg"
-      type="image/svg"
-      media="(prefers-color-scheme: dark)"
-    />
 
     <ClientRouter />
   </head>

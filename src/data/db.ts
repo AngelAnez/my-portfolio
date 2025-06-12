@@ -6,8 +6,6 @@ import {
   FinanciaAlPreview,
   MatchProjectImages,
   MatchProjectPreview,
-  MyPortfolioImages,
-  MyPortfolioPreview,
   RaizImages,
   RaizPreview,
   RentifyImages,
@@ -219,27 +217,6 @@ export const PROJECTS: Project[] = [
     ✅ Mejorar la toma de decisiones gracias a las estadísticas y los reportes
     ✅ Reducir el impacto ambiental causado por la producción de papel`,
     github: "https://github.com/AngelAnez/registro-zoo-paraguana",
-  },
-  {
-    title: "Portafolio Personal",
-    description:
-      "Mi sitio web personal enfocado en mi camino como desarrollador de software, donde se puede visualizar mi experiencia laboral, proyectos, recomendaciones de otros compañeros, certificaciones y más.",
-    stack: ["Astro", "TailwindCSS"],
-    preview: MyPortfolioPreview,
-    images: MyPortfolioImages,
-    problem:
-      "Como un estudiante recién egresado de la universidad, resulta complicado conseguir el primer empleo como desarrollador de software. Al carecer de experiencia laboral, es necesario buscar otras formas de demostrar las habilidades y conocimientos que se poseen para aportar valor a cualquier empresa, proyecto o equipo de trabajo. Es por ello que es necesario poseer una herramienta que pueda complementar al currículum y que permita reflejar el talento y la experiencia de un desarrollador. De aquí nace la idea de un portafolio web, donde puedan exhibirse los proyectos realizados, las tecnologías conocidas, la creatividad, los testimonios de otros compañeros de trabajo y demás información relevante de un desarrollador.",
-    result: `Tras varias ideas y mucha investigación, se desarrolló un sitio web tipo portafolio que cuenta con las siguientes secciones:
-
-    📌 Sobre Mí: Pequeño resumen introductorio sobre mi historia personal.
-    📌 Experiencia Laboral: Corresponde a mi experiencia y logros conseguidos en los trabajos en los que he participado, ya sea a una empresa directamente o de forma Freelance.
-    📌 Recomendaciones: Testimonios de otros compañeros de trabajo que han dejado en mi perfil de LinkedIn.
-    📌 Proyectos: Listado de proyectos web que he podido desarrollar en solitario o en equipo. Cada proyecto cuenta con su información detallada del proceso de desarrollo.
-    📌 Tecnologías: Corresponde a todos aquellos lenguajes, herramientas, bibliotecas o frameworks que he podido utilizar en mis proyectos.
-    📌 Certificaciones: Galería de certificados y diplomas que he obtenido a través de formaciones y cursos en diferentes instituciones.
-    📌 Contacto: Sección que contiene mis redes sociales y datos personales donde pueden contactarme.`,
-    demo: "/",
-    github: "https://github.com/AngelAnez/my-portfolio",
   },
   {
     title: "Emoticare",

@@ -1,6 +1,6 @@
 ---
 import type { GetStaticPaths } from "astro";
-import { PROJECTS as projects, SKILLS as skills } from "../../data/db";
+import { PROJECTS as projects } from "@data/db.ts";
 import Layout from "../../layout/Layout.astro";
 import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
@@ -49,37 +49,41 @@ const {
       <Icon name="arrow-left" class="size-4 md:size-6" /> Regresar
     </a>
 
-    <h1
+    <h2
       class="text-xl md:text-3xl font-semibold text-center"
       transition:name=`${title.toLowerCase().split(" ").join("-")}`
     >
       {title}
-    </h1>
+    </h2>
 
-    <Carousel images={images} transitionName={`${title.toLowerCase().split(" ").join("-")}-image`}/>
+    <Carousel
+      images={images}
+      transitionName={`${title.toLowerCase().split(" ").join("-")}-image`}
+    />
 
     <section class="flex flex-col gap-8">
-
       <div class="sub-container">
-        <h2 class="sub-title">
+        <h3 class="sub-title">
           <Icon name={"description"} class="size-5 md:size-6" /> Descripción
-        </h2>
+        </h3>
         <p>
           {description}
         </p>
       </div>
 
       <div class="sub-container">
-        <h2 class="sub-title">
+        <h3 class="sub-title">
           <Icon name={"problem"} class="size-5 md:size-6" /> ¿Cómo surgió el proyecto?
-        </h2>
+        </h3>
         <p>
           {problem}
         </p>
       </div>
 
       <div class="sub-container">
-        <h2 class="sub-title"><Icon name={"solution"} class="size-5 md:size-6" /> Resultado</h2>
+        <h3 class="sub-title">
+          <Icon name={"solution"} class="size-5 md:size-6" /> Resultado
+        </h3>
         <p>
           {result}
         </p>
@@ -88,18 +92,19 @@ const {
       {
         role && (
           <div class="sub-container">
-            <h2 class="sub-title">
-              <Icon name={"target"} class="size-5 md:size-6" /> Mi rol en el proyecto
-            </h2>
+            <h3 class="sub-title">
+              <Icon name={"target"} class="size-5 md:size-6" /> Mi rol en el
+              proyecto
+            </h3>
             <p>{role}</p>
           </div>
         )
       }
 
       <div class="sub-container">
-        <h2 class="sub-title">
+        <h3 class="sub-title">
           <Icon name={"development"} class="size-5 md:size-6" /> Tecnologías utilizadas
-        </h2>
+        </h3>
         <ul class="flex flex-wrap gap-4 items-center">
           {
             stack.map((tech) => (
@@ -112,9 +117,9 @@ const {
       </div>
 
       <div class="sub-container">
-        <h2 class="sub-title">
+        <h3 class="sub-title">
           <Icon name={"link"} class="size-5 md:size-6" /> Enlaces del proyecto
-        </h2>
+        </h3>
         <div class="flex gap-2 flex-wrap items-center">
           {
             demo && (
@@ -142,16 +147,20 @@ const {
       {
         team && (
           <div class="sub-container">
-            <h2 class="sub-title">
+            <h3 class="sub-title">
               {" "}
-              <Icon name={"collaborators"} class="size-5 md:size-6" /> Colaboradores
-            </h2>
+              <Icon name={"collaborators"} class="size-5 md:size-6" />{" "}
+              Colaboradores
+            </h3>
             <ul class="flex flex-wrap gap-4">
               {team.map((member) => (
                 <li class="p-4 rounded-lg bg-secondary-25 border border-white flex items-center gap-2 mx-auto sm:mx-0">
                   <Image
                     loading="lazy"
-                    src={member?.image || `https://eu.ui-avatars.com/api/?name=${member.name.split(" ").join("+")}&size=100`}
+                    src={
+                      member?.image ||
+                      `https://eu.ui-avatars.com/api/?name=${member.name.split(" ").join("+")}&size=100`
+                    }
                     alt={member.name}
                     onerror={`this.onerror=null;this.src='https://eu.ui-avatars.com/api/?name=${member.name.split(" ").join("+")}&size=100'`}
                     width={100}

@@ -29,14 +29,6 @@ import ZooSystem2 from "@images/projects/zoo-system2.webp";
 import ZooSystem3 from "@images/projects/zoo-system3.webp";
 import ZooSystem4 from "@images/projects/zoo-system4.webp";
 import ZooSystem5 from "@images/projects/zoo-system5.webp";
-import MyPortfolio from "@images/projects/myportfolio-card.webp";
-import MyPortfolio1 from "@images/projects/myportfolio1.webp";
-import MyPortfolio2 from "@images/projects/myportfolio2.webp";
-import MyPortfolio3 from "@images/projects/myportfolio3.webp";
-import MyPortfolio4 from "@images/projects/myportfolio4.webp";
-import MyPortfolio5 from "@images/projects/myportfolio5.webp";
-import MyPortfolio6 from "@images/projects/myportfolio6.webp";
-import MyPortfolio7 from "@images/projects/myportfolio7.webp";
 import Emoticare from "@images/projects/emoticare-card.webp";
 import Emoticare1 from "@images/projects/emoticare1.webp";
 import Emoticare2 from "@images/projects/emoticare2.webp";
@@ -431,17 +423,6 @@ export const ZooSystemImages = [
   ZooSystem3,
   ZooSystem4,
   ZooSystem5,
-];
-
-export const MyPortfolioPreview = MyPortfolio;
-export const MyPortfolioImages = [
-  MyPortfolio1,
-  MyPortfolio2,
-  MyPortfolio3,
-  MyPortfolio4,
-  MyPortfolio5,
-  MyPortfolio6,
-  MyPortfolio7,
 ];
 
 export const EmoticarePreview = Emoticare;
