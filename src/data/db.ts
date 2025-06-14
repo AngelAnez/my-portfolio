@@ -225,7 +225,7 @@ export const PROJECTS: Project[] = [
     stack: ["TypeScript", "React", "TailwindCSS", "Git", "Github"],
     preview: EmoticarePreview,
     images: EmoticareImages,
-    github: "https://github.com/AngelAnez/c20-41-n-node-react",
+    github: "https://github.com/AngelAnez/Emoticare",
     demo: "https://emoticare-demo.onrender.com",
     problem:
       "Para nuestra primera simulación laboral en No Country se nos pidió escoger un proyecto para desarrollar en un período de 5 semanas. Tras debatir varias opciones optamos por una plataforma de Telemedicina. En un mundo donde cada día es más común encontrar personas con depresión, es necesario brindar mayor accesibilidad a esas personas con los mejores recursos para su salud. Es con este objetivo en mente que surge la idea de crear una plataforma web que permita conectar a todos aquellos pacientes que lo requieran con médicos especialistas a cualquier hora y desde cualquier lugar con solo un teléfono o computador con acceso a internet.",
@@ -252,7 +252,7 @@ export const PROJECTS: Project[] = [
     stack: ["TypeScript", "React", "Material UI", "Git", "Github"],
     preview: RentifyPreview,
     images: RentifyImages,
-    github: "https://github.com/AngelAnez/S18-23-n-java-react",
+    github: "https://github.com/AngelAnez/Rentify",
     demo: "https://rentify-demo.onrender.com/",
     problem:
       "Como parte de la simulación laboral en No Country, el equipo buscaba desarrollar un proyecto que resuelva una problemática actual. En este sentido, hoy en día encontrar propiedades para arriendo prolongado y con trato directo al propietario puede ser una experiencia complicada. Muchas plataformas de alquiler están llenas de propiedades para vacacionar o están llenas de intermediarios y agentes, lo que aumenta el costo y puede dificultar la comunicación directa entre arrendatario y propietario. Además, quienes desean tanto arrendar como ofrecer una propiedad suelen encontrarse con el problema de tener que manejar diferentes perfiles o cuentas en las plataformas actuales. En este contexto, se presenta la necesidad de una aplicación de alquiler de propiedades que conecte a los arrendatarios directamente con los propietarios, eliminando intermediarios y que facilite la gestión y el seguimiento de sus propiedades o solicitudes de arriendo. Con ese objetivo nace Rentify.",
@@ -289,7 +289,7 @@ export const PROJECTS: Project[] = [
     preview: FinanciaAlPreview,
     images: FinanciaAlImages,
     role: "Dentro de este equipo me desempeñé como Frontend Developer. Al contar con una diseñadora UX/UI en el equipo, mi principal tarea fue maquetar los wireframes e implementar las funcionalidades básicas. Pero además, al ser una Hackathon, fueron necesarias varias reuniones para discutir y organizar como iba a funcionar el financiamiento y la inversión en la plataforma. Y debo destacar que el equipo siempre se mantuvo muy bien comunicado, donde todos tuvieron la oportunidad de sugerir y aportar ideas para hacer el mejor proyecto. Por mi parte, entre mis tareas como Frontend estuvieron la maquetación de todo el gran formulario para la solicitud de financiamiento, el simulador del comprador, y algunas vistas del administrador. Adicionalmente, como Emanuel y yo siempre estábamos comunicándonos, nos apoyabamos mútuamente con algún detalle que se nos hubiera pasado por alto. Por otro lado, también pude apoyar a Natalia con ciertas ideas de diseño para la plataforma, que fueron siempre bien recibidas por ella. Mientras que Abel y Deivison fueron la base del Backend a los cuales recurrí cuando tenía problemas para conectarme con la API y que también escuchaban mis propuestas para los endpoints. Definitivamente, un equipo excelente y muy profesional.",
-    github: "https://github.com/AngelAnez/equipo-h3-18-proptech",
+    github: "https://github.com/AngelAnez/Financia.al",
     demo: "https://equipo-h3-18-proptech-desarrollo.onrender.com/",
     problem:
       "Este proyecto corresponde a una Hackathon de No Country, por lo tanto, la idea y temática fue designada por un cliente. Este cliente deseaba el desarrollo de una plataforma web fintech que pudiera ofrecer opciones de crédito accesible a las familias, para optar por la posibilidad de adquirir un terreno donde construir su hogar. Y que al mismo tiempo, proporcionara a quienes tienen capacidad de ahorro una forma de invertir sus fondos en la financiación de terrenos. Para ello, la plataforma debía ofrecer herramientas de análisis de inversión y métricas detalladas para compradores e inversores, permitiendoles evaluar el rendimiento y riesgo de sus decisiones. A partir de esa idea y más especificaciones del cliente, nuestro equipo desarrolló Financia.al.",
@@ -328,8 +328,9 @@ export const PROJECTS: Project[] = [
     images: SubastArtImages,
     role: `Durante este proyecto me desempeñé como Frontend Developer. Al ser un equipo tan pequeño, la toma de decisiones para el Frontend recayó principalemente en Leandro y en mí, con sugerencias ocasionales de nuestros otros compañeros. Sin embargo, la buena comunicación que tuvimos Leandro y yo revisando lo que el otro hacía, y sugiriendo mejoras en donde fuera necesario, nos permitió distribuir y desarrollar nuestras tareas sin muchas complicaciones. Algunas de mis tareas en el Frontend fueron la conexión a través de WebSockets con el Backend, para hacer las subastas en vivo, y el diseño y maquetación de algunas páginas, como la de los detalles de cada subasta. Adicionalmente, mi participación en las reuniones con mis compañeros en el Backend me permitió comentar sugerencias y puntos de mejora en la API que nos ayudó a solucionar problemas que fueron surgiendo para así poder terminar de desarrollar el MVP.`,
     demo: "https://s20-04-n-frontend.onrender.com/",
+    github: "https://github.com/AngelAnez/SubastArt",
     problem:
-      "Como parte de la simulación laboral de No Country, se buscaba desarrollar un MVP de una aplicación web para resolver una problemática. En este caso, en el equipo surgió la idea de una plataforma de subastas para artistas. Hoy en día, existen muchas plataformas para comprar o vender productos. Sin embargo, hace falta una plataforma donde los artistas y amantes del arte puedan vender sus mejores obras a través de subastas en vivo, donde sean los propios compradores los que le pongan precio a sus obras, logrando así crear un espacio para que los amantes del arte puedan apreciar, competir y conocer el valor de sus obras. De allí nació SubasArt.",
+      "Como parte de la simulación laboral de No Country, se buscaba desarrollar un MVP de una aplicación web para resolver una problemática. En este caso, en el equipo surgió la idea de una plataforma de subastas para artistas. Hoy en día, existen muchas plataformas para comprar o vender productos. Sin embargo, hace falta una plataforma donde los artistas y amantes del arte puedan vender sus mejores obras a través de subastas en vivo, donde sean los propios compradores los que le pongan precio a sus obras, logrando así crear un espacio para que los amantes del arte puedan apreciar, competir y conocer el valor de sus obras. De allí nació SubastArt.",
     result: `Tras el período de 5 semanas de la simulación laboral, se pudo desarrollar de forma satisfactoria un MVP de una plataforma de subastas de obra de arte que cuenta con las siguientes funcionalidades:
 
     📌 Registro y Autenticación: Registro de usuarios interesados en subastar sus obras o participar en las subastas de la plataforma.
@@ -356,7 +357,7 @@ export const PROJECTS: Project[] = [
     role: "Backend Developer",
     result: `Cumpliendo con los requerimientos propuestos por la stakeholder y en vista de la problemática, se desarrolló la plataforma web con las siguientes funcionalidades:
 
-    📌 Autenticación de Usuarios por Rol: La plataforma permite que puedan iniciar sesión tanto usuarios adoptantes como administradores, restrigiendo las funcionalidades y vistas en función a cada rol.
+    📌 Autenticación de Usuarios por Rol: La plataforma permite que puedan iniciar sesión tanto usuarios adoptantes como administradores, restringiendo las funcionalidades y vistas en función a cada rol.
 
     📌 Registro de Adoptantes: Registro de usuarios interesados en adoptar mascotas. Este registro consiste en un gran formulario que los usuarios deben llenar para que el sistema pueda recomendarle mascotas en función a sus condiciones en el hogar y preferencias.
 
