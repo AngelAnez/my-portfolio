@@ -1,7 +1,8 @@
 ---
-import { ClientRouter } from "astro:transitions";
 import "@styles/global.css";
 import "@fontsource/noto-sans-math";
+import { ClientRouter } from "astro:transitions";
+import Analytics from '@vercel/analytics/astro'
 import Navbar from "@components/shared/Navbar.astro";
 import Footer from "@components/shared/Footer.astro";
 
@@ -44,4 +45,5 @@ const { title = "Angel Añez | Home" } = Astro.props;
     </main>
     <Footer />
   </body>
+  <Analytics />
 </html>
