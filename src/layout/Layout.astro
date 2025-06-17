@@ -17,11 +17,7 @@ const { title = "Angel Añez | Home" } = Astro.props;
   <head>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="title"
-      property="og:title"
-      content={title}
-    />
+    <meta name="title" property="og:title" content={title} />
     <meta name="type" property="og:type" content="website" />
     <meta name="url" property="og:url" content="https://angel-anez.com" />
 
@@ -35,6 +31,8 @@ const { title = "Angel Añez | Home" } = Astro.props;
       content="Angel Añez, Angel Anez, Desarrollador FullStack, Ingeniero de Sistemas, Venezuela"
     />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
     <title>{title}</title>
 
     <ClientRouter />
