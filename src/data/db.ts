@@ -18,7 +18,7 @@ import {
 } from "@data/images";
 
 export const MYLINKS = {
-  CV: "https://drive.google.com/file/d/1HYX8lfgBTdcGCJHHo99gFcAQfSWde-u_/view?usp=sharing",
+  CV: "https://drive.google.com/file/d/1BlDlkHywqzD7ooKapLDDslfvMcGQOijk/view?usp=sharing",
   LINKEDIN: "https://www.linkedin.com/in/angel-anez/",
   GITHUB: "https://github.com/AngelAnez",
   EMAIL: "angdavid2910@gmail.com",
