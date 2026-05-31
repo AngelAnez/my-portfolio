@@ -11,6 +11,7 @@ interface Experience {
   "end-date": string;
   "job-duty": string;
   stack: string[];
+  logo?: ImageMetadata;
 }
 
 interface Project {

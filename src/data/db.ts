@@ -17,11 +17,17 @@ import {
   ZooSystemPreview,
 } from "@data/images";
 
+import PDVSALogo from "@images/logos/PDVSA_Logo.svg"
+import ZooParaguanaLogo from "@images/logos/ZooParaguana_Logo.png"
+import NoCountryLogo from "@images/logos/NoCountry_Logo.png"
+import FooTalentGroupLogo from "@images/logos/FooTalentGroup_Logo.png"
+import InteligosLogo from "@images/logos/Inteligos_Logo.png"
+
 export const MYLINKS = {
   CV: "https://drive.google.com/file/d/1BlDlkHywqzD7ooKapLDDslfvMcGQOijk/view?usp=sharing",
   LINKEDIN: "https://www.linkedin.com/in/angel-anez/",
   GITHUB: "https://github.com/AngelAnez",
-  EMAIL: "angdavid2910@gmail.com",
+  EMAIL: "hola@angel-anez.com",
 };
 
 export const ABOUTME: string = `Oriundo de Venezuela, descubrí mi pasión por la tecnología y el aprendizaje desde pequeño. Siguiendo esa idea, años mas tarde, me gradué en 2023 como Ingeniero de Sistemas y desde entonces empezó mi camino en la programación y el desarrollo web.
@@ -141,6 +147,11 @@ export const SKILLS: Skill[] = [
     logo: skillLogos.zustand,
     type: "Frontend",
   },
+  {
+    name: 'Odoo',
+    logo: skillLogos.odoo,
+    type: "Desarrollo"
+  }
 ];
 
 export const EXPERIENCE: Experience[] = [
@@ -152,6 +163,7 @@ export const EXPERIENCE: Experience[] = [
     "job-duty":
       "Implementé un nuevo módulo para el sistema Nagios de la empresa que automatiza el envío de alertas de estado de los equipos y servicios a través de Telegram. Y a su vez, puede generar reportes diarios sobre el estado general de los equipos y servicios monitoreados por el sistema. Este módulo logró optimizar el tiempo de detección de fallas de los equipos en un 80%, mejorando así la toma de decisiones en la Superintendencia.",
     stack: ["JavaScript", "PHP", "Python", "Nagios", "Telegram"],
+    logo: PDVSALogo
   },
   {
     position: "Desarrollador de Software",
@@ -170,6 +182,7 @@ export const EXPERIENCE: Experience[] = [
       "EJS",
       "MySQL",
     ],
+    logo: ZooParaguanaLogo,
   },
   {
     position: "Desarrollador Frontend",
@@ -179,8 +192,31 @@ export const EXPERIENCE: Experience[] = [
     "job-duty":
       "Colaboré en 3 proyectos en equipo y una Hackathon donde pude aprender sobre los distintos pasos y roles necesarios para la creación de un producto de software, participar y liderar la toma de decisiones dentro de un equipo de desarrollo y conocer distintas tecnologías y metodologías de trabajo; logrando como resultado desarrollar 3 MVPs innovadores de forma satisfactoria y conseguir el 3er lugar en una Hackathon Fintech.",
     stack: ["JavaScript", "TypeScript", "React", "TailwindCSS"],
+    logo: NoCountryLogo,
+  },
+  {
+    position: "Desarrollador Backend",
+    company: "Foo Talent Group",
+    "start-date": "Abril 2025",
+    "end-date": "Mayo 2025",
+    "job-duty":
+      "Lideré el desarrollo del Backend de una aplicación web para la fundación Patas Pirque, que permite la publicación de mascotas en adopción y la sugerencia de mascotas a los usuarios a través de un algoritmo para mostrar las más compatibles con los datos del usuario, aumentando así el número de adopciones responsables. En este proyecto pude gestionar las tareas entre mis compañeros, fomentar buenas prácticas de desarrollo y apoyar en decisiones del producto que permitieron satisfacer los objetivos establecidos para el proyecto",
+    stack: ["TypeScript", "NestJS", "PostgresQL", "Swagger", "GitHub"],
+    logo: FooTalentGroupLogo,
+
+  },
+  {
+    position: "Analista de Control de Calidad",
+    company: "Intéligos",
+    "start-date": "Octubre 2025",
+    "end-date": "Actualidad",
+    "job-duty":
+      "Me encargo de asegurar la integridad funcional de los módulos desarrollados en Odoo, diseñando y ejecutando múltiples tipos de pruebas; reportando observaciones, bugs, defectos o puntos de mejora en los nuevos desarrollos, y documentando procesos técnicos complejos en guías de usuarios simples. También participo en las Code Review, con el objetivo de buscar que el equipo siga un estandar de calidad alineado a unas buenas prácticas de desarrollo. Todo lo anterior me permite garantizar la calidad, estabilidad y presentación de las soluciones implementadas en los entornos de Staging y Producción",
+    stack: ["Odoo", "Testing Manual", "Documentación de Procesos", "Claude", "Python", "GitHub", "Odoo SH"],
+    logo: InteligosLogo,
   },
 ];
+
 
 export const PROJECTS: Project[] = [
   {
