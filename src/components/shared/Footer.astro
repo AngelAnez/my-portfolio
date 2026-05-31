@@ -1,6 +1,5 @@
 ---
 import { MYLINKS } from "@data/db";
-import Title from "./Title.astro";
 import { Icon } from "astro-icon/components";
 const { EMAIL, LINKEDIN, GITHUB } = MYLINKS;
 ---
@@ -22,7 +21,7 @@ const { EMAIL, LINKEDIN, GITHUB } = MYLINKS;
           href={`mailto:${EMAIL}`}
           class="flex gap-2 items-center hover:underline"
         >
-          <Icon name={"mail"} size={20} /> angdavid2910@gmail.com
+          <Icon name={"mail"} size={20} /> {EMAIL}
         </a>
     </div>
 
@@ -38,7 +37,7 @@ const { EMAIL, LINKEDIN, GITHUB } = MYLINKS;
   </section>
 
   <p class="text-center text-sm md:text-base mt-5">
-    Copyright © {new Date().getFullYear()} - Angel Añez
+    Copyright © Angel Añez - <span id="currentYear"></span> 
   </p>
 </footer>
 
@@ -49,3 +48,10 @@ const { EMAIL, LINKEDIN, GITHUB } = MYLINKS;
     @apply border border-white shadow shadow-body-10 rounded-full flex gap-2 items-center justify-center px-2 py-1;
   }
 </style>
+
+<script>
+  const yearElement = document.getElementById('currentYear');
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear().toString();
+  }
+</script>
