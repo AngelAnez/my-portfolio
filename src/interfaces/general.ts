@@ -1,7 +1,7 @@
 interface Skill {
   name: string;
   logo: ImageMetadata;
-  type: "Frontend" | "Backend" | "Desarrollo"
+  type: "Frontend" | "Backend" | "Desarrollo" | "QA" | "IA"
 }
 
 interface Experience {

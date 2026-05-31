@@ -17,11 +17,11 @@ import {
   ZooSystemPreview,
 } from "@data/images";
 
-import PDVSALogo from "@images/logos/PDVSA_Logo.svg"
-import ZooParaguanaLogo from "@images/logos/ZooParaguana_Logo.png"
-import NoCountryLogo from "@images/logos/NoCountry_Logo.png"
-import FooTalentGroupLogo from "@images/logos/FooTalentGroup_Logo.png"
-import InteligosLogo from "@images/logos/Inteligos_Logo.png"
+import PDVSALogo from "@images/logos/PDVSA_Logo.svg";
+import ZooParaguanaLogo from "@images/logos/ZooParaguana_Logo.png";
+import NoCountryLogo from "@images/logos/NoCountry_Logo.png";
+import FooTalentGroupLogo from "@images/logos/FooTalentGroup_Logo.png";
+import InteligosLogo from "@images/logos/Inteligos_Logo.png";
 
 export const MYLINKS = {
   CV: "https://drive.google.com/file/d/1BlDlkHywqzD7ooKapLDDslfvMcGQOijk/view?usp=sharing",
@@ -148,10 +148,20 @@ export const SKILLS: Skill[] = [
     type: "Frontend",
   },
   {
-    name: 'Odoo',
+    name: "Odoo",
     logo: skillLogos.odoo,
-    type: "Desarrollo"
-  }
+    type: "Desarrollo",
+  },
+  {
+    name: "Documentación de Procesos",
+    logo: skillLogos.processDoc,
+    type: "QA",
+  },
+  {
+    name: "Claude",
+    logo: skillLogos.claude,
+    type: "IA",
+  },
 ];
 
 export const EXPERIENCE: Experience[] = [
@@ -163,7 +173,7 @@ export const EXPERIENCE: Experience[] = [
     "job-duty":
       "Implementé un nuevo módulo para el sistema Nagios de la empresa que automatiza el envío de alertas de estado de los equipos y servicios a través de Telegram. Y a su vez, puede generar reportes diarios sobre el estado general de los equipos y servicios monitoreados por el sistema. Este módulo logró optimizar el tiempo de detección de fallas de los equipos en un 80%, mejorando así la toma de decisiones en la Superintendencia.",
     stack: ["JavaScript", "PHP", "Python", "Nagios", "Telegram"],
-    logo: PDVSALogo
+    logo: PDVSALogo,
   },
   {
     position: "Desarrollador de Software",
@@ -203,7 +213,6 @@ export const EXPERIENCE: Experience[] = [
       "Lideré el desarrollo del Backend de una aplicación web para la fundación Patas Pirque, que permite la publicación de mascotas en adopción y la sugerencia de mascotas a los usuarios a través de un algoritmo para mostrar las más compatibles con los datos del usuario, aumentando así el número de adopciones responsables. En este proyecto pude gestionar las tareas entre mis compañeros, fomentar buenas prácticas de desarrollo y apoyar en decisiones del producto que permitieron satisfacer los objetivos establecidos para el proyecto",
     stack: ["TypeScript", "NestJS", "PostgresQL", "Swagger", "GitHub"],
     logo: FooTalentGroupLogo,
-
   },
   {
     position: "Analista de Control de Calidad",
@@ -212,11 +221,18 @@ export const EXPERIENCE: Experience[] = [
     "end-date": "Actualidad",
     "job-duty":
       "Me encargo de asegurar la integridad funcional de los módulos desarrollados en Odoo, diseñando y ejecutando múltiples tipos de pruebas; reportando observaciones, bugs, defectos o puntos de mejora en los nuevos desarrollos, y documentando procesos técnicos complejos en guías de usuarios simples. También participo en las Code Review, con el objetivo de buscar que el equipo siga un estandar de calidad alineado a unas buenas prácticas de desarrollo. Todo lo anterior me permite garantizar la calidad, estabilidad y presentación de las soluciones implementadas en los entornos de Staging y Producción",
-    stack: ["Odoo", "Testing Manual", "Documentación de Procesos", "Claude", "Python", "GitHub", "Odoo SH"],
+    stack: [
+      "Odoo",
+      "Testing Manual",
+      "Documentación de Procesos",
+      "Claude",
+      "Python",
+      "GitHub",
+      "Odoo SH",
+    ],
     logo: InteligosLogo,
   },
 ];
-
 
 export const PROJECTS: Project[] = [
   {
@@ -278,7 +294,7 @@ export const PROJECTS: Project[] = [
         collaborator.name.match("Rafael García") ||
         collaborator.name.match("Victor Hugo Murcio Mansilla") ||
         collaborator.name.match("Marcos Román Derbas") ||
-        collaborator.name.match("Erich Armijo")
+        collaborator.name.match("Erich Armijo"),
     ),
   },
   {
@@ -314,7 +330,7 @@ export const PROJECTS: Project[] = [
         collaborator.name.match("Matias Badano") ||
         collaborator.name.match("Diego Agustin Jorges") ||
         collaborator.name.match("Joaquín Herrera") ||
-        collaborator.name.match("Nestor Rubiano")
+        collaborator.name.match("Nestor Rubiano"),
     ),
   },
   {
@@ -344,7 +360,7 @@ export const PROJECTS: Project[] = [
         collaborator.name.match("Abel Montes Vega") ||
         collaborator.name.match("Deivison Jimenez") ||
         collaborator.name.match("Emanuel Capo") ||
-        collaborator.name.match("Natalia Caniza")
+        collaborator.name.match("Natalia Caniza"),
     ),
   },
   {
@@ -378,7 +394,7 @@ export const PROJECTS: Project[] = [
       (collaborator) =>
         collaborator.name.match("Leon Lederhos") ||
         collaborator.name.match("Brian Diaz") ||
-        collaborator.name.match("Leandro Martínez")
+        collaborator.name.match("Leandro Martínez"),
     ),
   },
   {
@@ -426,7 +442,7 @@ export const PROJECTS: Project[] = [
         collaborator.name.match("Feliangela García") ||
         collaborator.name.match("Gabriela Beatriz Pardo") ||
         collaborator.name.match("Claudia Campos") ||
-        collaborator.name.match("Juan Francisco Aguilar")
+        collaborator.name.match("Juan Francisco Aguilar"),
     ),
   },
   {
@@ -460,7 +476,7 @@ export const PROJECTS: Project[] = [
         collaborator.name.match("Giuliano Nissero") ||
         collaborator.name.match("Jonathan Narváez Urresta") ||
         collaborator.name.match("Eudes Mieres") ||
-        collaborator.name.match("Marcelo Peralta")
+        collaborator.name.match("Marcelo Peralta"),
     ),
   },
 ];
@@ -468,42 +484,42 @@ export const PROJECTS: Project[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     ...collaboratorList.find(
-      (collaborator) => collaborator.name === "Rafael Enrique Cortez"
+      (collaborator) => collaborator.name === "Rafael Enrique Cortez",
     ),
     text: `Angel es solidario con sus compañeros, siempre dispuesto a ayudar, una persona muy comprometida y responsable.`,
     linkedin: "https://www.linkedin.com/in/rafael-ecortez",
   },
   {
     ...collaboratorList.find(
-      (collaborator) => collaborator.name === "Triana Devia"
+      (collaborator) => collaborator.name === "Triana Devia",
     ),
     text: `Ángel es un líder nato, habiendo dirigido el equipo de Frontend con excelencia. Su carisma, participación activa y actitud solidaria han sido clave para el éxito del proyecto.`,
     linkedin: "https://www.linkedin.com/in/triana-devia",
   },
   {
     ...collaboratorList.find(
-      (collaborator) => collaborator.name === "Kenti Gabriel Antezana"
+      (collaborator) => collaborator.name === "Kenti Gabriel Antezana",
     ),
     text: `Tuve la oportunidad de trabajar con Ángel en No Country. Es un profesional impecable, bien predispuesto, con unas admirables habilidades en el desarrollo frontend. Posee grandes habilidades comunicativas, es una persona empatica y que se sabe comunicar muy bien. Ademas destaco su buen compañerismo y proactividad, con un perfil orientado al cumplimiento de objetivos. Sin dudas es alguien que recomiendo para trabajar.`,
     linkedin: "https://www.linkedin.com/in/kenti-gabriel-antezana-16364725b",
   },
   {
     ...collaboratorList.find(
-      (collaborator) => collaborator.name === "Deivison Jimenez"
+      (collaborator) => collaborator.name === "Deivison Jimenez",
     ),
     text: `Me es grato poder realizar esta recomendacion a Angel Durante el proyecto de No-Contry, ha sido una persona muy dedicada, de gran valor para el equipo, desde el Frontend a Realizado un Gran trabajo lleno de mucho apoyo, aporte al proyecto, es una persona Proactiva, reciliente, y demostrado gran compromiso al proyecto`,
     linkedin: "https://www.linkedin.com/in/deivison-jimenez",
   },
   {
     ...collaboratorList.find(
-      (collaborator) => collaborator.name === "Emanuel Capo"
+      (collaborator) => collaborator.name === "Emanuel Capo",
     ),
     text: `Angel es un profesional muy organizado, proactivo y trabajador. Es muy comunicativo para expresar sus ideas y siempre está dispuesto a ayudar. Tiene un gran conocimiento de React y Typescript y su aporte fue fundamental para llevar adelante el proyecto que compartimos.`,
     linkedin: "https://www.linkedin.com/in/emanuel-capo",
   },
   {
     ...collaboratorList.find(
-      (collaborator) => collaborator.name === "Natalia Caniza"
+      (collaborator) => collaborator.name === "Natalia Caniza",
     ),
     text: `Tuve la suerte de trabajar con Angel en un proyecto fintech que fue todo un desafío y no podría haber pedido un mejor compañero de equipo. Como programador front-end, su conocimiento técnico y atención a los detalles son impresionantes.
 Sus aportes fueron clave para el éxito del proyecto y me ayudaron muchísimo a desempeñar mejor mi rol, ya que siempre estaba dispuesto a compartir su conocimiento y colaborar con soluciones creativas.
@@ -512,14 +528,14 @@ Sin dudas, trabajar con él fue una experiencia muy enriquecedora y sé que cual
   },
   {
     ...collaboratorList.find(
-      (collaborator) => collaborator.name === "Abel Montes Vega"
+      (collaborator) => collaborator.name === "Abel Montes Vega",
     ),
     text: `Trabajé junto a Ángel durante una hackathon, donde demostró su capacidad como desarrollador frontend. Supo trabajar de manera eficiente a la par con el backend, logrando una integración completa del proyecto. Además, tuvimos una comunicación fluida que facilitó el desarrollo del trabajo en equipo. Su proactividad y eficacia fueron claves para alcanzar los objetivos del proyecto.`,
     linkedin: "https://www.linkedin.com/in/abel-montes-vega",
   },
   {
     ...collaboratorList.find(
-      (collaborator) => collaborator.name === "Leon Lederhos"
+      (collaborator) => collaborator.name === "Leon Lederhos",
     ),
     text: `Trabaje con Angel desarrollando un MVP en NO-Country. Es una persona excelente completa en todos los ambitos:
 - demostro escucha activa y una resolucion de problemas eficaz para cualquier situacion que se plantease
@@ -533,7 +549,7 @@ En definitiva fue un placer trabajar con Angel y haber desarrollado el MVP Subas
   },
   {
     ...collaboratorList.find(
-      (collaborator) => collaborator.name === "Brian Diaz"
+      (collaborator) => collaborator.name === "Brian Diaz",
     ),
     text: `Tuve la oportunidad de trabajar con Ángel en el desarrollo de un MVP, donde se encargó de la parte frontend con React. Desde el primer momento, destacó por su proactividad y excelente comunicación, lo que facilitó enormemente la integración entre el frontend y el backend.
 

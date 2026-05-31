@@ -1,11 +1,11 @@
 ---
 import Title from "@components/shared/Title.astro";
 import { SKILLS as skills } from "@data/db";
-import { Icon } from "astro-icon/components";
-import { Image } from "astro:assets";
+import SkillSection from "./SkillSection.astro";
 const FrontendSkills = skills.filter(skill => skill.type === "Frontend")
 const BackendSkills = skills.filter(skill => skill.type === "Backend")
 const DevelopmentSkills = skills.filter(skill => skill.type === "Desarrollo")
+const IASkills = skills.filter(skill => skill.type == "IA")
 ---
 
 <section id="skills" class="py-4 md:px-4">
@@ -15,67 +15,9 @@ const DevelopmentSkills = skills.filter(skill => skill.type === "Desarrollo")
     utilizar en mis proyectos.
   </p>
   <div class="flex flex-col gap-y-5 mt-8">
-    <h2 class="skill-type"><Icon name={"frontend"} size={20} /> Frontend</h2>
-    <ul class="skill-list">
-      {
-        FrontendSkills.map((skill) => (
-          <li class="flex flex-col gap-1 mx-auto hover:scale-125 transition-transform select-none duration-300">
-            <Image
-              class="w-full max-w-[50px] aspect-square mx-auto"
-              loading="lazy"
-              src={skill.logo}
-              alt={`${skill.name} logo`}
-            />
-            <p class="text-center text-base">{skill.name}</p>
-          </li>
-        ))
-      }
-    </ul>
-    <h2 class="skill-type"><Icon name={"backend"} size={20} /> Backend</h2>
-    <ul class="skill-list">
-      {
-        BackendSkills.map((skill) => (
-          <li class="flex flex-col gap-1 mx-auto hover:scale-125 transition-transform select-none duration-300">
-            <Image
-              class="w-full max-w-[40px] aspect-square mx-auto"
-              loading="lazy"
-              src={skill.logo}
-              alt={`${skill.name} logo`}
-            />
-            <p class="text-center text-base md:text-lg">{skill.name}</p>
-          </li>
-        ))
-      }
-    </ul>
-    <h2 class="skill-type">
-      <Icon name={"development"} size={20} /> Desarrollo
-    </h2>
-    <ul class="skill-list">
-      {
-        DevelopmentSkills.map((skill) => (
-          <li class="flex flex-col gap-1 mx-auto hover:scale-125 transition-transform select-none duration-300">
-            <Image
-              class="w-full max-w-[40px] aspect-square mx-auto"
-              loading="lazy"
-              src={skill.logo}
-              alt={`${skill.name} logo`}
-            />
-            <p class="text-center text-base md:text-lg">{skill.name}</p>
-          </li>
-        ))
-      }
-    </ul>
+    <SkillSection name="Frontend" iconName="frontend" skills={FrontendSkills}/>
+    <SkillSection name="Backend" iconName="backend" skills={BackendSkills}/>
+    <SkillSection name="Desarrollo" iconName="development" skills={DevelopmentSkills}/>
+    <SkillSection name="Inteligencia Artificial" iconName="ia" skills={IASkills}/>
   </div>
 </section>
-
-<style>
-  @reference "@styles/global.css";
-
-  .skill-list {
-    @apply grid grid-cols-2 sm:grid-cols-3 md:gap-x-4 gap-y-3 md:grid-cols-5 lg:grid-cols-10 md:gap-x-2;
-  }
-
-  .skill-type {
-    @apply font-semibold text-lg flex gap-2 items-center;
-  }
-</style>

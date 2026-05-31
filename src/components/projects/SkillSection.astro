@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  name: string;
+  iconName: string;
+  skills: Skill[]
+}
+
+const { name, iconName, skills } = Astro.props;
+---
+<h2 class="skill-type"><Icon name={iconName} size={20} /> {name}</h2>
+<ul class="skill-list">
+  {
+    skills.map((skill) => (
+      <li class="flex flex-col gap-1 mx-auto hover:scale-125 transition-transform select-none duration-300">
+        <Image
+          class="w-full max-w-[50px] aspect-square mx-auto"
+          loading="lazy"
+          src={skill.logo}
+          alt={`${skill.name} logo`}
+        />
+        <p class="text-center text-base">{skill.name}</p>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  @reference "@styles/global.css";
+
+  .skill-list {
+    @apply grid grid-cols-2 sm:grid-cols-3 md:gap-x-4 gap-y-3 md:grid-cols-5 lg:grid-cols-10;
+  }
+
+  .skill-type {
+    @apply font-semibold text-lg flex gap-2 items-center;
+  }
+</style>
+

@@ -21,6 +21,8 @@ import ZustandLogo from "@images/logos/zustand.svg";
 import NestJSLogo from "@images/logos/nestjs.svg";
 import PostgreSQLogo from "@images/logos/postgresql.svg";
 import PostmanLogo from "@images/logos/postman.svg";
+import OdooLogo from "@images/logos/odoo.png"
+import ClaudeLogo from "@images/logos/claude.svg"
 
 /* Projects */
 import ZooSystem from "@images/projects/zoo-system-card.webp";
@@ -115,7 +117,6 @@ import NCJanuary2025 from "@images/certificates/No-Country-Enero-2025.webp";
 import FTGMatchProject from "@images/certificates/Foo-Talent-Group-Match-Project.webp";
 
 /* Collaborators */
-
 export const collaboratorList = [
   {
     name: "Rafael García",
@@ -414,6 +415,8 @@ export const skillLogos = {
   nestjs: NestJSLogo,
   postgresql: PostgreSQLogo,
   postman: PostmanLogo,
+  odoo: OdooLogo,
+  claude: ClaudeLogo
 };
 
 export const ZooSystemPreview = ZooSystem;
